@@ -8,15 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
-@class WestsideViewController;
 
 @interface WestsideAppDelegate : NSObject <UIApplicationDelegate> {
 @private
 
+    UITabBarController *tabBarController;
+    UISegmentedControl *mediaSegmentedControl;
+    UIWebView *webView;
+    UINavigationBar *mediaNavigationBar;
+    
 }
+
+@property (nonatomic, retain) IBOutlet UINavigationController *mediaNavigationController;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet WestsideViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+
+- (IBAction)MediaViewChangeRequested:(id)sender;
+- (void) loadPodcast:(NSString *)string;
+
+@property (nonatomic, retain) IBOutlet UISegmentedControl *mediaSegmentedControl;
+
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
+
+@property (nonatomic, retain) NSString *audioURL;
+@property (nonatomic, retain) NSString *videoURL;
 
 @end

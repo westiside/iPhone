@@ -22,6 +22,10 @@
 		2D84558012EA835E00F19F55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D84557E12EA835E00F19F55 /* InfoPlist.strings */; };
 		2D84558312EA835E00F19F55 /* WestsideTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2D84558212EA835E00F19F55 /* WestsideTests.h */; };
 		2D84558512EA835E00F19F55 /* WestsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84558412EA835E00F19F55 /* WestsideTests.m */; };
+		2D84559112EA843700F19F55 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84558F12EA843700F19F55 /* MediaViewController.m */; };
+		2D84559212EA843700F19F55 /* MediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D84559012EA843700F19F55 /* MediaViewController.xib */; };
+		2D8DA26C12EB628100EE323D /* ParseFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26B12EB628100EE323D /* ParseFeeds.m */; };
+		2D8DA27012EB695A00EE323D /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26F12EB695A00EE323D /* Feed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,22 +33,29 @@
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2D84555B12EA835E00F19F55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2D84555F12EA835E00F19F55 /* Westside-Info.plist */ = {isa = PBXFileReference; path = "Westside-Info.plist"; sourceTree = "<group>"; };
+		2D84555F12EA835E00F19F55 /* Westside-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Westside-Info.plist"; sourceTree = "<group>"; };
 		2D84556112EA835E00F19F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D84556312EA835E00F19F55 /* Westside-Prefix.pch */ = {isa = PBXFileReference; path = "Westside-Prefix.pch"; sourceTree = "<group>"; };
+		2D84556312EA835E00F19F55 /* Westside-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Westside-Prefix.pch"; sourceTree = "<group>"; };
 		2D84556412EA835E00F19F55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2D84556612EA835E00F19F55 /* WestsideAppDelegate.h */ = {isa = PBXFileReference; path = WestsideAppDelegate.h; sourceTree = "<group>"; };
+		2D84556612EA835E00F19F55 /* WestsideAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WestsideAppDelegate.h; sourceTree = "<group>"; };
 		2D84556712EA835E00F19F55 /* WestsideAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WestsideAppDelegate.m; sourceTree = "<group>"; };
 		2D84556A12EA835E00F19F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		2D84556C12EA835E00F19F55 /* WestsideViewController.h */ = {isa = PBXFileReference; path = WestsideViewController.h; sourceTree = "<group>"; };
+		2D84556C12EA835E00F19F55 /* WestsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WestsideViewController.h; sourceTree = "<group>"; };
 		2D84556D12EA835E00F19F55 /* WestsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WestsideViewController.m; sourceTree = "<group>"; };
 		2D84557012EA835E00F19F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WestsideViewController.xib; sourceTree = "<group>"; };
 		2D84557712EA835E00F19F55 /* WestsideTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WestsideTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D84557D12EA835E00F19F55 /* WestsideTests-Info.plist */ = {isa = PBXFileReference; path = "WestsideTests-Info.plist"; sourceTree = "<group>"; };
+		2D84557D12EA835E00F19F55 /* WestsideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WestsideTests-Info.plist"; sourceTree = "<group>"; };
 		2D84557F12EA835E00F19F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D84558112EA835E00F19F55 /* WestsideTests-Prefix.pch */ = {isa = PBXFileReference; path = "WestsideTests-Prefix.pch"; sourceTree = "<group>"; };
+		2D84558112EA835E00F19F55 /* WestsideTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WestsideTests-Prefix.pch"; sourceTree = "<group>"; };
 		2D84558212EA835E00F19F55 /* WestsideTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WestsideTests.h; sourceTree = "<group>"; };
 		2D84558412EA835E00F19F55 /* WestsideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WestsideTests.m; sourceTree = "<group>"; };
+		2D84558E12EA843700F19F55 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		2D84558F12EA843700F19F55 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		2D84559012EA843700F19F55 /* MediaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaViewController.xib; sourceTree = "<group>"; };
+		2D8DA26A12EB628100EE323D /* ParseFeeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseFeeds.h; sourceTree = "<group>"; };
+		2D8DA26B12EB628100EE323D /* ParseFeeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseFeeds.m; sourceTree = "<group>"; };
+		2D8DA26E12EB695A00EE323D /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		2D8DA26F12EB695A00EE323D /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +114,16 @@
 		2D84555D12EA835E00F19F55 /* Westside */ = {
 			isa = PBXGroup;
 			children = (
+				2D8DA26A12EB628100EE323D /* ParseFeeds.h */,
+				2D8DA26B12EB628100EE323D /* ParseFeeds.m */,
+				2D8DA26E12EB695A00EE323D /* Feed.h */,
+				2D8DA26F12EB695A00EE323D /* Feed.m */,
 				2D84556612EA835E00F19F55 /* WestsideAppDelegate.h */,
 				2D84556712EA835E00F19F55 /* WestsideAppDelegate.m */,
 				2D84556912EA835E00F19F55 /* MainWindow.xib */,
+				2D84558E12EA843700F19F55 /* MediaViewController.h */,
+				2D84558F12EA843700F19F55 /* MediaViewController.m */,
+				2D84559012EA843700F19F55 /* MediaViewController.xib */,
 				2D84556C12EA835E00F19F55 /* WestsideViewController.h */,
 				2D84556D12EA835E00F19F55 /* WestsideViewController.m */,
 				2D84556F12EA835E00F19F55 /* WestsideViewController.xib */,
@@ -214,6 +232,7 @@
 				2D84556212EA835E00F19F55 /* InfoPlist.strings in Resources */,
 				2D84556B12EA835E00F19F55 /* MainWindow.xib in Resources */,
 				2D84557112EA835E00F19F55 /* WestsideViewController.xib in Resources */,
+				2D84559212EA843700F19F55 /* MediaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +271,9 @@
 				2D84556512EA835E00F19F55 /* main.m in Sources */,
 				2D84556812EA835E00F19F55 /* WestsideAppDelegate.m in Sources */,
 				2D84556E12EA835E00F19F55 /* WestsideViewController.m in Sources */,
+				2D84559112EA843700F19F55 /* MediaViewController.m in Sources */,
+				2D8DA26C12EB628100EE323D /* ParseFeeds.m in Sources */,
+				2D8DA27012EB695A00EE323D /* Feed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +443,7 @@
 				2D84558A12EA835E00F19F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D84558B12EA835E00F19F55 /* Build configuration list for PBXNativeTarget "WestsideTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +452,7 @@
 				2D84558D12EA835E00F19F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
