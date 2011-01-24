@@ -40,6 +40,7 @@
     [super didReceiveMemoryWarning];
     [audioFeeds release];
     [videoFeeds release];
+    [feedsParser release];
     // Release any cached data, images, etc that aren't in use.
 }
 
