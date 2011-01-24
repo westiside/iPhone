@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4512EBB19700C9B88B /* MediaController.m */; };
+		2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4612EBB19700C9B88B /* MediaController.xib */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
 		2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555B12EA835E00F19F55 /* CoreGraphics.framework */; };
@@ -22,13 +24,14 @@
 		2D84558012EA835E00F19F55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D84557E12EA835E00F19F55 /* InfoPlist.strings */; };
 		2D84558312EA835E00F19F55 /* WestsideTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2D84558212EA835E00F19F55 /* WestsideTests.h */; };
 		2D84558512EA835E00F19F55 /* WestsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84558412EA835E00F19F55 /* WestsideTests.m */; };
-		2D84559112EA843700F19F55 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84558F12EA843700F19F55 /* MediaViewController.m */; };
-		2D84559212EA843700F19F55 /* MediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D84559012EA843700F19F55 /* MediaViewController.xib */; };
-		2D8DA26C12EB628100EE323D /* ParseFeeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26B12EB628100EE323D /* ParseFeeds.m */; };
+		2D8DA26C12EB628100EE323D /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26B12EB628100EE323D /* FeedParser.m */; };
 		2D8DA27012EB695A00EE323D /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26F12EB695A00EE323D /* Feed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D0F8F4412EBB19700C9B88B /* MediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaController.h; sourceTree = "<group>"; };
+		2D0F8F4512EBB19700C9B88B /* MediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaController.m; sourceTree = "<group>"; };
+		2D0F8F4612EBB19700C9B88B /* MediaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaController.xib; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,11 +52,8 @@
 		2D84558112EA835E00F19F55 /* WestsideTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WestsideTests-Prefix.pch"; sourceTree = "<group>"; };
 		2D84558212EA835E00F19F55 /* WestsideTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WestsideTests.h; sourceTree = "<group>"; };
 		2D84558412EA835E00F19F55 /* WestsideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WestsideTests.m; sourceTree = "<group>"; };
-		2D84558E12EA843700F19F55 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
-		2D84558F12EA843700F19F55 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
-		2D84559012EA843700F19F55 /* MediaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaViewController.xib; sourceTree = "<group>"; };
-		2D8DA26A12EB628100EE323D /* ParseFeeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseFeeds.h; sourceTree = "<group>"; };
-		2D8DA26B12EB628100EE323D /* ParseFeeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseFeeds.m; sourceTree = "<group>"; };
+		2D8DA26A12EB628100EE323D /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FeedParser.h; sourceTree = "<group>"; };
+		2D8DA26B12EB628100EE323D /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; };
 		2D8DA26E12EB695A00EE323D /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		2D8DA26F12EB695A00EE323D /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,16 +114,16 @@
 		2D84555D12EA835E00F19F55 /* Westside */ = {
 			isa = PBXGroup;
 			children = (
-				2D8DA26A12EB628100EE323D /* ParseFeeds.h */,
-				2D8DA26B12EB628100EE323D /* ParseFeeds.m */,
+				2D8DA26A12EB628100EE323D /* FeedParser.h */,
+				2D8DA26B12EB628100EE323D /* FeedParser.m */,
 				2D8DA26E12EB695A00EE323D /* Feed.h */,
 				2D8DA26F12EB695A00EE323D /* Feed.m */,
 				2D84556612EA835E00F19F55 /* WestsideAppDelegate.h */,
 				2D84556712EA835E00F19F55 /* WestsideAppDelegate.m */,
 				2D84556912EA835E00F19F55 /* MainWindow.xib */,
-				2D84558E12EA843700F19F55 /* MediaViewController.h */,
-				2D84558F12EA843700F19F55 /* MediaViewController.m */,
-				2D84559012EA843700F19F55 /* MediaViewController.xib */,
+				2D0F8F4412EBB19700C9B88B /* MediaController.h */,
+				2D0F8F4512EBB19700C9B88B /* MediaController.m */,
+				2D0F8F4612EBB19700C9B88B /* MediaController.xib */,
 				2D84556C12EA835E00F19F55 /* WestsideViewController.h */,
 				2D84556D12EA835E00F19F55 /* WestsideViewController.m */,
 				2D84556F12EA835E00F19F55 /* WestsideViewController.xib */,
@@ -232,7 +232,7 @@
 				2D84556212EA835E00F19F55 /* InfoPlist.strings in Resources */,
 				2D84556B12EA835E00F19F55 /* MainWindow.xib in Resources */,
 				2D84557112EA835E00F19F55 /* WestsideViewController.xib in Resources */,
-				2D84559212EA843700F19F55 /* MediaViewController.xib in Resources */,
+				2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +271,9 @@
 				2D84556512EA835E00F19F55 /* main.m in Sources */,
 				2D84556812EA835E00F19F55 /* WestsideAppDelegate.m in Sources */,
 				2D84556E12EA835E00F19F55 /* WestsideViewController.m in Sources */,
-				2D84559112EA843700F19F55 /* MediaViewController.m in Sources */,
-				2D8DA26C12EB628100EE323D /* ParseFeeds.m in Sources */,
+				2D8DA26C12EB628100EE323D /* FeedParser.m in Sources */,
 				2D8DA27012EB695A00EE323D /* Feed.m in Sources */,
+				2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
