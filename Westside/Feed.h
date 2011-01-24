@@ -17,7 +17,6 @@
 @property (nonatomic, retain) NSString    *feedLink;
 @property (nonatomic, retain) NSString    *feedName;
 @property (nonatomic, retain) NSString    *pubDate;
-@property (nonatomic, retain) NSString    *author;
 @property (nonatomic, retain) NSString    *duration;
 @property (nonatomic)         BOOL        isAudio;
 

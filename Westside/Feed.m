@@ -12,7 +12,7 @@
 @implementation Feed
 @synthesize feedLink;
 @synthesize feedName;
-@synthesize author;
+@synthesize pubDate;
 @synthesize isAudio;
 @synthesize duration;
 
