@@ -21,6 +21,7 @@
 }
 
 @property (nonatomic, retain) NSMutableArray* audioFeeds;
+
 @property (nonatomic, retain) NSMutableArray* videoFeeds;
 
 -(void) parseXML;
