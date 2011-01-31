@@ -15,4 +15,11 @@
 @synthesize pubDate;
 @synthesize isAudio;
 
+-(void)dealloc{
+    [feedLink release];
+    [feedName release];
+    [pubDate release];
+    [super dealloc];
+}
+
 @end

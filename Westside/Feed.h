@@ -19,4 +19,6 @@
 @property (nonatomic, retain) NSString    *pubDate;
 @property (nonatomic)         BOOL        isAudio;
 
+-(void)dealloc;
+
 @end

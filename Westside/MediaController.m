@@ -207,6 +207,9 @@
         [self loadPodcast:f.feedLink];
     }
     
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
 
 
