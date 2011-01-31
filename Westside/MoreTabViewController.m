@@ -1,14 +1,15 @@
 //
-//  WestsideViewController.m
+//  MoreTabViewController.m
 //  Westside
 //
-//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/21/11.
-//  Copyright 2011 Westside Baptist Church. All rights reserved.
+//  Created by Nick Eubanks on 1/31/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "WestsideViewController.h"
+#import "MoreTabViewController.h"
 
-@implementation WestsideViewController
+
+@implementation MoreTabViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,20 +35,11 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
 }
-*/
 
 - (void)viewDidUnload
 {

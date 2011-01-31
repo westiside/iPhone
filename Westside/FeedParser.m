@@ -2,30 +2,36 @@
 //  FeedParser.m
 //  Westside
 //
-//  Created by Nick Eubanks on 1/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/22/11.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import "FeedParser.h"
-
 
 @implementation FeedParser
 @synthesize audioFeeds;
 @synthesize videoFeeds;
 
+-(FeedParser*) init{
+    [super init];
+    audioFeeds = [[NSMutableArray alloc] init];
+    videoFeeds = [[NSMutableArray alloc] init];
+    
+    return self;
+}
+
+-(void)dealloc{
+    [audioFeeds release];
+    [videoFeeds release];
+    [super dealloc];
+}
+
 
 #pragma mark - Access Methods
 
 -(void) parseXML{
-    
-    if(audioFeeds){
-       [audioFeeds release];
-    }
-    if(videoFeeds){
-        [videoFeeds release]; 
-    }
-    audioFeeds = [[NSMutableArray alloc] init];
-    videoFeeds = [[NSMutableArray alloc] init];
+    [audioFeeds removeAllObjects];
+    [videoFeeds removeAllObjects];
     
     NSURL *xmlURL = [NSURL URLWithString:@"http://sermon.net/rss/wbcmedia/main_channel"];
     NSXMLParser *feedParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
@@ -90,11 +96,6 @@
         pubDate = currentStringValue;
         return;
     } else
-                
-    if([elementName isEqualToString:@"itunes:duration"] ) {
-        duration = currentStringValue;
-        return;
-    } else
     
     if ( [elementName isEqualToString:@"item"] ) {
         
@@ -103,8 +104,7 @@
         f.feedName = [[f.feedName componentsSeparatedByString:@" - "] objectAtIndex:0];
         [f setFeedLink:[[feedLink componentsSeparatedByString:@"\n"] objectAtIndex:0]];
         [f setIsAudio:isAudio];
-        [f setDuration:[[duration componentsSeparatedByString:@"\n"] objectAtIndex:0]];
-        [f setPubDate:[[pubDate componentsSeparatedByString:@"\n"] objectAtIndex:0]];
+        [f setPubDate:[[[pubDate componentsSeparatedByString:@"\n"] objectAtIndex:0] substringWithRange:NSMakeRange(0, 17)]];
         
      
         
@@ -121,11 +121,6 @@
     
 }
 
-- (void)dealloc {
-    [audioFeeds release];
-    [videoFeeds release];
-    [super dealloc];
-}
 
 
 @end

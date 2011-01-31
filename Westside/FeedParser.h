@@ -2,8 +2,8 @@
 //  FeedParser.h
 //  Westside
 //
-//  Created by Nick Eubanks on 1/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/22/11.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -23,6 +23,8 @@
 @property (nonatomic, retain) NSMutableArray* audioFeeds;
 
 @property (nonatomic, retain) NSMutableArray* videoFeeds;
+
+-(FeedParser*) init;
 
 -(void) parseXML;
 

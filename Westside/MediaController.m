@@ -2,8 +2,8 @@
 //  MediaController.m
 //  Westside
 //
-//  Created by Nick Eubanks on 1/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/22/11.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import "MediaController.h"
@@ -17,9 +17,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-       
-    }
+    
     return self;
 }
 
@@ -28,9 +26,7 @@
     [mediaViewSelector release];
     [webView release];
     [podcastTable release];
-    [audioFeeds release];
-    [videoFeeds release];
-    [feedsParser release];
+    [feeds release];
     [super dealloc];
 }
 
@@ -38,9 +34,7 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    [audioFeeds release];
-    [videoFeeds release];
-    [feedsParser release];
+    
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -50,27 +44,17 @@
 {
     [super viewDidLoad];
     audioSelected = YES;
-    if(!audioFeeds){
-        
-        if(!feedsParser){
-            feedsParser = [[FeedParser alloc] init];
-            [self refreshButtonSelect:nil];
-        }
-        [feedsParser parseXML];
-        audioFeeds = [[NSMutableArray alloc] init];
-        audioFeeds = [feedsParser audioFeeds];
-        
-    }
-     
-    
+    feeds = [[FeedParser alloc] init];
+    [self refreshButtonSelect:nil];
+    [feeds parseXML];    
     [podcastTable reloadData];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -121,43 +105,26 @@
 }
 
 - (void)refreshPodCasts:(int)viewRequest:(BOOL)parse{
-    if(!feedsParser){
-        feedsParser = [[FeedParser alloc] init];
+    if(!feeds){
+        feeds = [[FeedParser alloc] init];
         [self refreshButtonSelect:nil];
     }
     if(parse) {
         NSLog(@"Parsing Feeds");
-        [feedsParser parseXML];
-        audioFeeds = nil;
-        videoFeeds = nil;
+        [feeds parseXML];
     }
     
     switch(viewRequest){
         case 0 :    //Audio
         {
             NSLog(@"Audio View Requested");
-            
-            if(!audioFeeds){
-                audioFeeds = [[NSMutableArray alloc] init];
-                audioFeeds = [feedsParser audioFeeds];
-            }
-            
             audioSelected = YES;     
-            
-            
             break;
         }
         case 1  :   //Video
         {
             NSLog(@"Video View Requested");
-            if(!videoFeeds){
-                videoFeeds = [[NSMutableArray alloc] init];
-                videoFeeds = [feedsParser videoFeeds];
-            }
-            
             audioSelected = NO;
-            
-            
             break;
         }
             
@@ -197,8 +164,8 @@
 {
     // Return the number of rows in the section.
     NSLog(@"Loading Table View");
-    if(audioSelected) return [audioFeeds count];
-    else return [videoFeeds count];
+    if(audioSelected) return [feeds.audioFeeds count];
+    else return [feeds.videoFeeds count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -207,17 +174,19 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell...
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     if(audioSelected){
-        Feed *f = [audioFeeds objectAtIndex:indexPath.row];
+        Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
         cell.textLabel.text = f.feedName;
+        cell.detailTextLabel.text = f.pubDate;
     }else{
-        Feed *f = [videoFeeds objectAtIndex:indexPath.row];
+        Feed *f = [feeds.videoFeeds objectAtIndex:indexPath.row];
         cell.textLabel.text = f.feedName;
+        cell.detailTextLabel.text = f.pubDate;
     }
       
     return cell;
@@ -230,11 +199,11 @@
 {
     NSLog(@"Table View Member Selected");
     if(audioSelected){
-        Feed *f = [audioFeeds objectAtIndex:indexPath.row];
+        Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
         [self loadPodcast:f.feedLink];
     } else
     {
-        Feed *f = [videoFeeds objectAtIndex:indexPath.row];
+        Feed *f = [feeds.videoFeeds objectAtIndex:indexPath.row];
         [self loadPodcast:f.feedLink];
     }
     

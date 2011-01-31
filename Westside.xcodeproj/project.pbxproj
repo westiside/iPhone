@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4512EBB19700C9B88B /* MediaController.m */; };
 		2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4612EBB19700C9B88B /* MediaController.xib */; };
+		2D3BF11912F1065D005CD1C3 /* App Project Schedule (Tent).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */; };
+		2D3BF11A12F1065D005CD1C3 /* SRS.doc in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11712F1065D005CD1C3 /* SRS.doc */; };
+		2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
 		2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555B12EA835E00F19F55 /* CoreGraphics.framework */; };
@@ -26,12 +29,19 @@
 		2D84558512EA835E00F19F55 /* WestsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84558412EA835E00F19F55 /* WestsideTests.m */; };
 		2D8DA26C12EB628100EE323D /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26B12EB628100EE323D /* FeedParser.m */; };
 		2D8DA27012EB695A00EE323D /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26F12EB695A00EE323D /* Feed.m */; };
+		2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */; };
+		2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */; };
+		2DFA2A6012F776BA00E3A8F9 /* MoreTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5E12F776BA00E3A8F9 /* MoreTabViewController.m */; };
+		2DFA2A6112F776BA00E3A8F9 /* MoreTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5F12F776BA00E3A8F9 /* MoreTabViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D0F8F4412EBB19700C9B88B /* MediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaController.h; sourceTree = "<group>"; };
 		2D0F8F4512EBB19700C9B88B /* MediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaController.m; sourceTree = "<group>"; };
 		2D0F8F4612EBB19700C9B88B /* MediaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaController.xib; sourceTree = "<group>"; };
+		2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "App Project Schedule (Tent).pdf"; sourceTree = "<group>"; };
+		2D3BF11712F1065D005CD1C3 /* SRS.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SRS.doc; sourceTree = "<group>"; };
+		2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Westside App UI Mockups.pdf"; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,10 +62,16 @@
 		2D84558112EA835E00F19F55 /* WestsideTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WestsideTests-Prefix.pch"; sourceTree = "<group>"; };
 		2D84558212EA835E00F19F55 /* WestsideTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WestsideTests.h; sourceTree = "<group>"; };
 		2D84558412EA835E00F19F55 /* WestsideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WestsideTests.m; sourceTree = "<group>"; };
-		2D8DA26A12EB628100EE323D /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FeedParser.h; sourceTree = "<group>"; };
+		2D8DA26A12EB628100EE323D /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedParser.h; sourceTree = "<group>"; };
 		2D8DA26B12EB628100EE323D /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; };
 		2D8DA26E12EB695A00EE323D /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		2D8DA26F12EB695A00EE323D /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
+		2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
+		2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
+		2DFA2A5D12F776BA00E3A8F9 /* MoreTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTabViewController.h; sourceTree = "<group>"; };
+		2DFA2A5E12F776BA00E3A8F9 /* MoreTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTabViewController.m; sourceTree = "<group>"; };
+		2DFA2A5F12F776BA00E3A8F9 /* MoreTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreTabViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D3BF11512F1065D005CD1C3 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */,
+				2D3BF11712F1065D005CD1C3 /* SRS.doc */,
+				2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		2D84554812EA835D00F19F55 = {
 			isa = PBXGroup;
 			children = (
+				2D3BF11512F1065D005CD1C3 /* Documentation */,
 				2D84555D12EA835E00F19F55 /* Westside */,
 				2D84557B12EA835E00F19F55 /* WestsideTests */,
 				2D84555612EA835E00F19F55 /* Frameworks */,
@@ -114,19 +141,13 @@
 		2D84555D12EA835E00F19F55 /* Westside */ = {
 			isa = PBXGroup;
 			children = (
-				2D8DA26A12EB628100EE323D /* FeedParser.h */,
-				2D8DA26B12EB628100EE323D /* FeedParser.m */,
-				2D8DA26E12EB695A00EE323D /* Feed.h */,
-				2D8DA26F12EB695A00EE323D /* Feed.m */,
 				2D84556612EA835E00F19F55 /* WestsideAppDelegate.h */,
 				2D84556712EA835E00F19F55 /* WestsideAppDelegate.m */,
 				2D84556912EA835E00F19F55 /* MainWindow.xib */,
-				2D0F8F4412EBB19700C9B88B /* MediaController.h */,
-				2D0F8F4512EBB19700C9B88B /* MediaController.m */,
-				2D0F8F4612EBB19700C9B88B /* MediaController.xib */,
-				2D84556C12EA835E00F19F55 /* WestsideViewController.h */,
-				2D84556D12EA835E00F19F55 /* WestsideViewController.m */,
-				2D84556F12EA835E00F19F55 /* WestsideViewController.xib */,
+				2D9B98BC12F7679F001FA322 /* Main Tab */,
+				2D9B98BD12F767CF001FA322 /* Connect Tab */,
+				2D9B98BA12F76794001FA322 /* Media Tab */,
+				2DFA2A5C12F7765900E3A8F9 /* More Tab */,
 				2D84555E12EA835E00F19F55 /* Supporting Files */,
 			);
 			path = Westside;
@@ -161,6 +182,50 @@
 				2D84558112EA835E00F19F55 /* WestsideTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D9B98BA12F76794001FA322 /* Media Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2D8DA26A12EB628100EE323D /* FeedParser.h */,
+				2D8DA26B12EB628100EE323D /* FeedParser.m */,
+				2D8DA26E12EB695A00EE323D /* Feed.h */,
+				2D8DA26F12EB695A00EE323D /* Feed.m */,
+				2D0F8F4412EBB19700C9B88B /* MediaController.h */,
+				2D0F8F4512EBB19700C9B88B /* MediaController.m */,
+				2D0F8F4612EBB19700C9B88B /* MediaController.xib */,
+			);
+			name = "Media Tab";
+			sourceTree = "<group>";
+		};
+		2D9B98BC12F7679F001FA322 /* Main Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2D84556C12EA835E00F19F55 /* WestsideViewController.h */,
+				2D84556D12EA835E00F19F55 /* WestsideViewController.m */,
+				2D84556F12EA835E00F19F55 /* WestsideViewController.xib */,
+			);
+			name = "Main Tab";
+			sourceTree = "<group>";
+		};
+		2D9B98BD12F767CF001FA322 /* Connect Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */,
+				2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */,
+				2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */,
+			);
+			name = "Connect Tab";
+			sourceTree = "<group>";
+		};
+		2DFA2A5C12F7765900E3A8F9 /* More Tab */ = {
+			isa = PBXGroup;
+			children = (
+				2DFA2A5D12F776BA00E3A8F9 /* MoreTabViewController.h */,
+				2DFA2A5E12F776BA00E3A8F9 /* MoreTabViewController.m */,
+				2DFA2A5F12F776BA00E3A8F9 /* MoreTabViewController.xib */,
+			);
+			name = "More Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +298,11 @@
 				2D84556B12EA835E00F19F55 /* MainWindow.xib in Resources */,
 				2D84557112EA835E00F19F55 /* WestsideViewController.xib in Resources */,
 				2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */,
+				2D3BF11912F1065D005CD1C3 /* App Project Schedule (Tent).pdf in Resources */,
+				2D3BF11A12F1065D005CD1C3 /* SRS.doc in Resources */,
+				2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */,
+				2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */,
+				2DFA2A6112F776BA00E3A8F9 /* MoreTabViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +344,8 @@
 				2D8DA26C12EB628100EE323D /* FeedParser.m in Sources */,
 				2D8DA27012EB695A00EE323D /* Feed.m in Sources */,
 				2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */,
+				2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */,
+				2DFA2A6012F776BA00E3A8F9 /* MoreTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

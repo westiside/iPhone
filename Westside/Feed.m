@@ -2,8 +2,8 @@
 //  Feed.m
 //  Westside
 //
-//  Created by Nick Eubanks on 1/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/22/11.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import "Feed.h"
@@ -14,6 +14,5 @@
 @synthesize feedName;
 @synthesize pubDate;
 @synthesize isAudio;
-@synthesize duration;
 
 @end

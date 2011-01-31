@@ -2,8 +2,8 @@
 //  MediaController.h
 //  Westside
 //
-//  Created by Nick Eubanks on 1/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/22/11.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,13 +11,11 @@
 
 @interface MediaController : UIViewController {
 @private
-    FeedParser *feedsParser;
+    FeedParser *feeds;
     UISegmentedControl *mediaViewSelector;
     UIWebView *webView;
     UITableView *podcastTable;
     BOOL audioSelected;
-    NSMutableArray *audioFeeds;
-    NSMutableArray *videoFeeds;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) IBOutlet UITableView *podcastTable;
