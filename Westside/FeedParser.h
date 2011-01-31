@@ -20,9 +20,9 @@
     NSString    *currentStringValue;
 }
 
-@property (nonatomic) NSMutableArray* audioFeeds;
+@property (nonatomic, retain) NSMutableArray* audioFeeds;
 
-@property (nonatomic) NSMutableArray* videoFeeds;
+@property (nonatomic, retain) NSMutableArray* videoFeeds;
 
 -(FeedParser*) init;
 
