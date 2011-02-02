@@ -12,6 +12,8 @@
 		2D3BF11912F1065D005CD1C3 /* App Project Schedule (Tent).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */; };
 		2D3BF11A12F1065D005CD1C3 /* SRS.doc in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11712F1065D005CD1C3 /* SRS.doc */; };
 		2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */; };
+		2D7ADD5812FA12D000B28EF1 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */; };
+		2D7ADD5912FA12D000B28EF1 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
 		2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555B12EA835E00F19F55 /* CoreGraphics.framework */; };
@@ -45,6 +47,9 @@
 		2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "App Project Schedule (Tent).pdf"; sourceTree = "<group>"; };
 		2D3BF11712F1065D005CD1C3 /* SRS.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SRS.doc; sourceTree = "<group>"; };
 		2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Westside App UI Mockups.pdf"; sourceTree = "<group>"; };
+		2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -221,6 +226,9 @@
 				2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */,
 				2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */,
 				2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */,
+				2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */,
+				2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */,
+				2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */,
 			);
 			name = "Connect Tab";
 			sourceTree = "<group>";
@@ -323,6 +331,7 @@
 				2DD5D38A12F7A05F00D67898 /* pic1.png in Resources */,
 				2DD5D38B12F7A05F00D67898 /* pic2.png in Resources */,
 				2DD5D38C12F7A05F00D67898 /* pic3.png in Resources */,
+				2D7ADD5912FA12D000B28EF1 /* TwitterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +375,7 @@
 				2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */,
 				2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */,
 				2DFA2A6012F776BA00E3A8F9 /* MoreTabViewController.m in Sources */,
+				2D7ADD5812FA12D000B28EF1 /* TwitterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

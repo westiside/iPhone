@@ -8,15 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface WestsideAppDelegate : NSObject <UIApplicationDelegate> {
 @private
 
     UITabBarController *tabBarController;
+    UINavigationController *connectNav;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet UINavigationController *connectNav;
+
 
 @end

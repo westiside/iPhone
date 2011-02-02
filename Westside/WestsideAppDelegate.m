@@ -13,6 +13,7 @@
 
 @synthesize window;
 @synthesize tabBarController;
+@synthesize connectNav;
 
 
 
@@ -22,6 +23,7 @@
      
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -38,10 +40,13 @@
     // Save data if appropriate.
 }
 
+
+
 - (void)dealloc {
 
     [window release];
     [tabBarController release]; 
+    [connectNav release];
     [super dealloc];
 }
 

@@ -7,9 +7,11 @@
 //
 
 #import "ConnectViewController.h"
-
+#import "WestsideAppDelegate.h"
 
 @implementation ConnectViewController
+@synthesize twitterView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -111,6 +113,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
      [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if(indexPath.section == 1){
+        if(twitterView == nil) {
+            TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController" bundle:nil];
+            twitterView = aTwitterView;
+            
+        }
+        twitterView.title = @"New Page";
+        
+        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.connectNav pushViewController:twitterView animated:YES]; 
+        
+    }
     
 }
 

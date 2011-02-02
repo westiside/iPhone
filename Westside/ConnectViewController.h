@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TwitterViewController.h"
 
 @interface ConnectViewController : UIViewController {
 @private
-    
-    UITableViewCell *perspectiveTableCell;
+    TwitterViewController *twitterView;
 }
+
+@property (nonatomic, retain) TwitterViewController *twitterView;
 
 @end
