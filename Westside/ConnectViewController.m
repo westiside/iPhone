@@ -2,8 +2,8 @@
 //  ConnectViewController.m
 //  Westside
 //
-//  Created by Nick Eubanks on 1/31/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/31/11.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import "ConnectViewController.h"
@@ -75,14 +75,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
-    }
     
+    if(indexPath.section == 0){
+        if (cell == nil) {
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        }
+        
+        cell.textLabel.text = @"Week of Jan 30";
+        cell.detailTextLabel.text = @"In 1955, “Gunsmoke” began its twenty year run on prime time television. John Wayne was asked to star...";
+        
 
-    cell.textLabel.text = @"Data-Here";
+    }else {
+        if (cell == nil) {
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        }
+
+        cell.textLabel.text = @"Data-Here";
+    }
     
     return cell;
 }

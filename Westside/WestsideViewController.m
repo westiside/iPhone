@@ -9,6 +9,8 @@
 #import "WestsideViewController.h"
 
 @implementation WestsideViewController
+@synthesize imageBanner;
+@synthesize contentView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,6 +23,8 @@
 
 - (void)dealloc
 {
+    [imageBanner release];
+    [contentView release];
     [super dealloc];
 }
 
@@ -34,20 +38,20 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+    imageBanner.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"png"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic2" ofType:@"png"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic3" ofType:@"png"]] ,nil];
+    imageBanner.animationDuration = 10;
+    [imageBanner startAnimating];
+    //imageBanner.image  = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"png"]];
+    [contentView loadHTMLString:@"<h3><b><center>Westside Baptist Church</center></b></h3>" baseURL:nil];
+    
+     
 }
-*/
+
 
 - (void)viewDidUnload
 {

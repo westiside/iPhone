@@ -11,7 +11,11 @@
 @interface WestsideViewController : UIViewController {
 @private
     
+    UIImageView *imageBanner;
+    UIWebView *contentView;
 }
 
+@property (nonatomic, retain) IBOutlet UIImageView *imageBanner;
+@property (nonatomic, retain) IBOutlet UIWebView *contentView;
 
 @end

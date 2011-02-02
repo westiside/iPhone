@@ -29,6 +29,9 @@
 		2D84558512EA835E00F19F55 /* WestsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84558412EA835E00F19F55 /* WestsideTests.m */; };
 		2D8DA26C12EB628100EE323D /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26B12EB628100EE323D /* FeedParser.m */; };
 		2D8DA27012EB695A00EE323D /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26F12EB695A00EE323D /* Feed.m */; };
+		2DD5D38A12F7A05F00D67898 /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5D38712F7A05F00D67898 /* pic1.png */; };
+		2DD5D38B12F7A05F00D67898 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5D38812F7A05F00D67898 /* pic2.png */; };
+		2DD5D38C12F7A05F00D67898 /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5D38912F7A05F00D67898 /* pic3.png */; };
 		2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */; };
 		2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */; };
 		2DFA2A6012F776BA00E3A8F9 /* MoreTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5E12F776BA00E3A8F9 /* MoreTabViewController.m */; };
@@ -66,6 +69,9 @@
 		2D8DA26B12EB628100EE323D /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; };
 		2D8DA26E12EB695A00EE323D /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		2D8DA26F12EB695A00EE323D /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		2DD5D38712F7A05F00D67898 /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic1.png; sourceTree = "<group>"; };
+		2DD5D38812F7A05F00D67898 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
+		2DD5D38912F7A05F00D67898 /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic3.png; sourceTree = "<group>"; };
 		2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
 		2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 		2D84555D12EA835E00F19F55 /* Westside */ = {
 			isa = PBXGroup;
 			children = (
+				2DD5D38512F7A00F00D67898 /* Resources */,
 				2D84556612EA835E00F19F55 /* WestsideAppDelegate.h */,
 				2D84556712EA835E00F19F55 /* WestsideAppDelegate.m */,
 				2D84556912EA835E00F19F55 /* MainWindow.xib */,
@@ -216,6 +223,16 @@
 				2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */,
 			);
 			name = "Connect Tab";
+			sourceTree = "<group>";
+		};
+		2DD5D38512F7A00F00D67898 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DD5D38712F7A05F00D67898 /* pic1.png */,
+				2DD5D38812F7A05F00D67898 /* pic2.png */,
+				2DD5D38912F7A05F00D67898 /* pic3.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2DFA2A5C12F7765900E3A8F9 /* More Tab */ = {
@@ -303,6 +320,9 @@
 				2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */,
 				2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */,
 				2DFA2A6112F776BA00E3A8F9 /* MoreTabViewController.xib in Resources */,
+				2DD5D38A12F7A05F00D67898 /* pic1.png in Resources */,
+				2DD5D38B12F7A05F00D67898 /* pic2.png in Resources */,
+				2DD5D38C12F7A05F00D67898 /* pic3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
