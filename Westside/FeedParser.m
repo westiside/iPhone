@@ -23,6 +23,13 @@
 -(void)dealloc{
     [audioFeeds release];
     [videoFeeds release];
+    
+    [feedName release];
+    [feedLink release];
+    [pubDate release];
+    [duration release];
+    [currentStringValue release];
+    
     [super dealloc];
 }
 
@@ -38,6 +45,7 @@
     [feedParser setDelegate:self];
     [feedParser setShouldResolveExternalEntities:YES];
     [feedParser parse]; 
+    //[feedParser release];
 
 }
 

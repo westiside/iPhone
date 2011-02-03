@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TwitterParser.h"
 
-
-@interface TwitterViewController : UITableViewController {
+@interface TwitterViewController : UIViewController {
 @private
-    
+    TwitterParser *twitter;
+    UITableView *tweetTable;
 }
+
+@property (nonatomic, retain) IBOutlet UITableView *tweetTable;
+
 
 @end

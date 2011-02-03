@@ -14,6 +14,8 @@
 		2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */; };
 		2D7ADD5812FA12D000B28EF1 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */; };
 		2D7ADD5912FA12D000B28EF1 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */; };
+		2D7ADD5C12FA248C00B28EF1 /* TwitterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */; };
+		2D7ADD5F12FA24A100B28EF1 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5E12FA24A100B28EF1 /* Tweet.m */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
 		2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555B12EA835E00F19F55 /* CoreGraphics.framework */; };
@@ -50,6 +52,10 @@
 		2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = "<group>"; };
+		2D7ADD5A12FA248C00B28EF1 /* TwitterParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterParser.h; sourceTree = "<group>"; };
+		2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterParser.m; sourceTree = "<group>"; };
+		2D7ADD5D12FA24A100B28EF1 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		2D7ADD5E12FA24A100B28EF1 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -229,6 +235,10 @@
 				2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */,
 				2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */,
 				2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */,
+				2D7ADD5A12FA248C00B28EF1 /* TwitterParser.h */,
+				2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */,
+				2D7ADD5D12FA24A100B28EF1 /* Tweet.h */,
+				2D7ADD5E12FA24A100B28EF1 /* Tweet.m */,
 			);
 			name = "Connect Tab";
 			sourceTree = "<group>";
@@ -376,6 +386,8 @@
 				2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */,
 				2DFA2A6012F776BA00E3A8F9 /* MoreTabViewController.m in Sources */,
 				2D7ADD5812FA12D000B28EF1 /* TwitterViewController.m in Sources */,
+				2D7ADD5C12FA248C00B28EF1 /* TwitterParser.m in Sources */,
+				2D7ADD5F12FA24A100B28EF1 /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

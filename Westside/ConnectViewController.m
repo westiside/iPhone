@@ -9,6 +9,8 @@
 #import "ConnectViewController.h"
 #import "WestsideAppDelegate.h"
 
+
+
 @implementation ConnectViewController
 @synthesize twitterView;
 
@@ -94,6 +96,9 @@
         }
 
         cell.textLabel.text = @"Data-Here";
+        if(indexPath.row ==0 && indexPath.section == 1) cell.textLabel.text = @"@neubanks89";
+        
+    
     }
     
     return cell;
@@ -119,7 +124,7 @@
             twitterView = aTwitterView;
             
         }
-        twitterView.title = @"New Page";
+        twitterView.title = @"@neubanks89";
         
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.connectNav pushViewController:twitterView animated:YES]; 

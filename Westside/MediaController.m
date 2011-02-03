@@ -101,7 +101,10 @@
 #pragma mark - Accessory Methods
 
 - (void)loadPodcast:(NSString *)string{
+    NSLog(@"Loading Podcast");
+    
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:string]]];
+    
 }
 
 - (void)refreshPodCasts:(int)viewRequest:(BOOL)parse{
@@ -197,6 +200,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     NSLog(@"Table View Member Selected");
     if(audioSelected){
         Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
@@ -207,8 +211,10 @@
         [self loadPodcast:f.feedLink];
     }
     
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSLog(@"Deselected");
+    
+    
     
 }
 
