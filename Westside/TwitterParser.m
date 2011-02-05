@@ -11,12 +11,13 @@
 
 @implementation TwitterParser
 @synthesize tweets;
+@synthesize pic;
 
 -(TwitterParser*)initWithScreenName: (NSString*)user{
     [super init];
     tweets = [[NSMutableArray alloc] init];
     screen_name = user;
-    
+    picFound = NO;
     return self;
 }
 
@@ -26,7 +27,6 @@
     [screen_name release];
     [created_at release];
     [text   release];
-    [tweets release];
     [super dealloc];
 }
 
@@ -48,6 +48,11 @@
 #pragma mark - Delegate Methods
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
+    
+    if(!picFound && [elementName isEqualToString:@"profile_image_url"]){
+        currentStringValue = nil;
+        return;
+    } else
     
     if ([elementName isEqualToString:@"text"] ) {
         currentStringValue = nil;
@@ -72,7 +77,15 @@
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
     
-    
+    if(!picFound && [elementName isEqualToString:@"profile_image_url"]){
+        NSURL *url = [NSURL URLWithString:currentStringValue];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *img = [[UIImage alloc] initWithData:data cache:NO];
+        pic = img;
+        picFound = YES;
+        
+        return;
+    }
     
     if ( [elementName isEqualToString:@"created_at"] ) {
         created_at = currentStringValue;

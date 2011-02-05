@@ -101,13 +101,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
     Tweet *tweet = [twitter.tweets objectAtIndex:indexPath.row];
     
     cell.textLabel.text = tweet.text;
     cell.detailTextLabel.text = tweet.created_at;
+    cell.imageView.image = twitter.pic;
     
     
     return cell;

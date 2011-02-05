@@ -15,9 +15,12 @@
     NSString *created_at;
     NSString *screen_name;
     NSString *currentStringValue;
+    BOOL picFound;
 }
 
 @property (nonatomic, retain) NSMutableArray* tweets;
+@property (nonatomic, retain) UIImage* pic;
+
 
 -(TwitterParser*) initWithScreenName:(NSString*)user;
 

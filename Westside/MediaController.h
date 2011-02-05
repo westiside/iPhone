@@ -15,10 +15,12 @@
     UISegmentedControl *mediaViewSelector;
     UIWebView *webView;
     UITableView *podcastTable;
+    UITableViewCell *PodcastCell;
     BOOL audioSelected;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) IBOutlet UITableView *podcastTable;
+@property (nonatomic, retain) IBOutlet UITableViewCell *PodcastCell;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *mediaViewSelector;
 - (IBAction)viewChangeRequest:(id)sender;
 - (IBAction)liveViewButtonSelected:(id)sender;

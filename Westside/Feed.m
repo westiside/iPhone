@@ -14,6 +14,7 @@
 @synthesize feedName;
 @synthesize pubDate;
 @synthesize isAudio;
+@synthesize image;
 
 -(void)dealloc{
     [feedLink release];

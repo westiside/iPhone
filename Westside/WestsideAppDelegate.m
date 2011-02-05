@@ -14,6 +14,8 @@
 @synthesize window;
 @synthesize tabBarController;
 @synthesize connectNav;
+@synthesize mediaTabBarItem;
+@synthesize moreNav;
 
 
 
@@ -23,6 +25,18 @@
      
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+    //Check for Live Feed
+    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
+    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
+    if([data isEqualToString:@"No on air lives"]){
+        NSLog(@"No Live Feed");
+       
+        
+    } else if(data != nil){
+        NSLog(@"Live Feed On Air");
+        [mediaTabBarItem setBadgeValue:@"LIVE"];
+    }
     
     return YES;
 }
@@ -47,6 +61,8 @@
     [window release];
     [tabBarController release]; 
     [connectNav release];
+    [mediaTabBarItem release];
+    [moreNav release];
     [super dealloc];
 }
 

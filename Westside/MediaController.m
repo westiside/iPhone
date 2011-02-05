@@ -7,17 +7,17 @@
 //
 
 #import "MediaController.h"
-
+#import "WestsideAppDelegate.h"
 
 @implementation MediaController
 @synthesize webView;
 @synthesize podcastTable;
+@synthesize PodcastCell;
 @synthesize mediaViewSelector;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
     return self;
 }
 
@@ -27,6 +27,7 @@
     [webView release];
     [podcastTable release];
     [feeds release];
+    [PodcastCell release];
     [super dealloc];
 }
 
@@ -44,10 +45,22 @@
 {
     [super viewDidLoad];
     audioSelected = YES;
-    feeds = [[FeedParser alloc] init];
-    [self refreshButtonSelect:nil];
-    [feeds parseXML];    
-    [podcastTable reloadData];
+    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
+    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
+    if(data == nil){
+        NSLog(@"No Internet Connection");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"An internet connection is required to listen podcasts. " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+        
+        
+    } else{
+        feeds = [[FeedParser alloc] init];
+        [self refreshButtonSelect:nil];
+        [feeds parseXML];    
+        [podcastTable reloadData];
+    }
 }
 
 - (void)viewDidUnload
@@ -102,10 +115,11 @@
 
 - (void)loadPodcast:(NSString *)string{
     NSLog(@"Loading Podcast");
-    
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:string]]];
+	
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:string]]];
     
 }
+
 
 - (void)refreshPodCasts:(int)viewRequest:(BOOL)parse{
     if(!feeds){
@@ -155,11 +169,13 @@
     
 }
 
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
+    NSLog(@"Sections retrieved........");
     return 1;
 }
 
@@ -174,6 +190,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
+    
+    
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -191,6 +209,9 @@
         cell.textLabel.text = f.feedName;
         cell.detailTextLabel.text = f.pubDate;
     }
+    
+   
+
       
     return cell;
 }

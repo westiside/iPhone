@@ -18,6 +18,7 @@
 @property (nonatomic, retain) NSString    *feedName;
 @property (nonatomic, retain) NSString    *pubDate;
 @property (nonatomic)         BOOL        isAudio;
+@property (nonatomic, retain) UIImage    *image;
 
 -(void)dealloc;
 

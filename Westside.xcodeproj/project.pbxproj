@@ -9,13 +9,26 @@
 /* Begin PBXBuildFile section */
 		2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4512EBB19700C9B88B /* MediaController.m */; };
 		2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4612EBB19700C9B88B /* MediaController.xib */; };
+		2D22F02A12FDCE8400FD3EAB /* NavFor.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D22F02912FDCE8400FD3EAB /* NavFor.png */; };
 		2D3BF11912F1065D005CD1C3 /* App Project Schedule (Tent).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */; };
 		2D3BF11A12F1065D005CD1C3 /* SRS.doc in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11712F1065D005CD1C3 /* SRS.doc */; };
 		2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */; };
+		2D6F264F12FCEC95008C2FDB /* genericbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F264E12FCEC95008C2FDB /* genericbg.png */; };
+		2D6F265712FCFA14008C2FDB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265612FCFA14008C2FDB /* Default.png */; };
+		2D6F265912FCFA1A008C2FDB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265812FCFA1A008C2FDB /* Default@2x.png */; };
+		2D6F265B12FD0332008C2FDB /* givebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265A12FD0332008C2FDB /* givebtn.png */; };
+		2D6F266012FD0459008C2FDB /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265C12FD0459008C2FDB /* pic1.jpg */; };
+		2D6F266112FD0459008C2FDB /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265D12FD0459008C2FDB /* pic2.jpg */; };
+		2D6F266212FD0459008C2FDB /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265E12FD0459008C2FDB /* pic3.jpg */; };
+		2D6F266312FD0459008C2FDB /* pic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265F12FD0459008C2FDB /* pic4.jpg */; };
+		2D7A6BDA12FDC3560002D7EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7A6BD912FDC3560002D7EA /* MapKit.framework */; };
+		2D7A6BDE12FDC8700002D7EA /* GenericWebNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */; };
+		2D7A6BDF12FDC8700002D7EA /* GenericWebNavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A6BDD12FDC8700002D7EA /* GenericWebNavViewController.xib */; };
 		2D7ADD5812FA12D000B28EF1 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */; };
 		2D7ADD5912FA12D000B28EF1 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */; };
 		2D7ADD5C12FA248C00B28EF1 /* TwitterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */; };
 		2D7ADD5F12FA24A100B28EF1 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5E12FA24A100B28EF1 /* Tweet.m */; };
+		2D7DBC1F12FDCECA00287814 /* NavBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7DBC1E12FDCECA00287814 /* NavBack.png */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
 		2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555B12EA835E00F19F55 /* CoreGraphics.framework */; };
@@ -33,9 +46,6 @@
 		2D84558512EA835E00F19F55 /* WestsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84558412EA835E00F19F55 /* WestsideTests.m */; };
 		2D8DA26C12EB628100EE323D /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26B12EB628100EE323D /* FeedParser.m */; };
 		2D8DA27012EB695A00EE323D /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26F12EB695A00EE323D /* Feed.m */; };
-		2DD5D38A12F7A05F00D67898 /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5D38712F7A05F00D67898 /* pic1.png */; };
-		2DD5D38B12F7A05F00D67898 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5D38812F7A05F00D67898 /* pic2.png */; };
-		2DD5D38C12F7A05F00D67898 /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD5D38912F7A05F00D67898 /* pic3.png */; };
 		2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */; };
 		2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */; };
 		2DFA2A6012F776BA00E3A8F9 /* MoreTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5E12F776BA00E3A8F9 /* MoreTabViewController.m */; };
@@ -46,9 +56,23 @@
 		2D0F8F4412EBB19700C9B88B /* MediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaController.h; sourceTree = "<group>"; };
 		2D0F8F4512EBB19700C9B88B /* MediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaController.m; sourceTree = "<group>"; };
 		2D0F8F4612EBB19700C9B88B /* MediaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaController.xib; sourceTree = "<group>"; };
+		2D22F02912FDCE8400FD3EAB /* NavFor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavFor.png; sourceTree = "<group>"; };
 		2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "App Project Schedule (Tent).pdf"; sourceTree = "<group>"; };
 		2D3BF11712F1065D005CD1C3 /* SRS.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SRS.doc; sourceTree = "<group>"; };
 		2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Westside App UI Mockups.pdf"; sourceTree = "<group>"; };
+		2D6F264E12FCEC95008C2FDB /* genericbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = genericbg.png; path = ../genericbg.png; sourceTree = "<group>"; };
+		2D6F265412FCF802008C2FDB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2D6F265612FCFA14008C2FDB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2D6F265812FCFA1A008C2FDB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2D6F265A12FD0332008C2FDB /* givebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = givebtn.png; sourceTree = "<group>"; };
+		2D6F265C12FD0459008C2FDB /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
+		2D6F265D12FD0459008C2FDB /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		2D6F265E12FD0459008C2FDB /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
+		2D6F265F12FD0459008C2FDB /* pic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic4.jpg; sourceTree = "<group>"; };
+		2D7A6BD912FDC3560002D7EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2D7A6BDB12FDC8700002D7EA /* GenericWebNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericWebNavViewController.h; sourceTree = "<group>"; };
+		2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericWebNavViewController.m; sourceTree = "<group>"; };
+		2D7A6BDD12FDC8700002D7EA /* GenericWebNavViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericWebNavViewController.xib; sourceTree = "<group>"; };
 		2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = "<group>"; };
@@ -56,6 +80,7 @@
 		2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterParser.m; sourceTree = "<group>"; };
 		2D7ADD5D12FA24A100B28EF1 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 		2D7ADD5E12FA24A100B28EF1 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		2D7DBC1E12FDCECA00287814 /* NavBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBack.png; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,9 +105,6 @@
 		2D8DA26B12EB628100EE323D /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; };
 		2D8DA26E12EB695A00EE323D /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
 		2D8DA26F12EB695A00EE323D /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
-		2DD5D38712F7A05F00D67898 /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic1.png; sourceTree = "<group>"; };
-		2DD5D38812F7A05F00D67898 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
-		2DD5D38912F7A05F00D67898 /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic3.png; sourceTree = "<group>"; };
 		2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
 		2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
@@ -96,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7A6BDA12FDC3560002D7EA /* MapKit.framework in Frameworks */,
 				2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */,
 				2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */,
 				2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */,
@@ -128,6 +151,8 @@
 		2D84554812EA835D00F19F55 = {
 			isa = PBXGroup;
 			children = (
+				2D6F265812FCFA1A008C2FDB /* Default@2x.png */,
+				2D6F265612FCFA14008C2FDB /* Default.png */,
 				2D3BF11512F1065D005CD1C3 /* Documentation */,
 				2D84555D12EA835E00F19F55 /* Westside */,
 				2D84557B12EA835E00F19F55 /* WestsideTests */,
@@ -148,6 +173,8 @@
 		2D84555612EA835E00F19F55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D7A6BD912FDC3560002D7EA /* MapKit.framework */,
+				2D6F265412FCF802008C2FDB /* MediaPlayer.framework */,
 				2D84555712EA835E00F19F55 /* UIKit.framework */,
 				2D84555912EA835E00F19F55 /* Foundation.framework */,
 				2D84555B12EA835E00F19F55 /* CoreGraphics.framework */,
@@ -246,9 +273,14 @@
 		2DD5D38512F7A00F00D67898 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2DD5D38712F7A05F00D67898 /* pic1.png */,
-				2DD5D38812F7A05F00D67898 /* pic2.png */,
-				2DD5D38912F7A05F00D67898 /* pic3.png */,
+				2D22F02912FDCE8400FD3EAB /* NavFor.png */,
+				2D7DBC1E12FDCECA00287814 /* NavBack.png */,
+				2D6F265A12FD0332008C2FDB /* givebtn.png */,
+				2D6F265C12FD0459008C2FDB /* pic1.jpg */,
+				2D6F265D12FD0459008C2FDB /* pic2.jpg */,
+				2D6F265E12FD0459008C2FDB /* pic3.jpg */,
+				2D6F265F12FD0459008C2FDB /* pic4.jpg */,
+				2D6F264E12FCEC95008C2FDB /* genericbg.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -259,6 +291,9 @@
 				2DFA2A5D12F776BA00E3A8F9 /* MoreTabViewController.h */,
 				2DFA2A5E12F776BA00E3A8F9 /* MoreTabViewController.m */,
 				2DFA2A5F12F776BA00E3A8F9 /* MoreTabViewController.xib */,
+				2D7A6BDB12FDC8700002D7EA /* GenericWebNavViewController.h */,
+				2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */,
+				2D7A6BDD12FDC8700002D7EA /* GenericWebNavViewController.xib */,
 			);
 			name = "More Tab";
 			sourceTree = "<group>";
@@ -338,10 +373,18 @@
 				2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */,
 				2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */,
 				2DFA2A6112F776BA00E3A8F9 /* MoreTabViewController.xib in Resources */,
-				2DD5D38A12F7A05F00D67898 /* pic1.png in Resources */,
-				2DD5D38B12F7A05F00D67898 /* pic2.png in Resources */,
-				2DD5D38C12F7A05F00D67898 /* pic3.png in Resources */,
 				2D7ADD5912FA12D000B28EF1 /* TwitterViewController.xib in Resources */,
+				2D6F264F12FCEC95008C2FDB /* genericbg.png in Resources */,
+				2D6F265712FCFA14008C2FDB /* Default.png in Resources */,
+				2D6F265912FCFA1A008C2FDB /* Default@2x.png in Resources */,
+				2D6F265B12FD0332008C2FDB /* givebtn.png in Resources */,
+				2D6F266012FD0459008C2FDB /* pic1.jpg in Resources */,
+				2D6F266112FD0459008C2FDB /* pic2.jpg in Resources */,
+				2D6F266212FD0459008C2FDB /* pic3.jpg in Resources */,
+				2D6F266312FD0459008C2FDB /* pic4.jpg in Resources */,
+				2D7A6BDF12FDC8700002D7EA /* GenericWebNavViewController.xib in Resources */,
+				2D22F02A12FDCE8400FD3EAB /* NavFor.png in Resources */,
+				2D7DBC1F12FDCECA00287814 /* NavBack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +431,7 @@
 				2D7ADD5812FA12D000B28EF1 /* TwitterViewController.m in Sources */,
 				2D7ADD5C12FA248C00B28EF1 /* TwitterParser.m in Sources */,
 				2D7ADD5F12FA24A100B28EF1 /* Tweet.m in Sources */,
+				2D7A6BDE12FDC8700002D7EA /* GenericWebNavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +515,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Westside/Westside-Prefix.pch";
@@ -485,6 +533,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Westside/Westside-Prefix.pch";
 				INFOPLIST_FILE = "Westside/Westside-Info.plist";

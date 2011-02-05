@@ -10,7 +10,6 @@
 #import "WestsideAppDelegate.h"
 
 
-
 @implementation ConnectViewController
 @synthesize twitterView;
 
@@ -71,7 +70,7 @@
     NSLog(@"Loading Table View");
     switch(section){
         case 0: return 1;
-        case 1: return 3;
+        case 1: return 2;
         case 2: return 3;
     }
 }
@@ -95,8 +94,9 @@
             cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         }
 
-        cell.textLabel.text = @"Data-Here";
-        if(indexPath.row ==0 && indexPath.section == 1) cell.textLabel.text = @"@neubanks89";
+        
+        if(indexPath.row ==0 && indexPath.section == 1) cell.textLabel.text = @"@wbcgainesville";
+        else if(indexPath.row ==1 && indexPath.section == 1) cell.textLabel.text = @"@westsidecollege";
         
     
     }
@@ -119,15 +119,24 @@
 {
      [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.section == 1){
-        if(twitterView == nil) {
-            TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController" bundle:nil];
-            twitterView = aTwitterView;
-            
+        if(twitterView != nil) {
+            [twitterView release];
         }
-        twitterView.title = @"@neubanks89";
+           
+        TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController"bundle:nil];
+        twitterView = aTwitterView;
+            
+        
+        
+        if(indexPath.row ==0 && indexPath.section == 1) twitterView.title = @"@wbcgainesville";
+        else if(indexPath.row ==1 && indexPath.section == 1) twitterView.title = @"@westsidecollege";
         
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.connectNav pushViewController:twitterView animated:YES]; 
+        
+    }
+    else if(indexPath.section == 2){
+       
         
     }
     

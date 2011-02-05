@@ -13,12 +13,15 @@
 
     UITabBarController *tabBarController;
     UINavigationController *connectNav;
+    UITabBarItem *mediaTabBarItem;
+    UINavigationController *moreNav;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet UINavigationController *connectNav;
 
+@property (nonatomic, retain) IBOutlet UITabBarItem *mediaTabBarItem;
+@property (nonatomic, retain) IBOutlet UINavigationController *moreNav;
 
 @end

@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MapKit/MapKit.h>
+#import "GenericWebNavViewController.h"
 
 @interface MoreTabViewController : UIViewController {
 @private
     
+    MKMapView *map;
+    GenericWebNavViewController *webVC;
 }
+
+@property (nonatomic, retain) IBOutlet MKMapView *map;
+@property (nonatomic, retain) GenericWebNavViewController *webVC;
+
+- (IBAction)eGiveBtnPress:(id)sender;
 
 @end

@@ -18,6 +18,7 @@
     NSString    *pubDate;
     NSString    *duration;
     NSString    *currentStringValue;
+    UIImage     *image;
 }
 
 @property (nonatomic, retain) NSMutableArray* audioFeeds;

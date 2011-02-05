@@ -28,6 +28,7 @@
     [feedLink release];
     [pubDate release];
     [duration release];
+    [image   release];
     [currentStringValue release];
     
     [super dealloc];
@@ -45,7 +46,7 @@
     [feedParser setDelegate:self];
     [feedParser setShouldResolveExternalEntities:YES];
     [feedParser parse]; 
-    //[feedParser release];
+    [feedParser release];
 
 }
 
@@ -73,6 +74,11 @@
         currentStringValue = nil;
         return;
     } else
+        
+    if([elementName isEqualToString:@"itunes:image href="] ) {
+        currentStringValue = nil;
+        return;
+    }
     
     return;
 }
@@ -104,6 +110,15 @@
         pubDate = currentStringValue;
         return;
     } else
+        
+    if([elementName isEqualToString:@"itunes:image href="] ) {
+        if(image != nil) [image release];
+        NSURL *url = [NSURL URLWithString:currentStringValue];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        image = [[UIImage alloc] initWithData:data];
+        
+    }
+
     
     if ( [elementName isEqualToString:@"item"] ) {
         
@@ -113,7 +128,7 @@
         [f setFeedLink:[[feedLink componentsSeparatedByString:@"\n"] objectAtIndex:0]];
         [f setIsAudio:isAudio];
         [f setPubDate:[[[pubDate componentsSeparatedByString:@"\n"] objectAtIndex:0] substringWithRange:NSMakeRange(0, 17)]];
-        
+        [f setImage:image];
      
         
         if(isAudio){

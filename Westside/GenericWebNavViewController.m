@@ -1,15 +1,16 @@
 //
-//  WestsideViewController.m
+//  GenericWebNavViewController.m
 //  Westside
 //
-//  Created by Nick Eubanks (naeubanks@gmail.com) on 1/21/11.
-//  Copyright 2011 Westside Baptist Church. All rights reserved.
+//  Created by Nick Eubanks on 2/5/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "WestsideViewController.h"
+#import "GenericWebNavViewController.h"
 
-@implementation WestsideViewController
-@synthesize imageBanner;
+
+@implementation GenericWebNavViewController
+@synthesize webView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,7 +23,6 @@
 
 - (void)dealloc
 {
-    [imageBanner release];
     [super dealloc];
 }
 
@@ -36,21 +36,16 @@
 
 #pragma mark - View lifecycle
 
-
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
-    imageBanner.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic2" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic3" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic4" ofType:@"jpg"]] ,nil];
-    imageBanner.animationDuration = 20;
-    [imageBanner startAnimating];
-       
-     
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://e-giving.org/start.asp?id=1678"]]];
+    
 }
-
 
 - (void)viewDidUnload
 {
+    [self setWebView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
