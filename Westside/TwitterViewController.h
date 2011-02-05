@@ -13,9 +13,11 @@
 @private
     TwitterParser *twitter;
     UITableView *tweetTable;
+    UITableViewCell *tvCell;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *tweetTable;
+@property (nonatomic, retain) IBOutlet UITableViewCell *tvCell;
 
 
 @end

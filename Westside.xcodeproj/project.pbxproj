@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4512EBB19700C9B88B /* MediaController.m */; };
 		2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4612EBB19700C9B88B /* MediaController.xib */; };
+		2D1B487B12FDFDFB00D11A42 /* TwitterTableViewCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */; };
 		2D22F02A12FDCE8400FD3EAB /* NavFor.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D22F02912FDCE8400FD3EAB /* NavFor.png */; };
 		2D3BF11912F1065D005CD1C3 /* App Project Schedule (Tent).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */; };
 		2D3BF11A12F1065D005CD1C3 /* SRS.doc in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11712F1065D005CD1C3 /* SRS.doc */; };
@@ -57,6 +58,7 @@
 		2D0F8F4412EBB19700C9B88B /* MediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaController.h; sourceTree = "<group>"; };
 		2D0F8F4512EBB19700C9B88B /* MediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaController.m; sourceTree = "<group>"; };
 		2D0F8F4612EBB19700C9B88B /* MediaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaController.xib; sourceTree = "<group>"; };
+		2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterTableViewCellNib.xib; sourceTree = "<group>"; };
 		2D22F02912FDCE8400FD3EAB /* NavFor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavFor.png; sourceTree = "<group>"; };
 		2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "App Project Schedule (Tent).pdf"; sourceTree = "<group>"; };
 		2D3BF11712F1065D005CD1C3 /* SRS.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SRS.doc; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */,
 				2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */,
 				2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */,
+				2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */,
 				2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */,
 				2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */,
 				2D7ADD5A12FA248C00B28EF1 /* TwitterParser.h */,
@@ -389,6 +392,7 @@
 				2D22F02A12FDCE8400FD3EAB /* NavFor.png in Resources */,
 				2D7DBC1F12FDCECA00287814 /* NavBack.png in Resources */,
 				2D7DBC2112FDD12B00287814 /* backtry.png in Resources */,
+				2D1B487B12FDFDFB00D11A42 /* TwitterTableViewCellNib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
