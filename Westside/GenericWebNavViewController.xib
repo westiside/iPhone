@@ -57,7 +57,6 @@
 						</object>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<bool key="IBUIScalesPageToFit">YES</bool>
 						<int key="IBUIDataDetectorTypes">15</int>
 						<bool key="IBUIDetectsPhoneNumbers">YES</bool>
 					</object>
@@ -73,7 +72,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSMutableArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIBarButtonItem" id="444631165">
+							<object class="IBUIBarButtonItem" id="298797706">
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<float key="IBUIWidth">12</float>
 								<reference key="IBUIToolbar" ref="758497595"/>
@@ -87,12 +86,12 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<reference key="IBUIToolbar" ref="758497595"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="682261396">
+							<object class="IBUIBarButtonItem" id="309334334">
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<reference key="IBUIToolbar" ref="758497595"/>
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
-							<object class="IBUIBarButtonItem" id="362241221">
+							<object class="IBUIBarButtonItem" id="756814618">
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
 									<string key="NSResourceName">NavFor.png</string>
@@ -100,7 +99,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<reference key="IBUIToolbar" ref="758497595"/>
 							</object>
-							<object class="IBUIBarButtonItem" id="763564263">
+							<object class="IBUIBarButtonItem" id="380495550">
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<float key="IBUIWidth">12</float>
 								<reference key="IBUIToolbar" ref="758497595"/>
@@ -158,7 +157,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">goForward</string>
-						<reference key="source" ref="362241221"/>
+						<reference key="source" ref="756814618"/>
 						<reference key="destination" ref="902634250"/>
 					</object>
 					<int key="connectionID">16</int>
@@ -205,10 +204,10 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="540475317"/>
-							<reference ref="362241221"/>
-							<reference ref="444631165"/>
-							<reference ref="682261396"/>
-							<reference ref="763564263"/>
+							<reference ref="756814618"/>
+							<reference ref="298797706"/>
+							<reference ref="309334334"/>
+							<reference ref="380495550"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -219,22 +218,22 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="362241221"/>
+						<reference key="object" ref="756814618"/>
 						<reference key="parent" ref="758497595"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">12</int>
-						<reference key="object" ref="444631165"/>
+						<reference key="object" ref="298797706"/>
 						<reference key="parent" ref="758497595"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">13</int>
-						<reference key="object" ref="682261396"/>
+						<reference key="object" ref="309334334"/>
 						<reference key="parent" ref="758497595"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">14</int>
-						<reference key="object" ref="763564263"/>
+						<reference key="object" ref="380495550"/>
 						<reference key="parent" ref="758497595"/>
 					</object>
 				</object>

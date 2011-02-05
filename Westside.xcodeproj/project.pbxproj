@@ -29,6 +29,7 @@
 		2D7ADD5C12FA248C00B28EF1 /* TwitterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */; };
 		2D7ADD5F12FA24A100B28EF1 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5E12FA24A100B28EF1 /* Tweet.m */; };
 		2D7DBC1F12FDCECA00287814 /* NavBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7DBC1E12FDCECA00287814 /* NavBack.png */; };
+		2D7DBC2112FDD12B00287814 /* backtry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7DBC2012FDD12B00287814 /* backtry.png */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
 		2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555B12EA835E00F19F55 /* CoreGraphics.framework */; };
@@ -81,6 +82,7 @@
 		2D7ADD5D12FA24A100B28EF1 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 		2D7ADD5E12FA24A100B28EF1 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		2D7DBC1E12FDCECA00287814 /* NavBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBack.png; sourceTree = "<group>"; };
+		2D7DBC2012FDD12B00287814 /* backtry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backtry.png; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				2D22F02912FDCE8400FD3EAB /* NavFor.png */,
+				2D7DBC2012FDD12B00287814 /* backtry.png */,
 				2D7DBC1E12FDCECA00287814 /* NavBack.png */,
 				2D6F265A12FD0332008C2FDB /* givebtn.png */,
 				2D6F265C12FD0459008C2FDB /* pic1.jpg */,
@@ -385,6 +388,7 @@
 				2D7A6BDF12FDC8700002D7EA /* GenericWebNavViewController.xib in Resources */,
 				2D22F02A12FDCE8400FD3EAB /* NavFor.png in Resources */,
 				2D7DBC1F12FDCECA00287814 /* NavBack.png in Resources */,
+				2D7DBC2112FDD12B00287814 /* backtry.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

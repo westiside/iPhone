@@ -66,6 +66,7 @@
     webVC =aWebNavView;
     
     aWebNavView.title = @"eGiving";
+    aWebNavView.hidesBottomBarWhenPushed = YES;
     
     WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [delegate.moreNav pushViewController:webVC animated:YES]; 
