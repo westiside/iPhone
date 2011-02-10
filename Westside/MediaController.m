@@ -10,11 +10,11 @@
 #import "WestsideAppDelegate.h"
 
 @implementation MediaController
-@synthesize webView;
 @synthesize podcastTable;
 @synthesize PodcastCell;
 @synthesize mediaViewSelector;
 @synthesize tvCell;
+@synthesize activityIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,7 +25,6 @@
 - (void)dealloc
 {
     [mediaViewSelector release];
-    [webView release];
     [podcastTable release];
     [feeds release];
     [PodcastCell release];
@@ -46,15 +45,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [activityIndicator startAnimating];
     audioSelected = YES;
     NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
     NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
     if(data == nil){
         /*NSLog(@"No Internet Connection");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"An internet connection is required to listen podcasts. " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        
-        [alert show];
-        [alert release];*/
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"An internet connection is required to listen podcasts. " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         
+         [alert show];
+         [alert release];*/
         
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
@@ -66,17 +66,33 @@
         [delegate.mediaTabBarItem setBadgeValue:nil];
         
     }
-        feeds = [[FeedParser alloc] init];
-        [self refreshButtonSelect:nil];
-        [feeds parseXML];    
-        [podcastTable reloadData];
-        
-       
+    feeds = [[FeedParser alloc] init];
+    [self refreshButtonSelect:nil];
+    [feeds parseXML];    
+    [podcastTable reloadData];
+    
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+   
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [activityIndicator  stopAnimating];
+   
+}
+
+
 - (void)viewDidUnload
 {
+    [self setActivityIndicator:nil];
     [super viewDidUnload];
     
     
@@ -130,7 +146,8 @@
     
 	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:string]]];
+    MPMoviePlayerViewController* theMoviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL: [NSURL URLWithString:string]];
+    [self presentMoviePlayerViewControllerAnimated:theMoviePlayer];
     
     
 }
@@ -163,17 +180,6 @@
     }
     
     
-    /*
-     Reload the TableView Data with Animation
-     ANIMATION OPTIONS:
-     UITableViewRowAnimationFade,
-     UITableViewRowAnimationRight,
-     UITableViewRowAnimationLeft,
-     UITableViewRowAnimationTop,
-     UITableViewRowAnimationBottom,
-     UITableViewRowAnimationNone,
-     UITableViewRowAnimationMiddle
-     */
     
     [podcastTable beginUpdates];
     [podcastTable deleteSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
@@ -291,38 +297,7 @@
     
 }
 
-/*
- [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
- */
 
-
-#pragma mark - Web View Delegate
-
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
-    
-    NSLog(@"Webview Request to Load");
-    
-    return YES;
-}
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    
-    NSLog(@"WEBVIEW Finished Loading");
-    
-}
-
-- (void)webViewDidStartLoad:(UIWebView *)webView{
-    
-    NSLog(@"WEBVIEW Started Loading");
-    
-}
-
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    
-    NSLog(@"WEBVIEW Fail With Error");
-    [webView stopLoading];
-    
-}
 
 @end
 
