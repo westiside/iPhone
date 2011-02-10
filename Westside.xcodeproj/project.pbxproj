@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4512EBB19700C9B88B /* MediaController.m */; };
 		2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4612EBB19700C9B88B /* MediaController.xib */; };
+		2D16DA0213046B7D00D080D5 /* ministrybanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D16DA0113046B7D00D080D5 /* ministrybanner.png */; };
+		2D16DA0413046C2E00D080D5 /* connectbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D16DA0313046C2E00D080D5 /* connectbanner.png */; };
+		2D16DA0613046CBE00D080D5 /* logo_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D16DA0513046CBE00D080D5 /* logo_shadow.png */; };
 		2D1B487B12FDFDFB00D11A42 /* TwitterTableViewCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */; };
 		2D22F02A12FDCE8400FD3EAB /* NavFor.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D22F02912FDCE8400FD3EAB /* NavFor.png */; };
 		2D3BF11912F1065D005CD1C3 /* App Project Schedule (Tent).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */; };
@@ -16,17 +19,12 @@
 		2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */; };
 		2D6DA35A130350E400900D67 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA359130350E400900D67 /* logo.png */; };
 		2D6DA35C1303524200900D67 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA35B1303524200900D67 /* logo2.png */; };
-		2D6DA35E1303528800900D67 /* ministries.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA35D1303528800900D67 /* ministries.png */; };
 		2D6DA3601303614100900D67 /* house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA35F1303614100900D67 /* house@2x.png */; };
 		2D6DA3661303618900900D67 /* speechmedia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3651303618900900D67 /* speechmedia@2x.png */; };
 		2D6DA36C130361A200900D67 /* speechmedia.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA36B130361A200900D67 /* speechmedia.png */; };
 		2D6DA36E130361AB00900D67 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA36D130361AB00900D67 /* house.png */; };
 		2D6DA371130363DA00900D67 /* ministry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA36F130363DA00900D67 /* ministry@2x.png */; };
 		2D6DA372130363DA00900D67 /* ministry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA370130363DA00900D67 /* ministry.png */; };
-		2D6DA37813037D1300900D67 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA37713037D1300900D67 /* icon57.png */; };
-		2D6DA37A13037D1900900D67 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA37913037D1900900D67 /* icon114.png */; };
-		2D6DA37C13037D2000900D67 /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA37B13037D2000900D67 /* icon72.png */; };
-		2D6DA3821303819100900D67 /* ministries_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3811303819000900D67 /* ministries_banner.png */; };
 		2D6DA3851303820200900D67 /* PlainBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA383130381FF00900D67 /* PlainBack.png */; };
 		2D6DA3861303820200900D67 /* PlainBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3841303820000900D67 /* PlainBack@2x.png */; };
 		2D6DA3881303828100900D67 /* MediaTableViewCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3871303828100900D67 /* MediaTableViewCellNib.xib */; };
@@ -84,6 +82,9 @@
 		2D0F8F4412EBB19700C9B88B /* MediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaController.h; sourceTree = "<group>"; };
 		2D0F8F4512EBB19700C9B88B /* MediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaController.m; sourceTree = "<group>"; };
 		2D0F8F4612EBB19700C9B88B /* MediaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaController.xib; sourceTree = "<group>"; };
+		2D16DA0113046B7D00D080D5 /* ministrybanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ministrybanner.png; path = ../ministrybanner.png; sourceTree = "<group>"; };
+		2D16DA0313046C2E00D080D5 /* connectbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connectbanner.png; path = ../connectbanner.png; sourceTree = "<group>"; };
+		2D16DA0513046CBE00D080D5 /* logo_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_shadow.png; sourceTree = "<group>"; };
 		2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterTableViewCellNib.xib; sourceTree = "<group>"; };
 		2D22F02912FDCE8400FD3EAB /* NavFor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavFor.png; sourceTree = "<group>"; };
 		2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "App Project Schedule (Tent).pdf"; sourceTree = "<group>"; };
@@ -91,17 +92,12 @@
 		2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Westside App UI Mockups.pdf"; sourceTree = "<group>"; };
 		2D6DA359130350E400900D67 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2D6DA35B1303524200900D67 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
-		2D6DA35D1303528800900D67 /* ministries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ministries.png; sourceTree = "<group>"; };
 		2D6DA35F1303614100900D67 /* house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house@2x.png"; sourceTree = "<group>"; };
 		2D6DA3651303618900900D67 /* speechmedia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speechmedia@2x.png"; sourceTree = "<group>"; };
 		2D6DA36B130361A200900D67 /* speechmedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speechmedia.png; sourceTree = "<group>"; };
 		2D6DA36D130361AB00900D67 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		2D6DA36F130363DA00900D67 /* ministry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ministry@2x.png"; sourceTree = "<group>"; };
 		2D6DA370130363DA00900D67 /* ministry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ministry.png; sourceTree = "<group>"; };
-		2D6DA37713037D1300900D67 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
-		2D6DA37913037D1900900D67 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
-		2D6DA37B13037D2000900D67 /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
-		2D6DA3811303819000900D67 /* ministries_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ministries_banner.png; sourceTree = "<group>"; };
 		2D6DA383130381FF00900D67 /* PlainBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainBack.png; sourceTree = "<group>"; };
 		2D6DA3841303820000900D67 /* PlainBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlainBack@2x.png"; sourceTree = "<group>"; };
 		2D6DA3871303828100900D67 /* MediaTableViewCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaTableViewCellNib.xib; sourceTree = "<group>"; };
@@ -208,9 +204,6 @@
 		2D84554812EA835D00F19F55 = {
 			isa = PBXGroup;
 			children = (
-				2D6DA37913037D1900900D67 /* icon114.png */,
-				2D6DA37B13037D2000900D67 /* icon72.png */,
-				2D6DA37713037D1300900D67 /* icon57.png */,
 				2DE8CBF11304528A00CBFA4F /* icon_blue114.png */,
 				2DE8CBF01304528A00CBFA4F /* icon_blue72.png */,
 				2DE8CBF21304528A00CBFA4F /* icon_blue57.png */,
@@ -339,6 +332,9 @@
 		2DD5D38512F7A00F00D67898 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D16DA0513046CBE00D080D5 /* logo_shadow.png */,
+				2D16DA0113046B7D00D080D5 /* ministrybanner.png */,
+				2D16DA0313046C2E00D080D5 /* connectbanner.png */,
 				2DE8CBE013044F6000CBFA4F /* group@2x.png */,
 				2DE8CBE113044F6000CBFA4F /* tv@2x.png */,
 				2DE8CBE213044F6000CBFA4F /* tv.png */,
@@ -351,14 +347,12 @@
 				2D6DA383130381FF00900D67 /* PlainBack.png */,
 				2D6DA3841303820000900D67 /* PlainBack@2x.png */,
 				2D6DA370130363DA00900D67 /* ministry.png */,
-				2D6DA3811303819000900D67 /* ministries_banner.png */,
 				2D6DA36D130361AB00900D67 /* house.png */,
 				2D6DA36B130361A200900D67 /* speechmedia.png */,
 				2D6DA3651303618900900D67 /* speechmedia@2x.png */,
 				2D6DA35F1303614100900D67 /* house@2x.png */,
 				2D6DA35B1303524200900D67 /* logo2.png */,
 				2D6DA359130350E400900D67 /* logo.png */,
-				2D6DA35D1303528800900D67 /* ministries.png */,
 				2D22F02912FDCE8400FD3EAB /* NavFor.png */,
 				2D7DBC1E12FDCECA00287814 /* NavBack.png */,
 				2D6F265C12FD0459008C2FDB /* pic1.jpg */,
@@ -470,17 +464,12 @@
 				2D1B487B12FDFDFB00D11A42 /* TwitterTableViewCellNib.xib in Resources */,
 				2D6DA35A130350E400900D67 /* logo.png in Resources */,
 				2D6DA35C1303524200900D67 /* logo2.png in Resources */,
-				2D6DA35E1303528800900D67 /* ministries.png in Resources */,
 				2D6DA3601303614100900D67 /* house@2x.png in Resources */,
 				2D6DA3661303618900900D67 /* speechmedia@2x.png in Resources */,
 				2D6DA36C130361A200900D67 /* speechmedia.png in Resources */,
 				2D6DA36E130361AB00900D67 /* house.png in Resources */,
 				2D6DA371130363DA00900D67 /* ministry@2x.png in Resources */,
 				2D6DA372130363DA00900D67 /* ministry.png in Resources */,
-				2D6DA37813037D1300900D67 /* icon57.png in Resources */,
-				2D6DA37A13037D1900900D67 /* icon114.png in Resources */,
-				2D6DA37C13037D2000900D67 /* icon72.png in Resources */,
-				2D6DA3821303819100900D67 /* ministries_banner.png in Resources */,
 				2D6DA3851303820200900D67 /* PlainBack.png in Resources */,
 				2D6DA3861303820200900D67 /* PlainBack@2x.png in Resources */,
 				2D6DA3881303828100900D67 /* MediaTableViewCellNib.xib in Resources */,
@@ -495,6 +484,9 @@
 				2DE8CBF31304528A00CBFA4F /* icon_blue72.png in Resources */,
 				2DE8CBF41304528A00CBFA4F /* icon_blue114.png in Resources */,
 				2DE8CBF51304528A00CBFA4F /* icon_blue57.png in Resources */,
+				2D16DA0213046B7D00D080D5 /* ministrybanner.png in Resources */,
+				2D16DA0413046C2E00D080D5 /* connectbanner.png in Resources */,
+				2D16DA0613046CBE00D080D5 /* logo_shadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

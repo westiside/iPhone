@@ -43,8 +43,8 @@
     [super viewDidLoad];
     
     //Hides Navigation Bar
-    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.connectNav setNavigationBarHidden:YES]; 
+    //WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    //[delegate.connectNav setNavigationBarHidden:YES]; 
     
     // Do any additional setup after loading the view from its nib.
 }

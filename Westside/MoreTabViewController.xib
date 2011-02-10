@@ -60,16 +60,16 @@
 					<object class="IBUIImageView" id="805677747">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 20}, {280, 72}}</string>
+						<string key="NSFrame">{{20, 0}, {280, 92}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="520289974"/>
 						<int key="IBUIContentMode">1</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">ministries_banner.png</string>
+							<string key="NSResourceName">ministrybanner.png</string>
 						</object>
 					</object>
 					<object class="IBUITableView" id="520289974">
@@ -78,6 +78,7 @@
 						<string key="NSFrame">{{0, 100}, {320, 311}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">10</int>
 							<object class="NSImage" key="NSImage">
@@ -300,12 +301,12 @@ AAMAAAABAAEAAAFTAAMAAAAEAAACAgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>PlainBack.png</string>
-				<string>ministries_banner.png</string>
+				<string>ministrybanner.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{320, 480}</string>
-				<string>{517, 135}</string>
+				<string>{504, 144}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">294</string>

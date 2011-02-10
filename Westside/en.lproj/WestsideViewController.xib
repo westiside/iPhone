@@ -72,7 +72,7 @@
 					<object class="IBUIImageView" id="554043558">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{40, 8}, {240, 80}}</string>
+						<string key="NSFrame">{{40, 8}, {240, 85}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<int key="IBUIContentMode">1</int>
@@ -80,7 +80,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">logo2.png</string>
+							<string key="NSResourceName">logo_shadow.png</string>
 						</object>
 					</object>
 				</object>
@@ -144,8 +144,8 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="37014704"/>
-							<reference ref="554043558"/>
 							<reference ref="911619933"/>
+							<reference ref="554043558"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -240,13 +240,13 @@
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>PlainBack.png</string>
-				<string>logo2.png</string>
+				<string>logo_shadow.png</string>
 				<string>pic1.jpg</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{320, 480}</string>
-				<string>{254, 70}</string>
+				<string>{254, 101}</string>
 				<string>{257, 197}</string>
 			</object>
 		</object>

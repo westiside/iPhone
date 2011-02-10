@@ -46,8 +46,8 @@
     [super viewDidLoad];
     
     //Unhides Navigation Bar
-    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.connectNav setNavigationBarHidden:NO animated:YES]; 
+    //WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    //[delegate.connectNav setNavigationBarHidden:NO animated:YES]; 
     
     twitter = [[TwitterParser alloc] initWithScreenName:self.title];
     [twitter parseXML];
@@ -77,8 +77,8 @@
 {
     [super viewWillDisappear:animated];
     //Unhides Navigation Bar
-    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.connectNav setNavigationBarHidden:YES animated:YES]; 
+    //WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    //[delegate.connectNav setNavigationBarHidden:YES animated:YES]; 
 }
 
 - (void)viewDidDisappear:(BOOL)animated
