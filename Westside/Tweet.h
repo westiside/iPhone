@@ -16,6 +16,7 @@
 
 @property (nonatomic, retain) NSString *text;
 @property (nonatomic, retain) NSString *created_at;
+@property (nonatomic) CGFloat height;
 
 -(Tweet*) initWithTextAndDate:(NSString*)text_in:(NSString*)date_in;
 -(void)dealloc;

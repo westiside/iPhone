@@ -23,6 +23,7 @@
 @property (nonatomic, retain) IBOutlet UITableView *podcastTable;
 @property (nonatomic, retain) IBOutlet UITableViewCell *PodcastCell;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *mediaViewSelector;
+@property (nonatomic, retain) IBOutlet UITableViewCell *tvCell;
 - (IBAction)viewChangeRequest:(id)sender;
 - (IBAction)liveViewButtonSelected:(id)sender;
 - (IBAction)refreshButtonSelect:(id)sender;

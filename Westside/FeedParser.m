@@ -112,10 +112,10 @@
     } else
         
     if([elementName isEqualToString:@"itunes:image href="] ) {
-        if(image != nil) [image release];
+       /* if(image != nil) [image release];
         NSURL *url = [NSURL URLWithString:currentStringValue];
         NSData *data = [NSData dataWithContentsOfURL:url];
-        image = [[UIImage alloc] initWithData:data];
+        image = [[UIImage alloc] initWithData:data];*/
         
     }
 
@@ -127,9 +127,21 @@
         f.feedName = [[f.feedName componentsSeparatedByString:@" - "] objectAtIndex:0];
         [f setFeedLink:[[feedLink componentsSeparatedByString:@"\n"] objectAtIndex:0]];
         [f setIsAudio:isAudio];
-        [f setPubDate:[[[pubDate componentsSeparatedByString:@"\n"] objectAtIndex:0] substringWithRange:NSMakeRange(0, 17)]];
-        [f setImage:image];
+        [f setPubDate:[[pubDate componentsSeparatedByString:@"\n"] objectAtIndex:0]];
+        //[f setImage:image];
      
+        //Format: Sun, 17 Oct 2010 07:00:00 GMT
+        NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
+        [inputFormatter setDateFormat:@"EEE, d MMM yyyy HH:mm:ss zzz"];
+        NSDate *formatterDate = [inputFormatter dateFromString:f.pubDate];
+        
+        NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
+        [outputFormatter setDateFormat:@"MMM d, yyyy"];
+ 
+        
+        NSString *newDateString = [outputFormatter stringFromDate:formatterDate];
+        [f setPubDate:newDateString];
+        
         
         if(isAudio){
             [audioFeeds addObject:f];

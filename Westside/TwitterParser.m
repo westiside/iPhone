@@ -88,14 +88,19 @@
     }
     
     if ( [elementName isEqualToString:@"created_at"] ) {
-        created_at = currentStringValue;
+        NSArray *array = [currentStringValue componentsSeparatedByString:@"\n"];
+        created_at = [array objectAtIndex:0];
+        
         return;
     } else
         
     if([elementName isEqualToString:@"text"] ) {
-        text = currentStringValue;
+        NSArray *array = [currentStringValue componentsSeparatedByString:@"\n"];
+        text = [array objectAtIndex:0];
         
-        Tweet *t = [[Tweet alloc] initWithTextAndDate:text :created_at];
+        
+        
+        Tweet *t = [[Tweet alloc] initWithTextAndDate:[text copy] :[created_at copy]];
         
         [tweets addObject:t];
                 
