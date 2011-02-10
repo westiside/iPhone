@@ -7,19 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
 #import "GenericWebNavViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import <CoreLocation/CoreLocation.h>
 
 @interface MoreTabViewController : UIViewController {
 @private
     
-    MKMapView *map;
     GenericWebNavViewController *webVC;
 }
 
-@property (nonatomic, retain) IBOutlet MKMapView *map;
 @property (nonatomic, retain) GenericWebNavViewController *webVC;
 
 - (IBAction)eGiveBtnPress:(id)sender;

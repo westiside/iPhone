@@ -32,13 +32,16 @@
 		2D6DA37A13037D1900900D67 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA37913037D1900900D67 /* icon114.png */; };
 		2D6DA37C13037D2000900D67 /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA37B13037D2000900D67 /* icon72.png */; };
 		2D6DA3821303819100900D67 /* ministries_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3811303819000900D67 /* ministries_banner.png */; };
+		2D6DA3851303820200900D67 /* PlainBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA383130381FF00900D67 /* PlainBack.png */; };
+		2D6DA3861303820200900D67 /* PlainBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3841303820000900D67 /* PlainBack@2x.png */; };
+		2D6DA3881303828100900D67 /* MediaTableViewCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3871303828100900D67 /* MediaTableViewCellNib.xib */; };
+		2D6DA38C13038E5600900D67 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6DA38B13038E5400900D67 /* AVFoundation.framework */; };
 		2D6F265712FCFA14008C2FDB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265612FCFA14008C2FDB /* Default.png */; };
 		2D6F265912FCFA1A008C2FDB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265812FCFA1A008C2FDB /* Default@2x.png */; };
 		2D6F266012FD0459008C2FDB /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265C12FD0459008C2FDB /* pic1.jpg */; };
 		2D6F266112FD0459008C2FDB /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265D12FD0459008C2FDB /* pic2.jpg */; };
 		2D6F266212FD0459008C2FDB /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265E12FD0459008C2FDB /* pic3.jpg */; };
 		2D6F266312FD0459008C2FDB /* pic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6F265F12FD0459008C2FDB /* pic4.jpg */; };
-		2D7A6BDA12FDC3560002D7EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7A6BD912FDC3560002D7EA /* MapKit.framework */; };
 		2D7A6BDE12FDC8700002D7EA /* GenericWebNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */; };
 		2D7A6BDF12FDC8700002D7EA /* GenericWebNavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A6BDD12FDC8700002D7EA /* GenericWebNavViewController.xib */; };
 		2D7ADD5812FA12D000B28EF1 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */; };
@@ -65,7 +68,6 @@
 		2D8DA27012EB695A00EE323D /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DA26F12EB695A00EE323D /* Feed.m */; };
 		2DD7A23012FF6E7400C5100B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */; };
 		2DD7A23212FF710B00C5100B /* bg-title.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD7A23112FF710B00C5100B /* bg-title.png */; };
-		2DD7A24112FF784D00C5100B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD7A24012FF784D00C5100B /* CoreLocation.framework */; };
 		2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */; };
 		2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */; };
 		2DFA2A6012F776BA00E3A8F9 /* MoreTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5E12F776BA00E3A8F9 /* MoreTabViewController.m */; };
@@ -99,6 +101,10 @@
 		2D6DA37913037D1900900D67 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		2D6DA37B13037D2000900D67 /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
 		2D6DA3811303819000900D67 /* ministries_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ministries_banner.png; sourceTree = "<group>"; };
+		2D6DA383130381FF00900D67 /* PlainBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainBack.png; sourceTree = "<group>"; };
+		2D6DA3841303820000900D67 /* PlainBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlainBack@2x.png"; sourceTree = "<group>"; };
+		2D6DA3871303828100900D67 /* MediaTableViewCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaTableViewCellNib.xib; sourceTree = "<group>"; };
+		2D6DA38B13038E5400900D67 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2D6F265412FCF802008C2FDB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2D6F265612FCFA14008C2FDB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2D6F265812FCFA1A008C2FDB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -106,7 +112,6 @@
 		2D6F265D12FD0459008C2FDB /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
 		2D6F265E12FD0459008C2FDB /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
 		2D6F265F12FD0459008C2FDB /* pic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic4.jpg; sourceTree = "<group>"; };
-		2D7A6BD912FDC3560002D7EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2D7A6BDB12FDC8700002D7EA /* GenericWebNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericWebNavViewController.h; sourceTree = "<group>"; };
 		2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericWebNavViewController.m; sourceTree = "<group>"; };
 		2D7A6BDD12FDC8700002D7EA /* GenericWebNavViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenericWebNavViewController.xib; sourceTree = "<group>"; };
@@ -144,7 +149,6 @@
 		2D8DA26F12EB695A00EE323D /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
 		2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2DD7A23112FF710B00C5100B /* bg-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-title.png"; sourceTree = "<group>"; };
-		2DD7A24012FF784D00C5100B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
 		2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
@@ -158,9 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DD7A24112FF784D00C5100B /* CoreLocation.framework in Frameworks */,
+				2D6DA38C13038E5600900D67 /* AVFoundation.framework in Frameworks */,
 				2DD7A23012FF6E7400C5100B /* QuartzCore.framework in Frameworks */,
-				2D7A6BDA12FDC3560002D7EA /* MapKit.framework in Frameworks */,
 				2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */,
 				2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */,
 				2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */,
@@ -218,9 +221,8 @@
 		2D84555612EA835E00F19F55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2DD7A24012FF784D00C5100B /* CoreLocation.framework */,
+				2D6DA38B13038E5400900D67 /* AVFoundation.framework */,
 				2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */,
-				2D7A6BD912FDC3560002D7EA /* MapKit.framework */,
 				2D6F265412FCF802008C2FDB /* MediaPlayer.framework */,
 				2D84555712EA835E00F19F55 /* UIKit.framework */,
 				2D84555912EA835E00F19F55 /* Foundation.framework */,
@@ -286,6 +288,7 @@
 				2D0F8F4412EBB19700C9B88B /* MediaController.h */,
 				2D0F8F4512EBB19700C9B88B /* MediaController.m */,
 				2D0F8F4612EBB19700C9B88B /* MediaController.xib */,
+				2D6DA3871303828100900D67 /* MediaTableViewCellNib.xib */,
 			);
 			name = "Media Tab";
 			sourceTree = "<group>";
@@ -322,6 +325,8 @@
 			isa = PBXGroup;
 			children = (
 				2D6DA36F130363DA00900D67 /* ministry@2x.png */,
+				2D6DA383130381FF00900D67 /* PlainBack.png */,
+				2D6DA3841303820000900D67 /* PlainBack@2x.png */,
 				2D6DA370130363DA00900D67 /* ministry.png */,
 				2D6DA3811303819000900D67 /* ministries_banner.png */,
 				2D6DA3631303616000900D67 /* speaker@2x.png */,
@@ -465,6 +470,9 @@
 				2D6DA37A13037D1900900D67 /* icon114.png in Resources */,
 				2D6DA37C13037D2000900D67 /* icon72.png in Resources */,
 				2D6DA3821303819100900D67 /* ministries_banner.png in Resources */,
+				2D6DA3851303820200900D67 /* PlainBack.png in Resources */,
+				2D6DA3861303820200900D67 /* PlainBack@2x.png in Resources */,
+				2D6DA3881303828100900D67 /* MediaTableViewCellNib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

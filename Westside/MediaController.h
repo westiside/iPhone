@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "FeedParser.h"
 
-@interface MediaController : UIViewController {
+@interface MediaController : UIViewController <UIWebViewDelegate> {
 @private
     FeedParser *feeds;
     UISegmentedControl *mediaViewSelector;
@@ -27,4 +28,11 @@
 - (IBAction)refreshButtonSelect:(id)sender;
 - (void)loadPodcast:(NSString *)string;
 - (void)refreshPodCasts:(int)viewRequest:(BOOL)parse;
+
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
+- (void)webViewDidFinishLoad:(UIWebView *)webView;
+- (void)webViewDidStartLoad:(UIWebView *)webView;
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
+
 @end

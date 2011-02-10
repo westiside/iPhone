@@ -7,7 +7,7 @@
 //
 
 #import "GenericWebNavViewController.h"
-
+#import "WestsideAppDelegate.h"
 
 @implementation GenericWebNavViewController
 @synthesize webView;
@@ -45,6 +45,10 @@
     [super viewDidLoad];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];
     
+    //Unhide Navigation Bar
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.moreNav setNavigationBarHidden:NO animated:YES]; 
+    
 }
 
 - (void)viewDidUnload
@@ -53,6 +57,14 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    //Unhides Navigation Bar
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.moreNav setNavigationBarHidden:YES animated:YES]; 
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

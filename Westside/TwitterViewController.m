@@ -7,6 +7,7 @@
 //
 
 #import "TwitterViewController.h"
+#import "WestsideAppDelegate.h"
 
 @implementation TwitterViewController
 @synthesize tweetTable;
@@ -42,9 +43,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //Unhides Navigation Bar
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.connectNav setNavigationBarHidden:NO animated:YES]; 
+    
     twitter = [[TwitterParser alloc] initWithScreenName:self.title];
     [twitter parseXML];
     [tweetTable reloadData];
+    
     
 }
 
@@ -68,6 +75,9 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    //Unhides Navigation Bar
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.connectNav setNavigationBarHidden:YES animated:YES]; 
 }
 
 - (void)viewDidDisappear:(BOOL)animated

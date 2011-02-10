@@ -57,6 +57,7 @@
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
         
+        
     } else{
         
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
@@ -124,8 +125,11 @@
 
 - (void)loadPodcast:(NSString *)string{
     NSLog(@"Loading Podcast");
-	
+    
+	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:string]]];
+    
     
 }
 
@@ -248,6 +252,40 @@
     
 }
 
+/*
+ [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+ */
 
+
+#pragma mark - Web View Delegate
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    
+    NSLog(@"Webview Request to Load");
+    
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+    NSLog(@"WEBVIEW Finished Loading");
+    
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+    
+    NSLog(@"WEBVIEW Started Loading");
+    
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+    NSLog(@"WEBVIEW Fail With Error");
+    [webView stopLoading];
+    
+}
 
 @end
+
+
+

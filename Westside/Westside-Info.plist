@@ -14,7 +14,6 @@
 	<string></string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>TestIconi4.png</string>
 		<string>icon57.png</string>
 		<string>icon114.png</string>
 	</array>
@@ -48,5 +47,9 @@
 	<array/>
 	<key>UTImportedTypeDeclarations</key>
 	<array/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 </dict>
 </plist>

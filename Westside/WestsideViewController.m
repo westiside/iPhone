@@ -46,7 +46,7 @@
     imageBanner.layer.cornerRadius = 10.0;
     imageBanner.clipsToBounds = YES;
     imageBanner.layer.borderColor = [UIColor whiteColor].CGColor;
-    imageBanner.layer.borderWidth = 4.0;
+    imageBanner.layer.borderWidth = 3.0;
     [imageBanner startAnimating];
        
      

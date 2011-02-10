@@ -11,7 +11,6 @@
 
 
 @implementation MoreTabViewController
-@synthesize map;
 @synthesize webVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -42,7 +41,11 @@
 {
     [super viewDidLoad];    
     
-    map.layer.cornerRadius = 20.0;
+    //Hides Navigation Bar
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.moreNav setNavigationBarHidden:YES]; 
+    
+    /*map.layer.cornerRadius = 20.0;
     map.clipsToBounds = YES;
     map.layer.borderColor = [UIColor whiteColor].CGColor;
     map.layer.borderWidth = 3.0;
@@ -62,7 +65,7 @@
     
     [map setRegion:region animated:YES];
     
-    
+    */
      
 }
 
