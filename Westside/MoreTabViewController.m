@@ -9,6 +9,7 @@
 #import "MoreTabViewController.h"
 #import "WestsideAppDelegate.h"
 
+
 @implementation MoreTabViewController
 @synthesize map;
 @synthesize webVC;
@@ -39,8 +40,30 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [super viewDidLoad];    
+    
+    map.layer.cornerRadius = 20.0;
+    map.clipsToBounds = YES;
+    map.layer.borderColor = [UIColor whiteColor].CGColor;
+    map.layer.borderWidth = 3.0;
+    //29.6604, Longitude = -82.4476
+    CLLocationDegrees lat = 29.661;
+    CLLocationDegrees longit = -82.4476;
+    CLLocation *loc = [[CLLocation alloc] initWithLatitude:lat longitude:longit];
+    MKCoordinateRegion region;
+    region.center = loc.coordinate;
+    
+    MKCoordinateSpan span;
+    span.latitudeDelta = .0025;
+    span.longitudeDelta = .0025;
+    region.span = span;
+
+    
+    
+    [map setRegion:region animated:YES];
+    
+    
+     
 }
 
 - (void)viewDidUnload
@@ -62,7 +85,7 @@
         [webVC release];
     }
     
-    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] init];
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLink:@"http://e-giving.org/start.asp?id=1678"];
     webVC =aWebNavView;
     
     aWebNavView.title = @"eGiving";
@@ -71,12 +94,35 @@
     WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [delegate.moreNav pushViewController:webVC animated:YES]; 
      
-   /* NSURL *url = [NSURL URLWithString:@"http://e-giving.org/start.asp?id=1678"];
-    if (![[UIApplication sharedApplication] openURL:url])
-        NSLog(@"%@%@",@"Failed to open url:",[url description]);
-    */
-    
-
 }
+
+- (IBAction)webBtnPress:(id)sender{
+    if(webVC != nil) {
+        [webVC release];
+    }
+    
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLink:@"http://www.westsidebaptist.org/"];
+    webVC =aWebNavView;
+    
+    aWebNavView.title = @"Website";
+    aWebNavView.hidesBottomBarWhenPushed = YES;
+    
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.moreNav pushViewController:webVC animated:YES]; 
+}
+
+- (IBAction)directionsBtnPress:(id)sender{
+    
+     /*CLLocationCoordinate2D currentLocation = [self getCurrentLocation];
+     NSString* address = @"123 Main St., New York, NY, 10001";
+     NSString* url = [NSString stringWithFormat: @"http://maps.google.com/maps?saddr=%f,%f&daddr=%@",
+     currentLocation.latitude, currentLocation.longitude,
+     [address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+      */
+     
+    
+}
+
+
 
 @end

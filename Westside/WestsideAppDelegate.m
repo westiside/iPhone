@@ -31,12 +31,14 @@
     NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
     if([data isEqualToString:@"No on air lives"]){
         NSLog(@"No Live Feed");
-       
+        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.mediaTabBarItem setBadgeValue:nil];
+
         
-    } else if(data != nil){
+    } else if(data == nil){
         NSLog(@"Live Feed On Air");
         [mediaTabBarItem setBadgeValue:@"LIVE"];
-    }
+    } 
     
     return YES;
 }

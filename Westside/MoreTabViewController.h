@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "GenericWebNavViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface MoreTabViewController : UIViewController {
 @private
@@ -21,5 +23,8 @@
 @property (nonatomic, retain) GenericWebNavViewController *webVC;
 
 - (IBAction)eGiveBtnPress:(id)sender;
+- (IBAction)webBtnPress:(id)sender;
+- (IBAction)directionsBtnPress:(id)sender;
+
 
 @end

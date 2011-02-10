@@ -14,5 +14,7 @@
     UIWebView *webView;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) NSString* link;
 
+-(id)initWithLink:(NSString*)string;
 @end

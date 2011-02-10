@@ -11,15 +11,19 @@
 
 @implementation GenericWebNavViewController
 @synthesize webView;
+@synthesize link;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+-(id)initWithLink:(NSString *)string{
+    
+    self = [super init];
     if (self) {
-        // Custom initialization
+        self.link = string;
+        NSLog(string);
     }
     return self;
 }
+
 
 - (void)dealloc
 {
@@ -39,7 +43,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://e-giving.org/start.asp?id=1678"]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];
     
 }
 
