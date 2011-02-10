@@ -14,8 +14,8 @@
 	<string></string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>icon57.png</string>
-		<string>icon114.png</string>
+		<string>icon_blue57.png</string>
+		<string>icon_blue114.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>Westside-Baptist-Church.${PRODUCT_NAME:rfc1034identifier}</string>
@@ -37,6 +37,10 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -47,9 +51,5 @@
 	<array/>
 	<key>UTImportedTypeDeclarations</key>
 	<array/>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>audio</string>
-	</array>
 </dict>
 </plist>

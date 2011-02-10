@@ -136,6 +136,8 @@
         if(indexPath.row ==0 && indexPath.section == 1) twitterView.title = @"@wbcgainesville";
         else if(indexPath.row ==1 && indexPath.section == 1) twitterView.title = @"@westsidecollege";
         
+        twitterView.hidesBottomBarWhenPushed = YES;
+        
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.connectNav pushViewController:twitterView animated:YES]; 
         
