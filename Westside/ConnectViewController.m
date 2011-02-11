@@ -90,8 +90,7 @@
             cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
         }
         
-        cell.textLabel.text = @"Week of Jan 30";
-        cell.detailTextLabel.text = @"In 1955, “Gunsmoke” began its twenty year run on prime time television. John Wayne was asked to star...";
+        cell.textLabel.text = @"Pastor's Perspectives";
         
 
     }else if(indexPath.section == 1) {
@@ -103,6 +102,8 @@
         if(indexPath.row ==0 && indexPath.section == 1) cell.textLabel.text = @"@wbcgainesville";
         else if(indexPath.row ==1 && indexPath.section == 1) cell.textLabel.text = @"@westsidecollege";
         
+        
+
     }else if(indexPath.section == 2){
         static NSString *MyIdentifier = @"TweetCell";
         
@@ -200,12 +201,13 @@
         return cell;
     }
     
+    [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
     return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     switch(section){
-        case 0: return @"Pastor's Perspective";
+        case 0: return @"";
         case 1: return @"Westside on Twitter";
         case 2: return @"Church Staff";
     }
@@ -248,6 +250,11 @@
         
     } else if (indexPath.section == 2){
         
+        UILabel *email = (UILabel *)[[tableView cellForRowAtIndexPath:indexPath] viewWithTag:3];
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email.text]]];
+        NSLog([@"mailto:" stringByAppendingString:email.text]);
+        
                
     }
     
@@ -260,7 +267,7 @@
         [webVC release];
     }
     
-    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkAndIsConnect:link :YES];
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkWithScaleAndNavHidden:link :YES :YES];
     
     webVC =aWebNavView;
     

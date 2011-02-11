@@ -66,6 +66,8 @@
     [map setRegion:region animated:YES];
     
     */
+    
+    [self eGiveBtnPress:self];
      
 }
 
@@ -87,7 +89,7 @@
         [webVC release];
     }
     
-    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLink:@"http://e-giving.org/start.asp?id=1678"];
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkWithScaleAndNavHidden:@"http://e-giving.org/start.asp?id=1678" :NO :NO];
     webVC =aWebNavView;
     
     aWebNavView.title = @"eGiving";
@@ -103,7 +105,7 @@
         [webVC release];
     }
     
-    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkAndIsConnect:@"http://www.westsidebaptist.org/" :NO];
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkWithScaleAndNavHidden:@"http://www.westsidebaptist.org/" :YES :NO];
     webVC =aWebNavView;
     
     aWebNavView.title = @"Website";

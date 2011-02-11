@@ -14,12 +14,14 @@
 @synthesize link;
 
 
--(id)initWithLinkAndIsConnect:(NSString *)string:(BOOL)connect{
+-(id)initWithLinkWithScaleAndNavHidden:(NSString *)string:(BOOL)scale_in:(BOOL)hide_in{
     
     self = [super init];
     if (self) {
         self.link = string;
-        isConnect = connect;
+        scale = scale_in;
+        hide = hide_in;
+        
     }
     return self;
 }
@@ -43,10 +45,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [webView setScalesPageToFit:scale];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];
     
     //Unhide Navigation Bar
-    if (!isConnect){
+    if (!hide){
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.moreNav setNavigationBarHidden:NO animated:YES]; 
     }
@@ -65,7 +69,7 @@
 {
     [super viewWillDisappear:animated];
     //Unhides Navigation Bar
-    if (!isConnect){
+    if (!hide){
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.moreNav setNavigationBarHidden:YES animated:YES]; 
     }

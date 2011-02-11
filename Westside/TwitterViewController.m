@@ -120,11 +120,9 @@
     Tweet *tweet = [twitter.tweets objectAtIndex:indexPath.row];
         
     UILabel *label;
-    UIImageView *image;
     UITextView *tv;
     
-    image = (UIImageView *)[cell viewWithTag:0];
-    image.image = twitter.pic;
+    cell.imageView.image = twitter.pic;
     
     tv = (UITextView *)[cell viewWithTag:1];
 

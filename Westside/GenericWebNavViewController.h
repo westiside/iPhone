@@ -10,12 +10,13 @@
 
 
 @interface GenericWebNavViewController : UIViewController {
-    BOOL isConnect;
+    BOOL scale;
+    BOOL hide;
     UIWebView *webView;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) NSString* link;
 
 
--(id)initWithLinkAndIsConnect:(NSString*)string:(BOOL)connect;
+-(id)initWithLinkWithScaleAndNavHidden:(NSString *)string:(BOOL)scale_in:(BOOL)hide_in;
 @end
