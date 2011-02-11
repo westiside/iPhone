@@ -11,12 +11,12 @@
 		2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4612EBB19700C9B88B /* MediaController.xib */; };
 		2D16DA0213046B7D00D080D5 /* ministrybanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D16DA0113046B7D00D080D5 /* ministrybanner.png */; };
 		2D16DA0413046C2E00D080D5 /* connectbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D16DA0313046C2E00D080D5 /* connectbanner.png */; };
-		2D16DA0613046CBE00D080D5 /* logo_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D16DA0513046CBE00D080D5 /* logo_shadow.png */; };
 		2D1B487B12FDFDFB00D11A42 /* TwitterTableViewCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */; };
 		2D22F02A12FDCE8400FD3EAB /* NavFor.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D22F02912FDCE8400FD3EAB /* NavFor.png */; };
 		2D3BF11912F1065D005CD1C3 /* App Project Schedule (Tent).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */; };
 		2D3BF11A12F1065D005CD1C3 /* SRS.doc in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11712F1065D005CD1C3 /* SRS.doc */; };
 		2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */; };
+		2D66CD5E1305C79500C385FF /* logo_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66CD5D1305C79500C385FF /* logo_shadow.png */; };
 		2D6DA35A130350E400900D67 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA359130350E400900D67 /* logo.png */; };
 		2D6DA35C1303524200900D67 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA35B1303524200900D67 /* logo2.png */; };
 		2D6DA3601303614100900D67 /* house@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA35F1303614100900D67 /* house@2x.png */; };
@@ -99,12 +99,12 @@
 		2D0F8F4612EBB19700C9B88B /* MediaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaController.xib; sourceTree = "<group>"; };
 		2D16DA0113046B7D00D080D5 /* ministrybanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ministrybanner.png; path = ../ministrybanner.png; sourceTree = "<group>"; };
 		2D16DA0313046C2E00D080D5 /* connectbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connectbanner.png; path = ../connectbanner.png; sourceTree = "<group>"; };
-		2D16DA0513046CBE00D080D5 /* logo_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_shadow.png; sourceTree = "<group>"; };
 		2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterTableViewCellNib.xib; sourceTree = "<group>"; };
 		2D22F02912FDCE8400FD3EAB /* NavFor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavFor.png; sourceTree = "<group>"; };
 		2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "App Project Schedule (Tent).pdf"; sourceTree = "<group>"; };
 		2D3BF11712F1065D005CD1C3 /* SRS.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SRS.doc; sourceTree = "<group>"; };
 		2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Westside App UI Mockups.pdf"; sourceTree = "<group>"; };
+		2D66CD5D1305C79500C385FF /* logo_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_shadow.png; sourceTree = "<group>"; };
 		2D6DA359130350E400900D67 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2D6DA35B1303524200900D67 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		2D6DA35F1303614100900D67 /* house@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house@2x.png"; sourceTree = "<group>"; };
@@ -373,7 +373,7 @@
 				2DEFCA1C1305AC57008763AC /* Staff Images */,
 				2DEFCA0E13059029008763AC /* Reachability.h */,
 				2DEFCA0F13059029008763AC /* Reachability.m */,
-				2D16DA0513046CBE00D080D5 /* logo_shadow.png */,
+				2D66CD5D1305C79500C385FF /* logo_shadow.png */,
 				2D16DA0113046B7D00D080D5 /* ministrybanner.png */,
 				2D16DA0313046C2E00D080D5 /* connectbanner.png */,
 				2D6DA383130381FF00900D67 /* PlainBack.png */,
@@ -552,7 +552,6 @@
 				2DE8CBF51304528A00CBFA4F /* icon_blue57.png in Resources */,
 				2D16DA0213046B7D00D080D5 /* ministrybanner.png in Resources */,
 				2D16DA0413046C2E00D080D5 /* connectbanner.png in Resources */,
-				2D16DA0613046CBE00D080D5 /* logo_shadow.png in Resources */,
 				2DEFCA241305B6A5008763AC /* gary.png in Resources */,
 				2DEFCA2C1305C081008763AC /* steve.png in Resources */,
 				2DEFCA2D1305C081008763AC /* sheryl.png in Resources */,
@@ -564,6 +563,7 @@
 				2DEFCA361305C08D008763AC /* daniel.png in Resources */,
 				2DEFCA371305C08D008763AC /* mike.png in Resources */,
 				2DEFCA381305C08D008763AC /* phil.png in Resources */,
+				2D66CD5E1305C79500C385FF /* logo_shadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
