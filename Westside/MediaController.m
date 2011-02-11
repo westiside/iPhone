@@ -8,6 +8,7 @@
 
 #import "MediaController.h"
 #import "WestsideAppDelegate.h"
+#import "Reachability.h"
 
 @implementation MediaController
 @synthesize podcastTable;
@@ -47,25 +48,6 @@
     [super viewDidLoad];
     [activityIndicator startAnimating];
     audioSelected = YES;
-    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
-    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
-    if(data == nil){
-        /*NSLog(@"No Internet Connection");
-         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"An internet connection is required to listen podcasts. " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-         
-         [alert show];
-         [alert release];*/
-        
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
-        
-        
-    } else{
-        
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.mediaTabBarItem setBadgeValue:nil];
-        
-    }
     feeds = [[FeedParser alloc] init];
     [self refreshButtonSelect:nil];
     [feeds parseXML];    
@@ -86,7 +68,36 @@
     [super viewDidAppear:animated];
     
     [activityIndicator  stopAnimating];
-   
+    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
+                
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to stream Podcasts" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+        
+    } else{
+        NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
+        NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
+        if(data == nil){
+            /*NSLog(@"No Internet Connection");
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"An internet connection is required to listen podcasts. " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+             
+             [alert show];
+             [alert release];*/
+            
+            WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+            [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
+            
+            
+        } else{
+            
+            WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+            [delegate.mediaTabBarItem setBadgeValue:nil];
+            
+        }
+
+    }
+    
 }
 
 

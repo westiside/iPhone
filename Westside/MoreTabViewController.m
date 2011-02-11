@@ -71,7 +71,6 @@
 
 - (void)viewDidUnload
 {
-    [self setMap:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -104,7 +103,7 @@
         [webVC release];
     }
     
-    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLink:@"http://www.westsidebaptist.org/"];
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkAndIsConnect:@"http://www.westsidebaptist.org/" :NO];
     webVC =aWebNavView;
     
     aWebNavView.title = @"Website";

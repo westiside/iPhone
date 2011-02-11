@@ -7,7 +7,7 @@
 //
 
 #import "WestsideAppDelegate.h"
-
+#import "Reachability.h"
 
 @implementation WestsideAppDelegate
 
@@ -26,6 +26,8 @@
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
+    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable) {
+        
     //Check for Live Feed
     NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
     NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
@@ -35,10 +37,12 @@
         [delegate.mediaTabBarItem setBadgeValue:nil];
 
         
+        
     } else if(data == nil){
         NSLog(@"Live Feed On Air");
         [mediaTabBarItem setBadgeValue:@"LIVE"];
     } 
+    }
     
     return YES;
 }

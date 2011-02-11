@@ -10,11 +10,12 @@
 
 
 @interface GenericWebNavViewController : UIViewController {
-    
+    BOOL isConnect;
     UIWebView *webView;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) NSString* link;
 
--(id)initWithLink:(NSString*)string;
+
+-(id)initWithLinkAndIsConnect:(NSString*)string:(BOOL)connect;
 @end

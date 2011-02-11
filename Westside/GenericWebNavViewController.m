@@ -14,12 +14,12 @@
 @synthesize link;
 
 
--(id)initWithLink:(NSString *)string{
+-(id)initWithLinkAndIsConnect:(NSString *)string:(BOOL)connect{
     
     self = [super init];
     if (self) {
         self.link = string;
-        NSLog(string);
+        isConnect = connect;
     }
     return self;
 }
@@ -46,8 +46,10 @@
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];
     
     //Unhide Navigation Bar
-    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.moreNav setNavigationBarHidden:NO animated:YES]; 
+    if (!isConnect){
+        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.moreNav setNavigationBarHidden:NO animated:YES]; 
+    }
     
 }
 
@@ -63,8 +65,10 @@
 {
     [super viewWillDisappear:animated];
     //Unhides Navigation Bar
-    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.moreNav setNavigationBarHidden:YES animated:YES]; 
+    if (!isConnect){
+        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.moreNav setNavigationBarHidden:YES animated:YES]; 
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
