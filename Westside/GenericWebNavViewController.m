@@ -14,13 +14,12 @@
 @synthesize link;
 
 
--(id)initWithLinkWithScaleAndNavHidden:(NSString *)string:(BOOL)scale_in:(BOOL)hide_in{
+-(id)initWithLinkWithScale:(NSString *)string:(BOOL)scale_in{
     
     self = [super init];
     if (self) {
         self.link = string;
         scale = scale_in;
-        hide = hide_in;
         
     }
     return self;
@@ -49,12 +48,6 @@
     [webView setScalesPageToFit:scale];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];
     
-    //Unhide Navigation Bar
-    if (!hide){
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.moreNav setNavigationBarHidden:NO animated:YES]; 
-    }
-    
 }
 
 - (void)viewDidUnload
@@ -68,11 +61,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    //Unhides Navigation Bar
-    if (!hide){
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.moreNav setNavigationBarHidden:YES animated:YES]; 
-    }
+   
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

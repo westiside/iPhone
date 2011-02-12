@@ -42,9 +42,7 @@
 {
     [super viewDidLoad];
     
-    //Hides Navigation Bar
-    //WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    //[delegate.connectNav setNavigationBarHidden:YES]; 
+    
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -55,6 +53,8 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -73,11 +73,27 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSLog(@"Loading Table View");
+    int number = 0;
     switch(section){
-        case 0: return 1;
-        case 1: return 2;
-        case 2: return 11;
+        case 0: 
+        {
+            number = 1;
+            break;
+        }
+        case 1: 
+        {
+            number = 2;
+            break;
+        }
+        case 2: 
+        {
+            number = 11;
+            break;
+        }    
     }
+    
+    
+    return number;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -206,13 +222,54 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSString *title = nil;
     switch(section){
-        case 0: return @"";
-        case 1: return @"Westside on Twitter";
-        case 2: return @"Church Staff";
-    }
-           
+        case 1: title = @"Westside on Twitter";
+        case 2: title = @"Church Staff";
+    } 
+        
+    return title;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if ([self tableView:tableView titleForHeaderInSection:section] != nil) {
+        return 40;
+    }
+    else {
+        // If no section header title, no section header needed
+        return 0;
+    }
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    NSString *sectionTitle = [self tableView:tableView titleForHeaderInSection:section];
+    if (sectionTitle == nil) {
+        return nil;
+    }
+    
+    // Create label with section title
+    UILabel *label = [[[UILabel alloc] init] autorelease];
+    label.frame = CGRectMake(20, 6, 300, 30);
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor whiteColor];
+    /*[UIColor colorWithHue:(136.0/360.0)  // Slightly bluish green
+                                 saturation:1.0
+                                 brightness:0.60
+                                      alpha:1.0];*/
+    label.shadowColor = [UIColor blackColor];
+    label.shadowOffset = CGSizeMake(0.0, 1.0);
+    label.font = [UIFont boldSystemFontOfSize:16];
+    label.text = sectionTitle;
+    
+    // Create header view and add label as a subview
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
+    [view autorelease];
+    [view addSubview:label];
+    
+    return view;
+}
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -242,6 +299,7 @@
         
         WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         [delegate.connectNav pushViewController:twitterView animated:YES]; 
+        [delegate.connectNav setNavigationBarHidden:NO animated:YES];
         
     }
     else if(indexPath.section == 0){
@@ -253,7 +311,7 @@
         UILabel *email = (UILabel *)[[tableView cellForRowAtIndexPath:indexPath] viewWithTag:3];
         
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email.text]]];
-        NSLog([@"mailto:" stringByAppendingString:email.text]);
+        
         
                
     }
@@ -267,7 +325,7 @@
         [webVC release];
     }
     
-    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkWithScaleAndNavHidden:link :YES :YES];
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkWithScale:link :YES];
     
     webVC =aWebNavView;
     
@@ -276,7 +334,16 @@
     
     WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [delegate.connectNav pushViewController:webVC animated:YES]; 
+    [delegate.connectNav setNavigationBarHidden:NO animated:YES];
+   
     
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.connectNav setNavigationBarHidden:YES animated:YES];
 }
 
 @end

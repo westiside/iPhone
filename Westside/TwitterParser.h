@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Tweet.h"
 
-@interface TwitterParser : NSObject {
+@interface TwitterParser : NSObject <NSXMLParserDelegate> {
 @private
     NSString *text;
     NSString *created_at;

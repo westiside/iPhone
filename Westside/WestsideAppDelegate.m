@@ -16,6 +16,7 @@
 @synthesize connectNav;
 @synthesize mediaTabBarItem;
 @synthesize moreNav;
+@synthesize minNav;
 
 
 
@@ -69,6 +70,7 @@
     [connectNav release];
     [mediaTabBarItem release];
     [moreNav release];
+    [minNav release];
     [super dealloc];
 }
 

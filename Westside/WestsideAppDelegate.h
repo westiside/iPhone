@@ -15,6 +15,7 @@
     UINavigationController *connectNav;
     UITabBarItem *mediaTabBarItem;
     UINavigationController *moreNav;
+    UINavigationController *minNav;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -23,5 +24,6 @@
 
 @property (nonatomic, retain) IBOutlet UITabBarItem *mediaTabBarItem;
 @property (nonatomic, retain) IBOutlet UINavigationController *moreNav;
+@property (nonatomic, retain) IBOutlet UINavigationController *minNav;
 
 @end

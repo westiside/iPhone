@@ -219,6 +219,27 @@
     else return [feeds.videoFeeds count];
 }
 
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    Feed *f;
+    if(audioSelected){
+        f = [feeds.audioFeeds objectAtIndex:indexPath.row];
+        
+    }else{
+        f = [feeds.videoFeeds objectAtIndex:indexPath.row];
+    }
+    
+    int height = 46;
+    
+    if([f.feedName length] > 37) height += 15;
+    
+    return height;
+}
+
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -229,44 +250,8 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
-     
-     
-    /*
-    
-    static NSString *MyIdentifier = @"MediaCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    if (cell == nil) {
-        [[NSBundle mainBundle] loadNibNamed:@"MediaTableViewCellNib" owner:self options:nil];
-        cell = tvCell;
-        tvCell = nil;
-    }
-    
-    Feed *f;
-    
-    if(audioSelected){
-        f = [feeds.audioFeeds objectAtIndex:indexPath.row];
-    }else{
-        f = [feeds.videoFeeds objectAtIndex:indexPath.row];
-    }
-
-    
-    UIImageView *image;
-    UILabel *label;
-    
-    image = (UIImageView *)[cell viewWithTag:0];
-    image.image = f.image;
     
     
-    label = (UILabel *)[cell viewWithTag:1];
-    label.text = f.feedName;
-    
-    label = (UILabel *)[cell viewWithTag:2];
-    label.text = f.feedName;
-    */  
-    
-    
-    // Configure the cell...
     Feed *f;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     if(audioSelected){
@@ -275,9 +260,13 @@
     }else{
         f = [feeds.videoFeeds objectAtIndex:indexPath.row];
     }
-    cell.textLabel.text = f.pubDate;
-    cell.detailTextLabel.text = f.feedName;
     
+    UIFont *font = [UIFont fontWithName:@"Helvetica" size:15];
+    [cell.textLabel setNumberOfLines:2];
+    [cell.textLabel setFont:font];
+    cell.textLabel.text = f.feedName;
+    cell.detailTextLabel.text = f.pubDate;
+    //cell.imageView.image = f.image;
    
 
       

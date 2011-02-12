@@ -69,14 +69,23 @@
         currentStringValue = nil;
         return;
     } else
-            
+     
+    /*
     if([elementName isEqualToString:@"itunes:duration"] ) {
         currentStringValue = nil;
         return;
     } else
         
-    if([elementName isEqualToString:@"itunes:image href="] ) {
-        currentStringValue = nil;
+   if([elementName isEqualToString:@"itunes:image"] ) {
+        if(image != nil) [image release];
+        NSURL *url = [NSURL URLWithString:[attributeDict objectForKey:@"href"]];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        image = [[UIImage alloc] initWithData:data];
+        return;
+    }*/
+    
+    if([elementName isEqualToString:@"enclosure"] ) {
+        isAudio = [[attributeDict objectForKey:@"type"] isEqualToString:@"audio/mpeg"];
         return;
     }
     
@@ -88,7 +97,7 @@
     if (!currentStringValue) {
         currentStringValue = [[NSMutableString alloc] initWithCapacity:50];
     }
-    [currentStringValue appendString:string];
+     currentStringValue = [currentStringValue stringByAppendingString:string];
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
@@ -97,7 +106,6 @@
     
     if ( [elementName isEqualToString:@"title"] ) {
         feedName = currentStringValue;
-        isAudio = [feedName containsSubstring:@"Audio"];
         return;
     } else
         
@@ -111,13 +119,8 @@
         return;
     } else
         
-    if([elementName isEqualToString:@"itunes:image href="] ) {
-       /* if(image != nil) [image release];
-        NSURL *url = [NSURL URLWithString:currentStringValue];
-        NSData *data = [NSData dataWithContentsOfURL:url];
-        image = [[UIImage alloc] initWithData:data];*/
-        
-    }
+    
+    
 
     
     if ( [elementName isEqualToString:@"item"] ) {
@@ -137,7 +140,7 @@
         
         NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
         [outputFormatter setDateFormat:@"MMM d, yyyy"];
- 
+        //[outputFormatter setDateFormat:@"MMM d"];
         
         NSString *newDateString = [outputFormatter stringFromDate:formatterDate];
         [f setPubDate:newDateString];

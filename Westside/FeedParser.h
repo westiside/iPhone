@@ -10,7 +10,7 @@
 #import "Feed.h"
 
 
-@interface FeedParser : NSObject {
+@interface FeedParser : NSObject <NSXMLParserDelegate> {
 @private
     NSString    *feedName;
     BOOL        isAudio;

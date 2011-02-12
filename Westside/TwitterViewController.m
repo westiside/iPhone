@@ -14,15 +14,6 @@
 @synthesize tvCell;
 
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-        
-    }
-    return self;
-}
 
 - (void)dealloc
 {
@@ -44,10 +35,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //Unhides Navigation Bar
-    //WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    //[delegate.connectNav setNavigationBarHidden:NO animated:YES]; 
     
     twitter = [[TwitterParser alloc] initWithScreenName:self.title];
     [twitter parseXML];
@@ -76,9 +63,6 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    //Unhides Navigation Bar
-    //WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    //[delegate.connectNav setNavigationBarHidden:YES animated:YES]; 
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -146,14 +130,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    
 }
 
 @end

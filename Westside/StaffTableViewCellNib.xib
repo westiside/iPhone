@@ -78,7 +78,7 @@
 							<object class="IBUILabel" id="278322476">
 								<reference key="NSNextResponder" ref="97879788"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{87, 20}, {224, 42}}</string>
+								<string key="NSFrame">{{87, 20}, {193, 42}}</string>
 								<reference key="NSSuperview" ref="97879788"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="77187693"/>
@@ -107,7 +107,7 @@
 							<object class="IBUILabel" id="77187693">
 								<reference key="NSNextResponder" ref="97879788"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{87, 54}, {224, 21}}</string>
+								<string key="NSFrame">{{87, 54}, {200, 21}}</string>
 								<reference key="NSSuperview" ref="97879788"/>
 								<reference key="NSWindow"/>
 								<bool key="IBUIOpaque">NO</bool>
@@ -197,9 +197,9 @@
 						<reference key="object" ref="546022903"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="797577178"/>
 							<reference ref="278322476"/>
 							<reference ref="77187693"/>
-							<reference ref="797577178"/>
 						</object>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">Table View Cell - StaffCell</string>

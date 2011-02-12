@@ -72,7 +72,7 @@
     if (!currentStringValue) {
         currentStringValue = [[NSMutableString alloc] initWithCapacity:50];
     }
-    [currentStringValue appendString:string];
+    currentStringValue = [currentStringValue stringByAppendingString:string];
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
@@ -80,7 +80,7 @@
     if(!picFound && [elementName isEqualToString:@"profile_image_url"]){
         NSURL *url = [NSURL URLWithString:currentStringValue];
         NSData *data = [NSData dataWithContentsOfURL:url];
-        UIImage *img = [[UIImage alloc] initWithData:data cache:NO];
+        UIImage *img = [[UIImage alloc] initWithData:data];
         pic = img;
         picFound = YES;
         
