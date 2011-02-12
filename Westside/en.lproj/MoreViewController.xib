@@ -93,7 +93,7 @@
 						<string key="NSFrame">{{172, 190}, {135, 73}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="892767746"/>
+						<reference key="NSNextKeyView" ref="826742378"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="141874651">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MSAwAA</bytes>
@@ -120,9 +120,9 @@
 							<int key="NSColorSpace">2</int>
 							<bytes key="NSRGB">MSAxIDAuOTc2NDcwNjQ5MgA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
+						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">directions_modules2.png</string>
+							<string key="NSResourceName">directions_modules.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="650971163">
@@ -142,12 +142,12 @@
 						<reference key="IBUIHighlightedTitleColor" ref="470843423"/>
 						<reference key="IBUINormalTitleColor" ref="140451415"/>
 						<reference key="IBUINormalTitleShadowColor" ref="821380206"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
+						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">give_modules2.png</string>
+							<string key="NSResourceName">give_modules.png</string>
 						</object>
 					</object>
-					<object class="IBMKMapView" id="892767746">
+					<object class="IBMKMapView" id="826742378">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{13, 275}, {294, 128}}</string>
@@ -235,10 +235,10 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="911619933"/>
 							<reference ref="37014704"/>
-							<reference ref="149040890"/>
 							<reference ref="650971163"/>
-							<reference ref="892767746"/>
+							<reference ref="826742378"/>
 							<reference ref="946199442"/>
+							<reference ref="149040890"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -269,7 +269,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">47</int>
-						<reference key="object" ref="892767746"/>
+						<reference key="object" ref="826742378"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</object>
@@ -392,8 +392,8 @@
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>PlainBack.png</string>
-				<string>directions_modules2.png</string>
-				<string>give_modules2.png</string>
+				<string>directions_modules.png</string>
+				<string>give_modules.png</string>
 				<string>logo_shadow.png</string>
 				<string>pic1.jpg</string>
 			</object>
