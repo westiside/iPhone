@@ -10,6 +10,7 @@
 #import "WestsideAppDelegate.h"
 
 @implementation MoreViewController
+@synthesize map;
 @synthesize imageBanner;
 @synthesize webVC;
 
@@ -50,6 +51,25 @@
     imageBanner.layer.borderWidth = 1.5;
     [imageBanner startAnimating];
        
+     map.layer.cornerRadius = 10.0;
+     map.clipsToBounds = YES;
+     map.layer.borderColor = [UIColor whiteColor].CGColor;
+     map.layer.borderWidth = 1.5;
+     //29.6604, Longitude = -82.4476
+     CLLocationDegrees lat = 29.661;
+     CLLocationDegrees longit = -82.4476;
+     CLLocation *loc = [[CLLocation alloc] initWithLatitude:lat longitude:longit];
+     MKCoordinateRegion region;
+     region.center = loc.coordinate;
+     
+     MKCoordinateSpan span;
+     span.latitudeDelta = .004;
+     span.longitudeDelta = .004;
+     region.span = span;
+     
+     
+     
+     [map setRegion:region animated:YES];
      
     
 }
@@ -66,6 +86,7 @@
 
 - (void)viewDidUnload
 {
+    [self setMap:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

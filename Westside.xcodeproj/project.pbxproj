@@ -66,6 +66,7 @@
 		2DC012B31307240400ADCC98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC012B21307240400ADCC98 /* MapKit.framework */; };
 		2DC012BD130742A400ADCC98 /* directions_modules.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC012BB130742A400ADCC98 /* directions_modules.png */; };
 		2DC012BE130742A400ADCC98 /* give_modules.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC012BC130742A400ADCC98 /* give_modules.png */; };
+		2DC012C01307437C00ADCC98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC012BF1307437A00ADCC98 /* CoreLocation.framework */; };
 		2DD7A23012FF6E7400C5100B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */; };
 		2DE8CBE613044F6000CBFA4F /* group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8CBE013044F6000CBFA4F /* group@2x.png */; };
 		2DE8CBE713044F6000CBFA4F /* tv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8CBE113044F6000CBFA4F /* tv@2x.png */; };
@@ -171,6 +172,7 @@
 		2DC012B21307240400ADCC98 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2DC012BB130742A400ADCC98 /* directions_modules.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions_modules.png; sourceTree = "<group>"; };
 		2DC012BC130742A400ADCC98 /* give_modules.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = give_modules.png; sourceTree = "<group>"; };
+		2DC012BF1307437A00ADCC98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2DE8CBE013044F6000CBFA4F /* group@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group@2x.png"; path = "../group@2x.png"; sourceTree = "<group>"; };
 		2DE8CBE113044F6000CBFA4F /* tv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tv@2x.png"; path = "../tv@2x.png"; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC012C01307437C00ADCC98 /* CoreLocation.framework in Frameworks */,
 				2DC012B31307240400ADCC98 /* MapKit.framework in Frameworks */,
 				2DEFCA161305917A008763AC /* SystemConfiguration.framework in Frameworks */,
 				2DEFCA1413059174008763AC /* MobileCoreServices.framework in Frameworks */,
@@ -271,6 +274,7 @@
 		2D84555612EA835E00F19F55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DC012BF1307437A00ADCC98 /* CoreLocation.framework */,
 				2DC012B21307240400ADCC98 /* MapKit.framework */,
 				2DEFCA151305917A008763AC /* SystemConfiguration.framework */,
 				2DEFCA1313059174008763AC /* MobileCoreServices.framework */,

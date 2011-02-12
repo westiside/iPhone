@@ -51,6 +51,7 @@
     feeds = [[FeedParser alloc] init];
     [self refreshButtonSelect:nil];
     [feeds parseXML];    
+    [podcastTable setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
     [podcastTable reloadData];
     
     
@@ -269,7 +270,6 @@
     //cell.imageView.image = f.image;
    
 
-      
     return cell;
      
 }

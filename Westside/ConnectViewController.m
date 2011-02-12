@@ -214,10 +214,15 @@
                 
         cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgPath ofType:@"png"]];
         
+        
+        [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
+
         return cell;
     }
     
     [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
+    [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
+
     return cell;
 }
 

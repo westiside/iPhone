@@ -114,7 +114,7 @@
     label = (UILabel *)[cell viewWithTag:2];
     label.text = tweet.created_at;
     
-    
+    [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
     return cell;
 }
 
