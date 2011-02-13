@@ -45,10 +45,10 @@
     [super viewDidLoad];
     imageBanner.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic2" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic3" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic4" ofType:@"jpg"]] ,nil];
     imageBanner.animationDuration = 20;
-    imageBanner.layer.cornerRadius = 10.0;
+    imageBanner.layer.cornerRadius = 12.0;
     imageBanner.clipsToBounds = YES;
-    imageBanner.layer.borderColor = [UIColor whiteColor].CGColor;
-    imageBanner.layer.borderWidth = 1.5;
+    imageBanner.layer.borderColor = [UIColor darkGrayColor].CGColor;
+    imageBanner.layer.borderWidth = 1;
     [imageBanner startAnimating];
        
      map.layer.cornerRadius = 10.0;
@@ -128,6 +128,101 @@
     [delegate.moreNav pushViewController:webVC animated:YES]; 
     [delegate.moreNav setNavigationBarHidden:NO animated:YES];
 }
+
+
+
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString *MyIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier] autorelease];
+    }
+    
+    NSString *label = @"";
+    if(indexPath.section == 0){
+        switch (indexPath.row) {
+            case 0:
+            {
+                label = @"eGiving";
+                break;
+            }
+            case 1: 
+            {
+                label = @"Get Directions";
+                break;
+            }
+           
+            
+            default:
+                break;
+        }
+    } 
+    
+    cell.textLabel.text = label;    
+    [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
+    [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
+    //250	240	230
+    
+    return cell;
+}
+
+
+#pragma mark - Table view delegate
+
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if(indexPath.section == 0){
+        switch (indexPath.row) {
+            case 0:
+            {
+                [self egiving:nil];
+                break;
+            }
+            case 1: 
+            {
+                [self directions:nil];
+                break;
+            }
+            /*case 2: 
+            {
+                label = @"Get Directions";
+                link =  @"http://www.westsidemediaministry.com/connect/ministries/youth/";
+                break;
+            }*/
+           
+           
+            default:
+                break;
+                
+                
+        }
+        
+    } 
+    
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 
 
