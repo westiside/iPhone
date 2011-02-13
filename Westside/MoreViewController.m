@@ -66,7 +66,7 @@
      span.latitudeDelta = .004;
      span.longitudeDelta = .004;
      region.span = span;
-     
+     [loc release];
      
      
      [map setRegion:region animated:YES];

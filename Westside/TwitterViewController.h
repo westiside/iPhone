@@ -18,6 +18,6 @@
 
 @property (nonatomic, retain) IBOutlet UITableView *tweetTable;
 @property (nonatomic, retain) IBOutlet UITableViewCell *tvCell;
-
+@property (nonatomic, retain) TwitterParser *twitter;
 
 @end

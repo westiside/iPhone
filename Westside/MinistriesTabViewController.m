@@ -159,8 +159,8 @@
 {
     
     if(indexPath.section == 0){
-        NSString *label;
-        NSString *link;
+        NSString *label = @"";
+        NSString *link = @"";
         switch (indexPath.row) {
             case 0:
             {

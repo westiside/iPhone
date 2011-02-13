@@ -52,7 +52,12 @@
     
     created_at = [newDateString copy];
     //self.created_at = newDateString;
-        
+    
+    [inputFormatter release];
+    [outputFormatter1 release];
+    [outputFormatter2 release];
+    [ampm release];
+    
     return self;
 }
 

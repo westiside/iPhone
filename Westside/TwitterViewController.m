@@ -12,13 +12,16 @@
 @implementation TwitterViewController
 @synthesize tweetTable;
 @synthesize tvCell;
-
+@synthesize twitter;
 
 
 - (void)dealloc
 {
     [tweetTable release];
     [tvCell release];
+    twitter = nil;
+    [twitter release];
+    
     [super dealloc];
 }
 
@@ -46,6 +49,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    [twitter release];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -115,6 +119,7 @@
     label.text = tweet.created_at;
     
     [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
+    
     return cell;
 }
 

@@ -152,6 +152,8 @@
             [videoFeeds addObject:f];
         }
         
+        [inputFormatter release];
+        [outputFormatter release];
         [f release];
         return;
         

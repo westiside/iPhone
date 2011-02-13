@@ -15,7 +15,6 @@
 
 -(TwitterParser*)initWithScreenName: (NSString*)user{
     [super init];
-    tweets = [[NSMutableArray alloc] init];
     screen_name = user;
     picFound = NO;
     return self;
@@ -27,13 +26,20 @@
     [screen_name release];
     [created_at release];
     [text   release];
+    [tweets release];
     [super dealloc];
+    
 }
 
 
 #pragma mark - Access Methods
 
 -(void) parseXML{
+    if(tweets != nil){
+        [tweets release];
+    }
+    tweets = [[NSMutableArray alloc] init];
+    
     NSString *apiCall = [[@"http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=" stringByAppendingString:screen_name] stringByAppendingString:@"&count=10"];
     
     NSURL *xmlURL = [NSURL URLWithString:apiCall];
@@ -42,7 +48,7 @@
     [feedParser setShouldResolveExternalEntities:YES];
     [feedParser parse]; 
     //[apiCall release];
-    //[feedParser release];
+    [feedParser release];
 }
 
 #pragma mark - Delegate Methods
@@ -98,12 +104,10 @@
         NSArray *array = [currentStringValue componentsSeparatedByString:@"\n"];
         text = [array objectAtIndex:0];
         
-        
-        
-        Tweet *t = [[Tweet alloc] initWithTextAndDate:[text copy] :[created_at copy]];
+        Tweet *t = [[Tweet alloc] initWithTextAndDate:[text copy]:[created_at copy]];
         
         [tweets addObject:t];
-                
+        
         [t release];
     
         return;

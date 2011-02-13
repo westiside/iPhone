@@ -51,7 +51,6 @@
     feeds = [[FeedParser alloc] init];
     [self refreshButtonSelect:nil];
     [feeds parseXML];    
-    [podcastTable setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
     [podcastTable reloadData];
     
     
@@ -171,20 +170,20 @@
         [self refreshButtonSelect:nil];
     }
     if(parse) {
-        NSLog(@"Parsing Feeds");
+       
         [feeds parseXML];
     }
     
     switch(viewRequest){
         case 0 :    //Audio
         {
-            NSLog(@"Audio View Requested");
+            
             audioSelected = YES;     
             break;
         }
         case 1  :   //Video
         {
-            NSLog(@"Video View Requested");
+            
             audioSelected = NO;
             break;
         }
@@ -208,14 +207,12 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    NSLog(@"Sections retrieved........");
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"Loading Table View");
     if(audioSelected) return [feeds.audioFeeds count];
     else return [feeds.videoFeeds count];
 }
@@ -262,11 +259,12 @@
         f = [feeds.videoFeeds objectAtIndex:indexPath.row];
     }
     
-    UIFont *font = [UIFont fontWithName:@"Helvetica" size:15];
+    UIFont *font = [UIFont fontWithName:@"Helvetica Bold" size:15];
     [cell.textLabel setNumberOfLines:2];
     [cell.textLabel setFont:font];
     cell.textLabel.text = f.feedName;
     cell.detailTextLabel.text = f.pubDate;
+    [cell.detailTextLabel setTextColor:[UIColor darkGrayColor]];
     //cell.imageView.image = f.image;
    
 
@@ -280,7 +278,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NSLog(@"Table View Member Selected");
+    
     if(audioSelected){
         Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
         [self loadPodcast:f.feedLink];
@@ -291,8 +289,7 @@
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSLog(@"Deselected");
-    
+       
     
     
 }

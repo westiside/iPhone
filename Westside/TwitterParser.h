@@ -22,6 +22,7 @@
 @property (nonatomic, retain) UIImage* pic;
 
 
+
 -(TwitterParser*) initWithScreenName:(NSString*)user;
 
 -(void) parseXML;
