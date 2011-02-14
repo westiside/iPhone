@@ -51,8 +51,7 @@
     feeds = [[FeedParser alloc] init];
     [self refreshButtonSelect:nil];
     [feeds parseXML];    
-    [podcastTable reloadData];
-    
+    [podcastTable reloadData];    
     
 }
 
@@ -268,6 +267,7 @@
     //cell.imageView.image = f.image;
    
 
+    
     return cell;
      
 }

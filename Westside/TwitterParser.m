@@ -14,11 +14,12 @@
 @synthesize pic;
 
 -(TwitterParser*)initWithScreenName: (NSString*)user{
-    [super init];
-    screen_name = user;
-    picFound = NO;
-    tweets = [[NSMutableArray alloc] init];
-    
+    self = [super init];
+    if(self){
+        screen_name = user;
+        picFound = NO;
+        tweets = [[NSMutableArray alloc] init];
+    }
     return self;
 }
 
@@ -72,7 +73,7 @@
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     if (!currentStringValue) {
-        currentStringValue = [[NSMutableString alloc] initWithCapacity:50];
+        currentStringValue = [NSMutableString stringWithCapacity:50];
     }
     currentStringValue = [currentStringValue stringByAppendingString:string];
 }
@@ -86,14 +87,12 @@
         pic = img;
         picFound = YES;
         
-        return;
     }
     
     if ( [elementName isEqualToString:@"created_at"] ) {
         NSArray *array = [currentStringValue componentsSeparatedByString:@"\n"];
         created_at = [array objectAtIndex:0];
         
-        return;
     } else
         
     if([elementName isEqualToString:@"text"] ) {
@@ -105,10 +104,12 @@
         [tweets addObject:t];
         
         [t release];
-    
-        return;
+        
+        
                     
-    }else return;
+    }
+    
+    return;
      
     
 }

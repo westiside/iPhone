@@ -17,7 +17,9 @@
     UIImageView *imageBanner;
     GenericWebNavViewController *webVC;
     MKMapView *map;
+    UITableView *tv;
 }
+@property (nonatomic, retain) IBOutlet UITableView *tv;
 
 @property (nonatomic, retain) GenericWebNavViewController *webVC;
 @property (nonatomic, retain) IBOutlet UIImageView *imageBanner;

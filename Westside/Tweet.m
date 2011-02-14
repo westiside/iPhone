@@ -21,8 +21,8 @@
 }
 
 -(Tweet*)initWithTextAndDate:(NSString*)text_in:(NSString*)date_in{
-    [super   init];
-    
+    self = [super init];
+    if(self){
     text = [text_in copy];
 
     CGSize constraintSize = CGSizeMake(200.0f, MAXFLOAT);
@@ -49,7 +49,7 @@
     NSString *str2 = [ampm stringFromDate:formatterDate];
     
     NSString *newDateString = [str1 stringByAppendingString:[[str2 lowercaseString] stringByAppendingString:str3]];
-    
+        
     created_at = [newDateString copy];
     //self.created_at = newDateString;
     
@@ -57,7 +57,7 @@
     [outputFormatter1 release];
     [outputFormatter2 release];
     [ampm release];
-    
+    }
     return self;
 }
 

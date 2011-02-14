@@ -14,6 +14,7 @@
 @private
     
     GenericWebNavViewController *webVC;
+    UITableView *tv;
 }
 
 @property (nonatomic, retain) GenericWebNavViewController *webVC;
@@ -21,5 +22,6 @@
 
 - (void)webWithLinkAndTitle:(NSString *)link:(NSString *)title;
 
+@property (nonatomic, retain) IBOutlet UITableView *tv;
 
 @end

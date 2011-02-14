@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<ttl>60</ttl>
+<atom:link href="http://sermon.net/rss/wbcmedia/main_channel" rel="self" type="application/rss+xml" />
+<title>Westside Baptist Church</title>
+<link>http://www.westsidebaptist.org</link>
+<language>en-us</language>
+<itunes:subtitle>This has been a Westside Media Ministry Production</itunes:subtitle>
+<description>This has been a Westside Media Ministry Production</description>
+<itunes:summary>This has been a Westside Media Ministry Production</itunes:summary>
+<lastBuildDate>Thu, 20 Jan 2011 13:54:35 GMT</lastBuildDate>
+<pubDate>Thu, 20 Jan 2011 13:54:35 GMT</pubDate>
+<copyright>Copyright 2011 Westside Baptist Church</copyright>
+<itunes:author>Michael Ricks</itunes:author>
+<managingEditor>mricks@westsidebaptist.org (Michael Ricks)</managingEditor>
+<generator>Php v.5.1.6</generator>
+<itunes:owner>
+<itunes:name>Michael Ricks</itunes:name>
+<itunes:email>mricks@westsidebaptist.org</itunes:email>
+</itunes:owner>
+<itunes:category text="Religion &amp; Spirituality">
+ <itunes:category text="Christianity"/>
+</itunes:category>
+<itunes:explicit>no</itunes:explicit>
+<itunes:new-feed-url>http://sermon.net/rss/wbcmedia/main_channel</itunes:new-feed-url>
+<itunes:image href="http://sermonplayer.com/commonClient/podcast/podcast_default.jpg" />
+<item>
+<title>Salavation (10:45) - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2584341-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Westside Baptist Church</itunes:summary>
+<itunes:duration>01:00:00</itunes:duration>
+<pubDate>Sun, 16 Jan 2011 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2584341-1.mp3' length='28858258' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2584341/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Westside Baptist Church</description>
+<itunes:subtitle>Westside Baptist Church</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Salavation (10:45) - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2584341-3.mp4</link>
+<pubDate>Sun, 16 Jan 2011 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Westside Baptist Church</itunes:summary>
+<itunes:subtitle>Westside Baptist Church</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2584341-3.mp4' length='373683052' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2584341/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Westside Baptist Church</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>The Kind of Life Jesus Offers - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2585152-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>The Kind of Life Jesus Offers</itunes:summary>
+<itunes:duration>01:12:35</itunes:duration>
+<pubDate>Sun, 16 Jan 2011 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2585152-1.mp3' length='34897367' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2585152/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>The Kind of Life Jesus Offers</description>
+<itunes:subtitle>The Kind of Life Jesus Offers</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>The Kind of Life Jesus Offers - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2585152-3.mp4</link>
+<pubDate>Sun, 16 Jan 2011 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>The Kind of Life Jesus Offers</itunes:summary>
+<itunes:subtitle>The Kind of Life Jesus Offers</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2585152-3.mp4' length='452198510' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2585152/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>The Kind of Life Jesus Offers</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>The Bible: God's Word (10:45) - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2579109-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>The Bible</itunes:summary>
+<itunes:duration>01:27:29</itunes:duration>
+<pubDate>Sun, 09 Jan 2011 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2579109-1.mp3' length='42047166' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2579109/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>The Bible</description>
+<itunes:subtitle>The Bible</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>The Bible: God's Word (10:45) - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2579109-3.mp4</link>
+<pubDate>Sun, 09 Jan 2011 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>The Bible</itunes:summary>
+<itunes:subtitle>The Bible</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2579109-3.mp4' length='545878436' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2579109/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>The Bible</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Send Me...to the City - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2579110-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>The Jericho Project Celebration Service</itunes:summary>
+<itunes:duration>01:08:57</itunes:duration>
+<pubDate>Sun, 09 Jan 2011 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2579110-1.mp3' length='33153225' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2579110/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>The Jericho Project Celebration Service</description>
+<itunes:subtitle>The Jericho Project Celebration Service</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Send Me...to the City - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2579110-3.mp4</link>
+<pubDate>Sun, 09 Jan 2011 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>The Jericho Project Celebration Service</itunes:summary>
+<itunes:subtitle>The Jericho Project Celebration Service</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2579110-3.mp4' length='429153363' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2579110/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>The Jericho Project Celebration Service</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Plans for a Hope and a Future - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2574833-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Special Guest Phil Young</itunes:summary>
+<itunes:duration>01:05:45</itunes:duration>
+<pubDate>Sun, 02 Jan 2011 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2574833-1.mp3' length='31618263' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2574833/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Special Guest Phil Young</description>
+<itunes:subtitle>Special Guest Phil Young</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Plans for a Hope and a Future - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2574833-3.mp4</link>
+<pubDate>Sun, 02 Jan 2011 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Special Guest Phil Young</itunes:summary>
+<itunes:subtitle>Special Guest Phil Young</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2574833-3.mp4' length='406162503' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2574833/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Special Guest Phil Young</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Resolution Sunday - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2573787-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Resolution Sunday</itunes:summary>
+<itunes:duration>01:18:58</itunes:duration>
+<pubDate>Sat, 01 Jan 2011 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2573787-1.mp3' length='37960573' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2573787/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Resolution Sunday</description>
+<itunes:subtitle>Resolution Sunday</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Resolution Sunday - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2573787-3.mp4</link>
+<pubDate>Sat, 01 Jan 2011 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Resolution Sunday</itunes:summary>
+<itunes:subtitle>Resolution Sunday</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2573787-3.mp4' length='483918653' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2573787/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Resolution Sunday</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>He Did What He Came to Do - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2566039-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>A sermon by Dr. Gary Crawford</itunes:summary>
+<itunes:duration>01:21:20</itunes:duration>
+<pubDate>Sun, 19 Dec 2010 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2566039-1.mp3' length='39100569' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2566039/type/audio</guid>
+<itunes:keywords>westside</itunes:keywords>
+<description>A sermon by Dr. Gary Crawford</description>
+<itunes:subtitle>A sermon by Dr. Gary Crawford</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>He Did What He Came to Do - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2566039-3.mp4</link>
+<pubDate>Sun, 19 Dec 2010 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>A sermon by Dr. Gary Crawford</itunes:summary>
+<itunes:subtitle>A sermon by Dr. Gary Crawford</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2566039-3.mp4' length='497463944' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2566039/type/video</guid>
+<itunes:keywords>westside</itunes:keywords>
+<description>A sermon by Dr. Gary Crawford</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Harvest Constitution Celebration - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2566765-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>A celebration of the constitution of Harvest Baptist Church, a church plant of Westside.</itunes:summary>
+<itunes:duration>00:14:18</itunes:duration>
+<pubDate>Sun, 19 Dec 2010 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2566765-1.mp3' length='6924466' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2566765/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A celebration of the constitution of Harvest Baptist Church, a church plant of Westside.</description>
+<itunes:subtitle>A celebration of the constitution of Harvest Baptist Church, a church plant of Westside.</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Harvest Constitution Celebration - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2566765-3.mp4</link>
+<pubDate>Sun, 19 Dec 2010 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>A celebration of the constitution of Harvest Baptist Church, a church plant of Westside.</itunes:summary>
+<itunes:subtitle>A celebration of the constitution of Harvest Baptist Church, a church plant of Westside.</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2566765-3.mp4' length='89398248' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2566765/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A celebration of the constitution of Harvest Baptist Church, a church plant of Westside.</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Guest Speaker: Dr. John Sullivan - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2541465-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Guest Speaker</itunes:summary>
+<itunes:duration>00:09:09</itunes:duration>
+<pubDate>Sun, 14 Nov 2010 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2541465-1.mp3' length='4448192' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2541465/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Guest Speaker</description>
+<itunes:subtitle>Guest Speaker</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Guest Speaker: Dr. John Sullivan - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2541465-3.mp4</link>
+<pubDate>Sun, 14 Nov 2010 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Guest Speaker</itunes:summary>
+<itunes:subtitle>Guest Speaker</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2541465-3.mp4' length='56869728' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2541465/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Guest Speaker</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Special Guest: Rick Marks - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2535689-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Special Guest: Rick Marks</itunes:summary>
+<itunes:duration>01:20:37</itunes:duration>
+<pubDate>Sun, 07 Nov 2010 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2535689-1.mp3' length='38751581' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2535689/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Special Guest: Rick Marks</description>
+<itunes:subtitle>Special Guest: Rick Marks</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Special Guest: Rick Marks - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2535689-3.mp4</link>
+<pubDate>Sun, 07 Nov 2010 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Special Guest: Rick Marks</itunes:summary>
+<itunes:subtitle>Special Guest: Rick Marks</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2535689-3.mp4' length='492273190' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2535689/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Special Guest: Rick Marks</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Children's Fall Concert - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2535691-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Children's Fall Concert</itunes:summary>
+<itunes:duration>00:46:18</itunes:duration>
+<pubDate>Sun, 07 Nov 2010 08:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2535691-1.mp3' length='22285031' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2535691/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Children's Fall Concert</description>
+<itunes:subtitle>Children's Fall Concert</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Children's Fall Concert - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2535691-3.mp4</link>
+<pubDate>Sun, 07 Nov 2010 08:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Children's Fall Concert</itunes:summary>
+<itunes:subtitle>Children's Fall Concert</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2535691-3.mp4' length='280460365' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2535691/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Children's Fall Concert</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Who Has the Final Say? - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2530620-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>A continuation of the Are You Sure? series.</itunes:summary>
+<itunes:duration>00:00:00</itunes:duration>
+<pubDate>Sun, 31 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2530620-1.mp3' length='55891' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2530620/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A continuation of the Are You Sure? series.</description>
+<itunes:subtitle>A continuation of the Are You Sure? series.</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Who Has the Final Say? - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2530620-3.mp4</link>
+<pubDate>Sun, 31 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>A continuation of the Are You Sure? series.</itunes:summary>
+<itunes:subtitle>A continuation of the Are You Sure? series.</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2530620-3.mp4' length='11455' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2530620/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A continuation of the Are You Sure? series.</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Best Practices: Blessing or Curse - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2524872-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>A continuation of the Are You Sure? series</itunes:summary>
+<itunes:duration>01:16:13</itunes:duration>
+<pubDate>Sun, 24 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2524872-1.mp3' length='36643212' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2524872/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A continuation of the Are You Sure? series</description>
+<itunes:subtitle>A continuation of the Are You Sure? series</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Best Practices: Blessing or Curse - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2524872-3.mp4</link>
+<pubDate>Sun, 24 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>A continuation of the Are You Sure? series</itunes:summary>
+<itunes:subtitle>A continuation of the Are You Sure? series</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2524872-3.mp4' length='395965116' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2524872/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A continuation of the Are You Sure? series</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Reaching Your Potential: Sacrifice or Selfishness? - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2519346-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Westside</itunes:summary>
+<itunes:duration>01:21:07</itunes:duration>
+<pubDate>Sun, 17 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2519346-1.mp3' length='38993379' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2519346/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Westside</description>
+<itunes:subtitle>Westside</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Reaching Your Potential: Sacrifice or Selfishness? - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2519346-3.mp4</link>
+<pubDate>Sun, 17 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Westside</itunes:summary>
+<itunes:subtitle>Westside</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2519346-3.mp4' length='1' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2519346/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Westside</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>LU Praise Concert - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2519349-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Westside</itunes:summary>
+<itunes:duration>01:28:30</itunes:duration>
+<pubDate>Sun, 17 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2519349-1.mp3' length='42538464' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2519349/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Westside</description>
+<itunes:subtitle>Westside</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>LU Praise Concert - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2519349-3.mp4</link>
+<pubDate>Sun, 17 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Westside</itunes:summary>
+<itunes:subtitle>Westside</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2519349-3.mp4' length='459821390' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2519349/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Westside</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Prayer Conference with Sammy Tippit pt1 - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2514111-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Session 1</itunes:summary>
+<itunes:duration>01:09:13</itunes:duration>
+<pubDate>Sun, 10 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2514111-1.mp3' length='33278806' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2514111/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Session 1</description>
+<itunes:subtitle>Session 1</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Prayer Conference with Sammy Tippit pt1 - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2514111-3.mp4</link>
+<pubDate>Sun, 10 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Session 1</itunes:summary>
+<itunes:subtitle>Session 1</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2514111-3.mp4' length='359727991' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2514111/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Session 1</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Prayer Conference with Sammy Tippit pt2 - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2514114-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Session 2</itunes:summary>
+<itunes:duration>00:29:42</itunes:duration>
+<pubDate>Sun, 10 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2514114-1.mp3' length='14309105' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2514114/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Session 2</description>
+<itunes:subtitle>Session 2</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Prayer Conference with Sammy Tippit pt2 - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2514114-3.mp4</link>
+<pubDate>Sun, 10 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Session 2</itunes:summary>
+<itunes:subtitle>Session 2</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2514114-3.mp4' length='154403840' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2514114/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Session 2</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Does Success Equal a Right Relationship with God? - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2508855-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>A Continuation of the Are You Sure? Series</itunes:summary>
+<itunes:duration>01:18:50</itunes:duration>
+<pubDate>Sun, 03 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2508855-1.mp3' length='37897931' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2508855/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A Continuation of the Are You Sure? Series</description>
+<itunes:subtitle>A Continuation of the Are You Sure? Series</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Does Success Equal a Right Relationship with God? - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2508855-3.mp4</link>
+<pubDate>Sun, 03 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>A Continuation of the Are You Sure? Series</itunes:summary>
+<itunes:subtitle>A Continuation of the Are You Sure? Series</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2508855-3.mp4' length='397430109' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2508855/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>A Continuation of the Are You Sure? Series</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+<item>
+<title>Guest Speaker: Asa Walker - Audio</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2508857-1.mp3</link>
+<itunes:author></itunes:author>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:summary>Guest Speaker: Asa Walker</itunes:summary>
+<itunes:duration>01:01:22</itunes:duration>
+<pubDate>Sun, 03 Oct 2010 07:00:00 GMT</pubDate>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2508857-1.mp3' length='29516355' type='audio/mpeg'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2508857/type/audio</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Guest Speaker: Asa Walker</description>
+<itunes:subtitle>Guest Speaker: Asa Walker</itunes:subtitle>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg?1295553275"/>
+</item>
+<item>
+<title>Guest Speaker: Asa Walker - Video</title>
+<link>http://sermonplayer.com/download_rss/25554-rss-2508857-3.mp4</link>
+<pubDate>Sun, 03 Oct 2010 07:00:00 GMT</pubDate>
+<author>mricks@westsidebaptist.org</author>
+<itunes:explicit>no</itunes:explicit>
+<itunes:author></itunes:author>
+<itunes:summary>Guest Speaker: Asa Walker</itunes:summary>
+<itunes:subtitle>Guest Speaker: Asa Walker</itunes:subtitle>
+<enclosure url='http://sermonplayer.com/download_rss/25554-rss-2508857-3.mp4' length='318550813' type='video/mp4'/>
+<guid>http://sermon.net/wbcmedia/sermonid/2508857/type/video</guid>
+<itunes:keywords>Westside</itunes:keywords>
+<description>Guest Speaker: Asa Walker</description>
+<itunes:image href="http://sermonplayer.com/c/wbcmedia/artwork/2431017_25554.jpg"/>
+</item>
+</channel>
+</rss>

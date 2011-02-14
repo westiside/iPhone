@@ -1,0 +1,747 @@
+TWestside
+v7
+r0
+t318403432.548923
+cCheck dependencies
+cProcessInfoPlistFile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Info.plist Westside/Westside-Info.plist
+cProcessPCH /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch.gch Westside/Westside-Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/main.o /Users/nickeubanks/Desktop/iPhone/Westside/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideAppDelegate.o /Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/FeedParser.o /Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Feed.o /Users/nickeubanks/Desktop/iPhone/Westside/Feed.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MediaController.o /Users/nickeubanks/Desktop/iPhone/Westside/MediaController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/ConnectViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MoreTabViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterParser.o /Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Tweet.o /Users/nickeubanks/Desktop/iPhone/Westside/Tweet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside normal i386
+cGenerateDSYMFile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app.dSYM /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside
+cCopyStringsFile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/InfoPlist.strings Westside/en.lproj/InfoPlist.strings
+cCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib
+cCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib
+cCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/MediaController.xib
+cCpResource "build/Debug-iphonesimulator/Westside.app/App Project Schedule (Tent).pdf" "Documentation/App Project Schedule (Tent).pdf"
+cCpResource build/Debug-iphonesimulator/Westside.app/SRS.doc Documentation/SRS.doc
+cCpResource "build/Debug-iphonesimulator/Westside.app/Westside App UI Mockups.pdf" "Documentation/Westside App UI Mockups.pdf"
+cCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.xib
+cCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.xib
+cCpResource build/Debug-iphonesimulator/Westside.app/pic1.png Westside/pic1.png
+cCpResource build/Debug-iphonesimulator/Westside.app/pic2.png Westside/pic2.png
+cCpResource build/Debug-iphonesimulator/Westside.app/pic3.png Westside/pic3.png
+cCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.xib
+cTouch /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/nickeubanks/Desktop/iPhone/Documentation/App Project Schedule (Tent).pdf
+c000000004D39F17800000000000104EC
+t1295643000
+s66796
+
+N/Users/nickeubanks/Desktop/iPhone/Documentation/SRS.doc
+c000000004D48D8EB000000000000F800
+t1296619755
+s63488
+
+N/Users/nickeubanks/Desktop/iPhone/Documentation/Westside App UI Mockups.pdf
+c000000004D3745C500000000001325A3
+t1295467973
+s1254819
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.h
+c000000004D49DE4E000000000000019F
+t1296686670
+s415
+i<UIKit/UIKit.h>
+i"TwitterViewController.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m
+c000000004D4A33460000000000000E63
+t1296708422
+s3683
+i"ConnectViewController.h"
+i"WestsideAppDelegate.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.xib
+c000000004D49D9E60000000000002DDE
+t1296685542
+s11742
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/Feed.h
+c000000004D47419400000000000001DB
+t1296515476
+s475
+i<Foundation/Foundation.h>
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/Feed.m
+c000000004D4741C00000000000000194
+t1296515520
+s404
+i"Feed.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.h
+c000000004D4A309D0000000000000259
+t1296707741
+s601
+i<Foundation/Foundation.h>
+i"Feed.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m
+c000000004D49F47E0000000000000D5E
+t1296692350
+s3422
+i"FeedParser.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/MediaController.h
+c000000004D472FED000000000000035B
+t1296510957
+s859
+i<UIKit/UIKit.h>
+i"FeedParser.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/MediaController.m
+c000000004D4A35E60000000000001761
+t1296709094
+s5985
+i"MediaController.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/MediaController.xib
+c000000004D45B80E0000000000004E9B
+t1296414734
+s20123
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.h
+c000000004D48CFD10000000000000118
+t1296617425
+s280
+i<UIKit/UIKit.h>
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.m
+c000000004D48CFDA00000000000004CF
+t1296617434
+s1231
+i"MoreTabViewController.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.xib
+c000000004D473FAC0000000000001A77
+t1296514988
+s6775
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/Tweet.h
+c000000004D49F5770000000000000197
+t1296692599
+s407
+i<Foundation/Foundation.h>
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/Tweet.m
+c000000004D4A307200000000000001D6
+t1296707698
+s470
+i"Tweet.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.h
+c000000004D4A322500000000000001E8
+t1296708133
+s488
+i<Foundation/Foundation.h>
+i"Tweet.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m
+c000000004D4A324E0000000000000967
+t1296708174
+s2407
+i"TwitterParser.h"
+i"Tweet.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.h
+c000000004D4A310F000000000000018A
+t1296707855
+s394
+i<UIKit/UIKit.h>
+i"TwitterParser.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m
+c000000004D4A35ED0000000000000BE8
+t1296709101
+s3048
+i"TwitterViewController.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.xib
+c000000004D49FD1A000000000000250C
+t1296694554
+s9484
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/Westside-Prefix.pch
+c000000004D3DDB460000000000000142
+t1295899462
+s322
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.h
+c000000004D49DDBA0000000000000245
+t1296686522
+s581
+i<UIKit/UIKit.h>
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.m
+c000000004D49DDBA0000000000000560
+t1296686522
+s1376
+i"WestsideAppDelegate.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.h
+c000000004D47749A00000000000001D4
+t1296528538
+s468
+i<UIKit/UIKit.h>
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.m
+c000000004D47750400000000000007A1
+t1296528644
+s1953
+i"WestsideViewController.h"
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/InfoPlist.strings
+c000000004D3DDB46000000000000002D
+t1295899462
+s45
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib
+c000000004D49EE4600000000000052CC
+t1296690758
+s21196
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib
+c000000004D47749A000000000000219B
+t1296528538
+s8603
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/main.m
+c000000004D3DDB460000000000000164
+t1295899462
+s356
+i<UIKit/UIKit.h>
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/pic1.png
+c000000004D4768B8000000000000D50D
+t1296525496
+s54541
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/pic2.png
+c000000004D4768AF0000000000010914
+t1296525487
+s67860
+
+N/Users/nickeubanks/Desktop/iPhone/Westside/pic3.png
+c000000004D4768C700000000000081CA
+t1296525511
+s33226
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app
+t1296710632
+s544
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app.dSYM
+t1296710625
+s102
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/App Project Schedule (Tent).pdf
+t1296710631
+s66796
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/ConnectViewController.nib
+t1296710632
+s1181
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Info.plist
+t1296710622
+s921
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/MediaController.nib
+t1296710631
+s2413
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/MoreTabViewController.nib
+t1296710632
+s764
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/PkgInfo
+t1296710622
+s8
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/SRS.doc
+t1296710631
+s63488
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/TwitterViewController.nib
+t1296710632
+s1139
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside
+t1296710625
+s62152
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside App UI Mockups.pdf
+t1296710631
+s1254819
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/InfoPlist.strings
+t1296710627
+s42
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/MainWindow.nib
+t1296710629
+s2405
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/WestsideViewController.nib
+t1296710630
+s1126
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/pic1.png
+t1296710632
+s54541
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/pic2.png
+t1296710632
+s67860
+
+N/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/pic3.png
+t1296710632
+s33226
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/ConnectViewController.o
+t1296710624
+s54064
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Feed.o
+t1296710624
+s10652
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/FeedParser.o
+t1296710624
+s19964
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MediaController.o
+t1296710624
+s64640
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MoreTabViewController.o
+t1296710624
+s39476
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Tweet.o
+t1296710624
+s9440
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterParser.o
+t1296710624
+s16008
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterViewController.o
+t1296710624
+s48792
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Westside.LinkFileList
+c000000004D4A3BDD000000000000058C
+t1296710621
+s1420
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideAppDelegate.o
+t1296710624
+s53160
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideViewController.o
+t1296710624
+s45152
+
+N/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/main.o
+t1296710624
+s6312
+
+N/var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch.gch
+t1296710623
+s15490256
+
+NWestside/Westside-Info.plist
+c000000004D4A3A060000000000000563
+t1296710150
+s1379
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies318403421#318403421#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/ConnectViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.424204
+e318403424.554750
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/ConnectViewController.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m: In function '-[ConnectViewController tableView:numberOfRowsInSection:]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m:77: warning: control reaches end of non-void function
+o/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m: In function '-[ConnectViewController tableView:titleForHeaderInSection:]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m:114: warning: control reaches end of non-void function
+lSLF07#2@74"Compile /Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m318403424#318403424#0(527"/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m: In function '-[ConnectViewController tableView:numberOfRowsInSection:]':/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m:77: warning: control reaches end of non-void function/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m: In function '-[ConnectViewController tableView:titleForHeaderInSection:]':/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m:114: warning: control reaches end of non-void function2(22@40"Control reaches end of non-void function318403424#141#121#0(6@66"/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m318401222#77#0#77#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function318403424#405#122#0(6@66"/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m318401222#114#0#114#0#40"control reaches end of non-void function0(0#0#66"/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m8603712096#1932"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/ConnectViewController.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Feed.o /Users/nickeubanks/Desktop/iPhone/Westside/Feed.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.345950
+e318403424.424102
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Feed.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/Feed.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/nickeubanks/Desktop/iPhone/Westside/Feed.m318403424#318403424#0(0"0(0#0#49"/Users/nickeubanks/Desktop/iPhone/Westside/Feed.m8595219104#1898"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/Feed.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Feed.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/FeedParser.o /Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.257303
+e318403424.345861
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/FeedParser.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m: In function '-[FeedParser parseXML]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:45: warning: class 'FeedParser' does not implement the 'NSXMLParserDelegate' protocol
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m: In function '-[FeedParser parser:foundCharacters:]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: 'NSString' may not respond to '-appendString:'
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: (Messages without a matching method signature
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: will be assumed to return 'id' and accept
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: '...' as arguments.)
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m: In function '-[FeedParser parser:didEndElement:namespaceURI:qualifiedName:]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:94: warning: 'NSString' may not respond to '-containsSubstring:'
+o/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:94: warning: assignment makes integer from pointer without a cast
+lSLF07#2@63"Compile /Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m318403424#318403424#0(1157"/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m: In function '-[FeedParser parseXML]':/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:45: warning: class 'FeedParser' does not implement the 'NSXMLParserDelegate' protocol/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m: In function '-[FeedParser parser:foundCharacters:]':/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: 'NSString' may not respond to '-appendString:'/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: (Messages without a matching method signature/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: will be assumed to return 'id' and accept/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:85: warning: '...' as arguments.)/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m: In function '-[FeedParser parser:didEndElement:namespaceURI:qualifiedName:]':/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:94: warning: 'NSString' may not respond to '-containsSubstring:'/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m:94: warning: assignment makes integer from pointer without a cast5(22@72"Class 'FeedParser' does not implement the 'NSXMLParserDelegate' protocol318403424#95#142#0(6@55"/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m318385150#45#0#45#0#45"class '*' does not implement the '*' protocol0(22@46"'NSString' may not respond to '-appendString:'318403424#347#116#0(6@55"/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m318385150#85#0#85#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)318403424#463#115#0(6@55"/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m318385150#85#0#85#0#0"0(22@51"'NSString' may not respond to '-containsSubstring:'318403424#914#121#0(6@55"/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m318385150#94#0#94#0#26"'*' may not respond to '*'0(22@52"Assignment makes integer from pointer without a cast318403424#1035#122#0(6@55"/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m318385150#94#0#94#0#0"0(0#0#55"/Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m8606030464#1910"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/FeedParser.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/FeedParser.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MediaController.o /Users/nickeubanks/Desktop/iPhone/Westside/MediaController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.347028
+e318403424.478583
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MediaController.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/MediaController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/nickeubanks/Desktop/iPhone/Westside/MediaController.m318403424#318403424#0(0"0(0#0#60"/Users/nickeubanks/Desktop/iPhone/Westside/MediaController.m8604007776#1920"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/MediaController.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MediaController.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MoreTabViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.478677
+e318403424.550654
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MoreTabViewController.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.m318403424#318403424#0(0"0(0#0#66"/Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.m8604447168#1932"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/MoreTabViewController.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Tweet.o /Users/nickeubanks/Desktop/iPhone/Westside/Tweet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.642264
+e318403424.701981
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Tweet.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/Tweet.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/nickeubanks/Desktop/iPhone/Westside/Tweet.m318403424#318403424#0(0"0(0#0#50"/Users/nickeubanks/Desktop/iPhone/Westside/Tweet.m7307761437599099904#1900"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/Tweet.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Tweet.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterParser.o /Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.554842
+e318403424.642176
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterParser.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m: In function '-[TwitterParser parseXML]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:41: warning: class 'TwitterParser' does not implement the 'NSXMLParserDelegate' protocol
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m: In function '-[TwitterParser parser:foundCharacters:]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: 'NSString' may not respond to '-appendString:'
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: (Messages without a matching method signature
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: will be assumed to return 'id' and accept
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: '...' as arguments.)
+lSLF07#2@66"Compile /Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m318403424#318403424#0(809"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m: In function '-[TwitterParser parseXML]':/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:41: warning: class 'TwitterParser' does not implement the 'NSXMLParserDelegate' protocol/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m: In function '-[TwitterParser parser:foundCharacters:]':/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: 'NSString' may not respond to '-appendString:'/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: (Messages without a matching method signature/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: will be assumed to return 'id' and accept/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m:70: warning: '...' as arguments.)3(22@75"Class 'TwitterParser' does not implement the 'NSXMLParserDelegate' protocol318403424#101#148#0(6@58"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m318400974#41#0#41#0#45"class '*' does not implement the '*' protocol0(22@46"'NSString' may not respond to '-appendString:'318403424#365#119#0(6@58"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m318400974#70#0#70#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)318403424#484#118#0(6@58"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m318400974#70#0#70#0#0"0(0#0#58"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m8603632096#1916"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/TwitterParser.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterParser.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.550749
+e318403424.664261
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterViewController.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m: In function '-[TwitterViewController initWithStyle:]':
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: 'UIViewController' may not respond to '-initWithStyle:'
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: (Messages without a matching method signature
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: will be assumed to return 'id' and accept
+o/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: '...' as arguments.)
+lSLF07#2@74"Compile /Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m318403424#318403424#0(608"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m: In function '-[TwitterViewController initWithStyle:]':/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: 'UIViewController' may not respond to '-initWithStyle:'/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: (Messages without a matching method signature/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: will be assumed to return 'id' and accept/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m:18: warning: '...' as arguments.)2(22@55"'UIViewController' may not respond to '-initWithStyle:'318403424#123#136#0(6@66"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m318401901#18#0#18#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)318403424#259#126#0(6@66"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m318401901#18#0#18#0#0"0(0#0#66"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m8603700448#1932"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/TwitterViewController.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideAppDelegate.o /Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403423.940876
+e318403424.257203
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideAppDelegate.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.m318403423#318403424#0(0"0(0#0#64"/Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.m8603010272#1928"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/WestsideAppDelegate.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideAppDelegate.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideViewController.o /Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403424.239007
+e318403424.346961
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideViewController.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.m318403424#318403424#0(0"0(0#0#67"/Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.m8603298912#1934"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/WestsideViewController.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/WestsideViewController.o0#
+
+CCompileC build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/main.o /Users/nickeubanks/Desktop/iPhone/Westside/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403423.939888
+e318403424.238924
+r1
+xCompileC
+xbuild/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/main.o
+x/Users/nickeubanks/Desktop/iPhone/Westside/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /Users/nickeubanks/Desktop/iPhone/Westside/main.m318403423#318403424#0(0"0(0#0#49"/Users/nickeubanks/Desktop/iPhone/Westside/main.m8604518528#1898"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -include /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch -c /Users/nickeubanks/Desktop/iPhone/Westside/main.m -o /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.xib
+s318403431.224444
+e318403432.067860
+r1
+xCompileXIB
+x/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.xib
+lSLF07#2@45"CompileXIB Westside/ConnectViewController.xib318403431#318403432#0(0"0(0#0#68"/Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.xib8595052288#587"    cd /Users/nickeubanks/Desktop/iPhone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/ConnectViewController.nib /Users/nickeubanks/Desktop/iPhone/Westside/ConnectViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/MediaController.xib
+s318403429.649957
+e318403431.448387
+r1
+xCompileXIB
+x/Users/nickeubanks/Desktop/iPhone/Westside/MediaController.xib
+lSLF07#2@39"CompileXIB Westside/MediaController.xib318403429#318403431#0(0"0(0#0#62"/Users/nickeubanks/Desktop/iPhone/Westside/MediaController.xib8604536480#575"    cd /Users/nickeubanks/Desktop/iPhone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/MediaController.nib /Users/nickeubanks/Desktop/iPhone/Westside/MediaController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.xib
+s318403431.839539
+e318403432.224781
+r1
+xCompileXIB
+x/Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.xib
+lSLF07#2@45"CompileXIB Westside/MoreTabViewController.xib318403431#318403432#0(0"0(0#0#68"/Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.xib8604423008#587"    cd /Users/nickeubanks/Desktop/iPhone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/MoreTabViewController.nib /Users/nickeubanks/Desktop/iPhone/Westside/MoreTabViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.xib
+s318403432.070329
+e318403432.545738
+r1
+xCompileXIB
+x/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.xib
+lSLF07#2@45"CompileXIB Westside/TwitterViewController.xib318403432#318403432#0(0"0(0#0#68"/Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.xib8603782464#587"    cd /Users/nickeubanks/Desktop/iPhone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/TwitterViewController.nib /Users/nickeubanks/Desktop/iPhone/Westside/TwitterViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib
+s318403425.301371
+e318403429.649812
+r1
+xCompileXIB
+x/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib:3: warning: The 'window' outlet of 'Westside App Delegate' is connected to 'Window' but 'window' is no longer defined on WestsideAppDelegate.
+o/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib:3: warning: The 'connectNav' outlet of 'Westside App Delegate' is connected to 'Selected Navigation Controller (Connect)' but 'connectNav' is no longer defined on WestsideAppDelegate.
+o/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib:3: warning: The 'tabBarController' outlet of 'Westside App Delegate' is connected to 'Tab Bar Controller' but 'tabBarController' is no longer defined on WestsideAppDelegate.
+lSLF07#2@43"CompileXIB Westside/en.lproj/MainWindow.xib318403425#318403429#0(742"/* com.apple.ibtool.document.warnings *//Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib:3: warning: The 'window' outlet of 'Westside App Delegate' is connected to 'Window' but 'window' is no longer defined on WestsideAppDelegate./Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib:3: warning: The 'connectNav' outlet of 'Westside App Delegate' is connected to 'Selected Navigation Controller (Connect)' but 'connectNav' is no longer defined on WestsideAppDelegate./Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib:3: warning: The 'tabBarController' outlet of 'Westside App Delegate' is connected to 'Tab Bar Controller' but 'tabBarController' is no longer defined on WestsideAppDelegate.3(22@129"The 'window' outlet of 'Westside App Delegate' is connected to 'Window' but 'window' is no longer defined on WestsideAppDelegate.318403429#18446744073709551615#0#0(6@66"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib318383558#3#0#3#0#0"0(22@171"The 'connectNav' outlet of 'Westside App Delegate' is connected to 'Selected Navigation Controller (Connect)' but 'connectNav' is no longer defined on WestsideAppDelegate.318403429#18446744073709551615#0#0(6@66"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib318383558#3#0#3#0#0"0(22@161"The 'tabBarController' outlet of 'Westside App Delegate' is connected to 'Tab Bar Controller' but 'tabBarController' is no longer defined on WestsideAppDelegate.318403429#18446744073709551615#0#0(6@66"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib318383558#3#0#3#0#0"0(0#0#66"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib8603626976#583"    cd /Users/nickeubanks/Desktop/iPhone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/MainWindow.nib /Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib
+s318403427.469598
+e318403431.216549
+r1
+xCompileXIB
+x/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on WestsideViewController.
+o/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib:-1: warning: The 'contentView' outlet of 'File's Owner' is connected to 'Web View' but 'contentView' is no longer defined on WestsideViewController.
+o/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib:-1: warning: The 'imageBanner' outlet of 'File's Owner' is connected to 'Image View' but 'imageBanner' is no longer defined on WestsideViewController.
+lSLF07#2@55"CompileXIB Westside/en.lproj/WestsideViewController.xib318403427#318403431#0(709"/* com.apple.ibtool.document.warnings *//Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on WestsideViewController./Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib:-1: warning: The 'contentView' outlet of 'File's Owner' is connected to 'Web View' but 'contentView' is no longer defined on WestsideViewController./Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib:-1: warning: The 'imageBanner' outlet of 'File's Owner' is connected to 'Image View' but 'imageBanner' is no longer defined on WestsideViewController.3(22@117"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on WestsideViewController.318403430#18446744073709551615#0#0(6@78"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib318221338#18446744073709551615#0#18446744073709551615#0#0"0(22@135"The 'contentView' outlet of 'File's Owner' is connected to 'Web View' but 'contentView' is no longer defined on WestsideViewController.318403430#18446744073709551615#0#0(6@78"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib318221338#18446744073709551615#0#18446744073709551615#0#0"0(22@137"The 'imageBanner' outlet of 'File's Owner' is connected to 'Image View' but 'imageBanner' is no longer defined on WestsideViewController.318403430#18446744073709551615#0#0(6@78"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib318221338#18446744073709551615#0#18446744073709551615#0#0"0(0#0#78"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib8597961824#607"    cd /Users/nickeubanks/Desktop/iPhone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/WestsideViewController.nib /Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/WestsideViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCopyStringsFile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/InfoPlist.strings Westside/en.lproj/InfoPlist.strings
+s318403425.300394
+e318403427.469472
+r1
+xCopyStringsFile
+x/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj/InfoPlist.strings
+xWestside/en.lproj/InfoPlist.strings
+lSLF07#2@40"Copy Westside/en.lproj/InfoPlist.strings318403425#318403427#0(0"0(0#0#69"/Users/nickeubanks/Desktop/iPhone/Westside/en.lproj/InfoPlist.strings8605808576#483"    cd /Users/nickeubanks/Desktop/iPhone    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary Westside/en.lproj/InfoPlist.strings --outdir /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/en.lproj0#
+
+CCpResource "build/Debug-iphonesimulator/Westside.app/App Project Schedule (Tent).pdf" "Documentation/App Project Schedule (Tent).pdf"
+s318403431.216706
+e318403431.512849
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Westside.app/App Project Schedule (Tent).pdf
+xDocumentation/App Project Schedule (Tent).pdf
+lSLF07#2@50"Copy Documentation/App Project Schedule (Tent).pdf318403431#318403431#0(0"0(0#0#79"/Users/nickeubanks/Desktop/iPhone/Documentation/App Project Schedule (Tent).pdf8604613728#491"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/nickeubanks/Desktop/iPhone/Documentation/App Project Schedule (Tent).pdf" /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app0#
+
+CCpResource "build/Debug-iphonesimulator/Westside.app/Westside App UI Mockups.pdf" "Documentation/Westside App UI Mockups.pdf"
+s318403431.219410
+e318403431.839450
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Westside.app/Westside App UI Mockups.pdf
+xDocumentation/Westside App UI Mockups.pdf
+lSLF07#2@46"Copy Documentation/Westside App UI Mockups.pdf318403431#318403431#0(0"0(0#0#75"/Users/nickeubanks/Desktop/iPhone/Documentation/Westside App UI Mockups.pdf8602616416#487"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/nickeubanks/Desktop/iPhone/Documentation/Westside App UI Mockups.pdf" /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app0#
+
+CCpResource build/Debug-iphonesimulator/Westside.app/SRS.doc Documentation/SRS.doc
+s318403431.217665
+e318403431.493195
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Westside.app/SRS.doc
+xDocumentation/SRS.doc
+lSLF07#2@26"Copy Documentation/SRS.doc318403431#318403431#0(0"0(0#0#55"/Users/nickeubanks/Desktop/iPhone/Documentation/SRS.doc8603457568#465"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/nickeubanks/Desktop/iPhone/Documentation/SRS.doc /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app0#
+
+CCpResource build/Debug-iphonesimulator/Westside.app/pic1.png Westside/pic1.png
+s318403432.067947
+e318403432.088824
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Westside.app/pic1.png
+xWestside/pic1.png
+lSLF07#2@22"Copy Westside/pic1.png318403432#318403432#0(0"0(0#0#51"/Users/nickeubanks/Desktop/iPhone/Westside/pic1.png8595270944#461"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/nickeubanks/Desktop/iPhone/Westside/pic1.png /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app0#
+
+CCpResource build/Debug-iphonesimulator/Westside.app/pic2.png Westside/pic2.png
+s318403432.069165
+e318403432.093064
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Westside.app/pic2.png
+xWestside/pic2.png
+lSLF07#2@22"Copy Westside/pic2.png318403432#318403432#0(0"0(0#0#51"/Users/nickeubanks/Desktop/iPhone/Westside/pic2.png8604490496#461"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/nickeubanks/Desktop/iPhone/Westside/pic2.png /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app0#
+
+CCpResource build/Debug-iphonesimulator/Westside.app/pic3.png Westside/pic3.png
+s318403432.069751
+e318403432.089795
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Westside.app/pic3.png
+xWestside/pic3.png
+lSLF07#2@22"Copy Westside/pic3.png318403432#318403432#0(0"0(0#0#51"/Users/nickeubanks/Desktop/iPhone/Westside/pic3.png8604019360#461"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/nickeubanks/Desktop/iPhone/Westside/pic3.png /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app0#
+
+CGenerateDSYMFile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app.dSYM /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside
+s318403425.109951
+e318403425.300289
+r1
+xGenerateDSYMFile
+x/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app.dSYM
+x/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Westside.app.dSYM build/Debug-iphonesimulator/Westside.app/Westside318403425#318403425#0(0"0(0#0#83"/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside8605796576#371"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside -o /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app.dSYM0#
+
+CLd /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside normal i386
+s318403424.702064
+e318403425.109861
+r1
+xLd
+x/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside
+xnormal
+xi386
+lSLF07#2@88"Link /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside318403424#318403425#0(0"0(0#0#0"8604588672#889"    cd /Users/nickeubanks/Desktop/iPhone    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -filelist /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Objects-normal/i386/Westside.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -prebind -o /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Westside0#
+
+CProcessInfoPlistFile /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Info.plist Westside/Westside-Info.plist
+s318403422.004373
+e318403422.123778
+r1
+xProcessInfoPlistFile
+x/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Info.plist
+xWestside/Westside-Info.plist
+lSLF07#2@36"Process Westside/Westside-Info.plist318403422#318403422#0(0"0(0#0#62"/Users/nickeubanks/Desktop/iPhone/Westside/Westside-Info.plist30681223440564324#476"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Westside/Westside-Info.plist -genpkginfo /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app/Info.plist0#
+
+CProcessPCH /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch.gch Westside/Westside-Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s318403422.123912
+e318403423.939724
+r1
+xProcessPCH
+x/var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch.gch
+xWestside/Westside-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@39"Precompile Westside/Westside-Prefix.pch318403422#318403423#0(0"0(0#0#62"/Users/nickeubanks/Desktop/iPhone/Westside/Westside-Prefix.pch8594839808#1794"    cd /Users/nickeubanks/Desktop/iPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-generated-files.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-own-target-headers.hmap -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-all-target-headers.hmap -iquote /Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/Westside-project-headers.hmap -F/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator -I/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/include -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources/i386 -I/Users/nickeubanks/Desktop/iPhone/build/Westside.build/Debug-iphonesimulator/Westside.build/DerivedSources -c /Users/nickeubanks/Desktop/iPhone/Westside/Westside-Prefix.pch -o /var/folders/Hm/Hm2gDrFYEjezWoNydQch0E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Westside-Prefix-cbwdovmmpbfhyehdatlzijxxwyud/Westside-Prefix.pch.gch0#
+
+CTouch /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app
+s318403432.545823
+e318403432.548876
+r1
+xTouch
+x/Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app
+lSLF07#2@80"Touch /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app318403432#318403432#0(0"0(0#0#0"8604487008#269"    cd /Users/nickeubanks/Desktop/iPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/nickeubanks/Desktop/iPhone/build/Debug-iphonesimulator/Westside.app0#
+

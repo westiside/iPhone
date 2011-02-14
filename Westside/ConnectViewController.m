@@ -13,6 +13,7 @@
 @synthesize twitterView;
 @synthesize webVC;
 @synthesize staffCell;
+@synthesize tv;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,7 +42,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    tv.backgroundColor = [UIColor clearColor];
+
     
     
     // Do any additional setup after loading the view from its nib.
@@ -49,6 +51,7 @@
 
 - (void)viewDidUnload
 {
+    [self setTv:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statuses type="array">
+<status>
+  <created_at>Mon Jan 31 01:27:09 +0000 2011</created_at>
+  <id>31886168706519040</id>
+  <text>Two bags of 8 o'clock coffee at publix for $3.86 is an awesome deal.</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Wed Jan 19 18:11:41 +0000 2011</created_at>
+  <id>27790311904251904</id>
+  <text>I love Wachovia, the ATM just said Happy Birthday, lol</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo xmlns:georss="http://www.georss.org/georss">
+    <georss:point>29.647286 -82.341223</georss:point>
+  </geo>
+  <coordinates xmlns:georss="http://www.georss.org/georss">
+    <georss:point>29.647286 -82.341223</georss:point>
+  </coordinates>
+  <place xmlns:georss="http://www.georss.org/georss">
+    <id>7dda05213481260c</id>
+    <name>Gainesville</name>
+    <full_name>Gainesville, FL</full_name>
+    <place_type>city</place_type>
+    <url>http://api.twitter.com/1/geo/id/7dda05213481260c.json</url>
+    <attributes/>
+    <bounding_box>
+      <georss:polygon>29.613578 -82.420516 29.613578 -82.218991 29.770553 -82.218991 29.770553 -82.420516</georss:polygon>
+    </bounding_box>
+    <country code="US">United States</country>
+  </place>
+  <contributors/>
+</status>
+<status>
+  <created_at>Tue Jan 18 03:42:51 +0000 2011</created_at>
+  <id>27209274711085056</id>
+  <text>The main reason I'm getting the Verizon iPhone: http://t.co/ieS4R7D</text>
+  <source>&lt;a href=&quot;http://itunes.apple.com/us/app/twitter/id409789998?mt=12&quot; rel=&quot;nofollow&quot;&gt;Twitter for Mac&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Mon Jan 17 04:24:55 +0000 2011</created_at>
+  <id>26857474459967488</id>
+  <text>@iphonehq right... Apple would announce a CDMA iPhone 5 days before the CDMA iPhone 4 is released... that makes sense, lol</text>
+  <source>&lt;a href=&quot;http://itunes.apple.com/us/app/twitter/id409789998?mt=12&quot; rel=&quot;nofollow&quot;&gt;Twitter for Mac&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id>26845759722749952</in_reply_to_status_id>
+  <in_reply_to_user_id>24914248</in_reply_to_user_id>
+  <in_reply_to_screen_name>iphonehq</in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Sun Jan 16 19:21:23 +0000 2011</created_at>
+  <id>26720688895164416</id>
+  <text>anyone else notice that Bing search has been a lot better lately? I'm starting to like it.</text>
+  <source>&lt;a href=&quot;http://itunes.apple.com/us/app/twitter/id409789998?mt=12&quot; rel=&quot;nofollow&quot;&gt;Twitter for Mac&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Sun Jan 16 17:24:41 +0000 2011</created_at>
+  <id>26691320026234880</id>
+  <text>@SarahDayOwen I've been a Droid user for a year and am getting an iphone on release day. Much better for longevity and quality apps.</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id>25753261973704704</in_reply_to_status_id>
+  <in_reply_to_user_id>20474594</in_reply_to_user_id>
+  <in_reply_to_screen_name>SarahDayOwen</in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications>false</notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following>false</following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent>false</follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Thu Jan 13 13:35:35 +0000 2011</created_at>
+  <id>25546500721344512</id>
+  <text>This is pretty good: &quot;@Curtsiphone: Verizon iPhone 4 priorities: if 4G were important, Sprint would be #1 http://tinyurl.com/46nwbh3&quot;</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Wed Jan 12 18:27:53 +0000 2011</created_at>
+  <id>25257674274766848</id>
+  <text>I love how my software testing professor has to explain aspects of American culture with all of his illustrations. So many foreigners.</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Wed Jan 12 15:10:01 +0000 2011</created_at>
+  <id>25207880038744064</id>
+  <text>It doesn't matter how many times you tell me morning bus lady, I will not be wasting money on a new Gator 1 card when I'm graduating in May</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Tue Jan 11 18:11:52 +0000 2011</created_at>
+  <id>24891254466682880</id>
+  <text>Verizon iPhone 4 is finally official. Looks like android is going to have a tough road ahead of it...</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Sun Jan 09 02:03:24 +0000 2011</created_at>
+  <id>23922755594362880</id>
+  <text>I'm going to have to join a club or something this semester, this weekend has been extremely  boring.</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Fri Jan 07 22:09:41 +0000 2011</created_at>
+  <id>23501554900279296</id>
+  <text>Big Verizon event on 1/11/11 @11am, lol. Wonder what that could be after a week of running the show at CES.  #ces #verizon</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Fri Jan 07 18:53:30 +0000 2011</created_at>
+  <id>23452180962877440</id>
+  <text>Having five hours of class in a row on Friday is very draining.</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Thu Jan 06 23:39:33 +0000 2011</created_at>
+  <id>23161780800847873</id>
+  <text>I have to say, I'm not very impressed by the LTE phones announced today. #ces</text>
+  <source>&lt;a href=&quot;http://itunes.apple.com/us/app/twitter/id409789998?mt=12&quot; rel=&quot;nofollow&quot;&gt;Twitter for Mac&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Thu Jan 06 03:19:58 +0000 2011</created_at>
+  <id>22854860722413568</id>
+  <text>So #microsoft is blowing android out of the water with windows phone 7 right now... this year is going to be interesting in mobile.</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Sat Jan 01 01:54:13 +0000 2011</created_at>
+  <id>21021343822643200</id>
+  <text>Thank you McDonald's for being the only fast food open in Gainesville.</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo xmlns:georss="http://www.georss.org/georss">
+    <georss:point>29.619702 -82.385344</georss:point>
+  </geo>
+  <coordinates xmlns:georss="http://www.georss.org/georss">
+    <georss:point>29.619702 -82.385344</georss:point>
+  </coordinates>
+  <place xmlns:georss="http://www.georss.org/georss">
+    <id>4ec01c9dbc693497</id>
+    <name>Florida</name>
+    <full_name>Florida, US</full_name>
+    <place_type>admin</place_type>
+    <url>http://api.twitter.com/1/geo/id/4ec01c9dbc693497.json</url>
+    <attributes/>
+    <bounding_box>
+      <georss:polygon>24.396308 -87.634896 24.396308 -79.974306 31.000968 -79.974306 31.000968 -87.634896</georss:polygon>
+    </bounding_box>
+    <country code="US">United States</country>
+  </place>
+  <contributors/>
+</status>
+<status>
+  <created_at>Mon Dec 27 01:04:37 +0000 2010</created_at>
+  <id>19196920102658048</id>
+  <text>it seems like I have a lot more &quot;oh crap&quot; moments with windows than with any other platform. At least there's usually a quick fix</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Sat Dec 25 20:24:12 +0000 2010</created_at>
+  <id>18763964343132162</id>
+  <text>&quot;The early bird might get the worm, but what happens to the early worm?&quot;</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo xmlns:georss="http://www.georss.org/georss">
+    <georss:point>30.548309 -84.20524</georss:point>
+  </geo>
+  <coordinates xmlns:georss="http://www.georss.org/georss">
+    <georss:point>30.548309 -84.20524</georss:point>
+  </coordinates>
+  <place xmlns:georss="http://www.georss.org/georss">
+    <id>dd051875ff9eb6a5</id>
+    <name>Killearn Acres</name>
+    <full_name>Killearn Acres, Tallahassee</full_name>
+    <place_type>neighborhood</place_type>
+    <url>http://api.twitter.com/1/geo/id/dd051875ff9eb6a5.json</url>
+    <attributes/>
+    <bounding_box>
+      <georss:polygon>30.53450799 -84.21486804 30.53450799 -84.18166884 30.55093596 -84.18166884 30.55093596 -84.21486804</georss:polygon>
+    </bounding_box>
+    <country code="US">United States</country>
+  </place>
+  <contributors/>
+</status>
+<status>
+  <created_at>Sat Dec 18 16:51:18 +0000 2010</created_at>
+  <id>16173673748631552</id>
+  <text>@androidcentral @droid_life Just finished compiling Gingerbread for the OG Droid. Everything is working but the camera. http://bit.ly/hCgyKz</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id>16887507</in_reply_to_user_id>
+  <in_reply_to_screen_name>androidcentral</in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+<status>
+  <created_at>Wed Dec 15 15:49:42 +0000 2010</created_at>
+  <id>15071004934021121</id>
+  <text>Operating Systems exam seemed to be way too easy.</text>
+  <source>&lt;a href=&quot;http://mobile.twitter.com&quot; rel=&quot;nofollow&quot;&gt;Twitter for Android&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <favorited>false</favorited>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <retweet_count>0</retweet_count>
+  <retweeted>false</retweeted>
+  <user>
+    <id>59136551</id>
+    <name>Nick Eubanks</name>
+    <screen_name>neubanks89</screen_name>
+    <location>Gainesville, FL</location>
+    <description></description>
+    <profile_image_url>http://a2.twimg.com/profile_images/593485587/n584290802_3622_normal.jpg</profile_image_url>
+    <url>http://www.facebook.com/NickEubanks</url>
+    <protected>false</protected>
+    <followers_count>16</followers_count>
+    <profile_background_color>C0DEED</profile_background_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_link_color>0084B4</profile_link_color>
+    <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+    <friends_count>28</friends_count>
+    <created_at>Wed Jul 22 14:17:10 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://a3.twimg.com/a/1296081712/images/themes/theme1/bg.png</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <profile_use_background_image>true</profile_use_background_image>
+    <notifications></notifications>
+    <geo_enabled>true</geo_enabled>
+    <verified>false</verified>
+    <following></following>
+    <statuses_count>102</statuses_count>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <follow_request_sent></follow_request_sent>
+    <listed_count>0</listed_count>
+    <show_all_inline_media>false</show_all_inline_media>
+    <is_translator>false</is_translator>
+  </user>
+  <geo/>
+  <coordinates/>
+  <place/>
+  <contributors/>
+</status>
+</statuses>

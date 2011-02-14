@@ -11,6 +11,7 @@
 
 
 @implementation MinistriesTabViewController
+@synthesize tv;
 @synthesize webVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,14 +40,13 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];    
-    
-   
-     
+    [super viewDidLoad]; 
+    tv.backgroundColor = [UIColor clearColor];
 }
 
 - (void)viewDidUnload
 {
+    [self setTv:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -148,6 +148,7 @@
     
     return cell;
 }
+
 
 
 #pragma mark - Table view delegate

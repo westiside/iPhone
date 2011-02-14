@@ -16,11 +16,13 @@
     TwitterViewController *twitterView;
     GenericWebNavViewController *webVC;
     UITableViewCell *staffCell;
+    UITableView *tv;
 }
 
 @property (nonatomic, retain) TwitterViewController *twitterView;
 @property (nonatomic, retain) GenericWebNavViewController *webVC;
 @property (nonatomic, retain) IBOutlet UITableViewCell *staffCell;
+@property (nonatomic, retain) IBOutlet UITableView *tv;
 
 -(void) pushWebWithLinkAndTitle:(NSString *)link:(NSString *)title;
 

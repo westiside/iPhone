@@ -12,6 +12,7 @@
 @implementation MoreViewController
 @synthesize map;
 @synthesize imageBanner;
+@synthesize tv;
 @synthesize webVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -43,6 +44,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    tv.backgroundColor = [UIColor clearColor];
     imageBanner.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic2" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic3" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic4" ofType:@"jpg"]] ,nil];
     imageBanner.animationDuration = 20;
     imageBanner.layer.cornerRadius = 12.0;
@@ -87,6 +89,7 @@
 - (void)viewDidUnload
 {
     [self setMap:nil];
+    [self setTv:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

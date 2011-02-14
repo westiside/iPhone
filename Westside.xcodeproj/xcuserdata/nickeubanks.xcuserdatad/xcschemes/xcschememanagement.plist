@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iPad.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2D49AE951308C28400862F5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2D84555212EA835D00F19F55</key>
 		<dict>
 			<key>primary</key>
