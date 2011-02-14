@@ -23,7 +23,7 @@
 -(Tweet*)initWithTextAndDate:(NSString*)text_in:(NSString*)date_in{
     [super   init];
     
-    text = text_in;
+    text = [text_in copy];
 
     CGSize constraintSize = CGSizeMake(200.0f, MAXFLOAT);
     UIFont *font = [UIFont fontWithName:@"Helvetica" size:15];

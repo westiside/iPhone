@@ -19,9 +19,7 @@
 {
     [tweetTable release];
     [tvCell release];
-    twitter = nil;
-    [twitter release];
-    
+    [twitter dealloc];
     [super dealloc];
 }
 
@@ -49,7 +47,6 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    [twitter release];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
