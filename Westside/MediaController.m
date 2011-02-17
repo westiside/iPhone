@@ -52,7 +52,6 @@
     [self refreshButtonSelect:nil];
     [feeds parseXML];    
     [podcastTable reloadData];    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -152,7 +151,6 @@
 #pragma mark - Accessory Methods
 
 - (void)loadPodcast:(NSString *)string{
-    NSLog(@"Loading Podcast");
     
 	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     
@@ -282,10 +280,12 @@
     if(audioSelected){
         Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
         [self loadPodcast:f.feedLink];
+       //NSLog(f.feedLink);
     } else
     {
         Feed *f = [feeds.videoFeeds objectAtIndex:indexPath.row];
         [self loadPodcast:f.feedLink];
+        //NSLog(f.feedLink);
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

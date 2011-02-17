@@ -196,13 +196,13 @@
             case 5:
             {
                 label = @"Missions";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/missions/";
+                link =  @"http://www.westsidemissions.com";//http://www.westsidemediaministry.com/connect/ministries/missions/";
                 break;
             }
             case 6:
             {
                 label = @"Music";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/music/";
+                link =  @"http://www.westsidemusicministry.com";//http://www.westsidemediaministry.com/connect/ministries/music/";
                 break;
             }
             case 7:

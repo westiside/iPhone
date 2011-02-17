@@ -8,12 +8,14 @@
 
 #import "ConnectViewController.h"
 #import "WestsideAppDelegate.h"
+#import "WPParser.h"
 
 @implementation ConnectViewController
 @synthesize twitterView;
 @synthesize webVC;
 @synthesize staffCell;
 @synthesize tv;
+@synthesize staffVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +28,8 @@
 
 - (void)dealloc
 {
+    if(webVC) [webVC release];
+    if(staffVC) [staffVC release];
     [super dealloc];
 }
 
@@ -43,7 +47,7 @@
 {
     [super viewDidLoad];
     tv.backgroundColor = [UIColor clearColor];
-
+    
     
     
     // Do any additional setup after loading the view from its nib.
@@ -111,18 +115,18 @@
         
         cell.textLabel.text = @"Pastor's Perspectives";
         
-
+        
     }else if(indexPath.section == 1) {
         if (cell == nil) {
             cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
         }
-
+        
         
         if(indexPath.row ==0 && indexPath.section == 1) cell.textLabel.text = @"@wbcgainesville";
         else if(indexPath.row ==1 && indexPath.section == 1) cell.textLabel.text = @"@westsidecollege";
         
         
-
+        
     }else if(indexPath.section == 2){
         static NSString *MyIdentifier = @"TweetCell";
         
@@ -139,7 +143,7 @@
         UILabel *title = (UILabel *)[cell viewWithTag:2];
         UILabel *email = (UILabel *)[cell viewWithTag:3];
         NSString *imgPath = @"chad";
-      
+        
         
         switch (indexPath.row) {
             case 0: //gary
@@ -214,18 +218,18 @@
             default:
                 break;
         }
-                
+        
         cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgPath ofType:@"png"]];
         
         
         [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
-
+        
         return cell;
     }
     
     [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
     [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
-
+    
     return cell;
 }
 
@@ -242,7 +246,7 @@
             break;
         }
     } 
-        
+    
     return title;
 }
 
@@ -269,9 +273,9 @@
     label.backgroundColor = [UIColor clearColor];
     label.textColor = [UIColor whiteColor];
     /*[UIColor colorWithHue:(136.0/360.0)  // Slightly bluish green
-                                 saturation:1.0
-                                 brightness:0.60
-                                      alpha:1.0];*/
+     saturation:1.0
+     brightness:0.60
+     alpha:1.0];*/
     label.shadowColor = [UIColor blackColor];
     label.shadowOffset = CGSizeMake(0.0, 1.0);
     label.font = [UIFont boldSystemFontOfSize:16];
@@ -296,15 +300,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.section == 1){
         if(twitterView != nil) {
             [twitterView release];
         }
-           
+        
         TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController"bundle:nil];
         twitterView = aTwitterView;
-            
+        
         
         
         if(indexPath.row ==0 && indexPath.section == 1) twitterView.title = @"@wbcgainesville";
@@ -318,8 +322,17 @@
         
     }
     else if(indexPath.section == 0){
-       
-        [self pushWebWithLinkAndTitle:@"http://www.westsidemediaministry.com/who-we-are/pastors-perspectives/":@"Pastor's Perspective"];
+        //feed://www.westsidemediaministry.com/who-we-are/pastors-perspectives/feed/rss/
+        //http://www.westsidemediaministry.com/who-we-are/pastors-perspectives/
+        //[self pushWebWithLinkAndTitle:@"http://www.westsidemediaministry.com/who-we-are/pastors-perspectives/feed/":@"Pastor's Perspective"];
+        
+        WPParser *parser = [[WPParser alloc] initWithLink:@"http://www.westsidebaptist.org/2011/02/art-listening/feed/rss/"];
+        NSString *html = [parser parseXML];
+        
+        [self pushWebWithHTMLAndTitle:html :@"Pastor's Perspectives":[parser getLink]];
+        
+        [parser release];
+        
         
     } else if (indexPath.section == 2){
         
@@ -328,7 +341,7 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email.text]]];
         
         
-               
+        [self pushStaffWithID:1];
     }
     
 }
@@ -350,7 +363,48 @@
     WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [delegate.connectNav pushViewController:webVC animated:YES]; 
     [delegate.connectNav setNavigationBarHidden:NO animated:YES];
-   
+    
+    
+}
+
+-(void) pushWebWithHTMLAndTitle:(NSString *)html:(NSString *)title:(NSString*)link{
+    if(webVC != nil) {
+        [webVC release];
+    }
+    
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithHTMLAndLink:html:link];
+    
+    webVC =aWebNavView;
+    
+    aWebNavView.title = title;
+    aWebNavView.hidesBottomBarWhenPushed = YES;
+    
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.connectNav pushViewController:webVC animated:YES]; 
+    [delegate.connectNav setNavigationBarHidden:NO animated:YES];
+    
+    
+}
+
+
+
+-(void) pushStaffWithID:(int)ID{
+    if(staffVC != nil) {
+        [staffVC release];
+    }
+    
+    StaffDetailsViewController *aStaffNavView = [[StaffDetailsViewController alloc] init];
+    
+    staffVC =aStaffNavView;
+    
+    aStaffNavView.title = @"Gary Crawford";
+    aStaffNavView.hidesBottomBarWhenPushed = YES;
+    
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.connectNav pushViewController:staffVC animated:YES]; 
+    [delegate.connectNav setNavigationBarHidden:NO animated:YES];
+    
+    
     
 }
 

@@ -12,15 +12,26 @@
 @implementation GenericWebNavViewController
 @synthesize webView;
 @synthesize link;
+@synthesize html;
 
 
 -(id)initWithLinkWithScale:(NSString *)string:(BOOL)scale_in{
     
     self = [super init];
     if (self) {
-        self.link = string;
+        link = [string copy];
         scale = scale_in;
-        
+        wp = NO;
+    }
+    return self;
+}
+
+-(id)initWithHTMLAndLink:(NSString *)string:(NSString *)link_in{
+    self = [super init];
+    if (self) {
+        html = [string copy];
+        link = [link_in copy];
+        wp = YES;
     }
     return self;
 }
@@ -29,6 +40,8 @@
 - (void)dealloc
 {
     [super dealloc];
+    [link release];
+    if(html) [html release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,8 +58,15 @@
 {
     [super viewDidLoad];
 
-    [webView setScalesPageToFit:scale];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];
+    
+    if (wp){
+        [webView setScalesPageToFit:NO];
+        [webView loadHTMLString:html baseURL:nil];
+    }
+    else {
+        [webView setScalesPageToFit:scale];
+        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:link]]];
+    }
     
 }
 
