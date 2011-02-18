@@ -336,9 +336,6 @@
         
     } else if (indexPath.section == 2){
         
-        UILabel *email = (UILabel *)[[tableView cellForRowAtIndexPath:indexPath] viewWithTag:3];
-        
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email.text]]];
         
         
         [self pushStaffWithID:1];

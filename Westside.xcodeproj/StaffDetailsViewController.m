@@ -80,7 +80,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return 3;
 }
 
 
@@ -97,8 +97,14 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
+    if (indexPath.row == 0) cell.textLabel.text = @"Launch Email";
+    else if(indexPath.row == 1) cell.textLabel.text = @"Twitter Timeline";
+    else cell.textLabel.text = @"Facebook Page";
     
     
+    [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
+    
+    [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
     
     return cell;
     
@@ -111,7 +117,10 @@
 {
     
     
-    
+    if (indexPath.row == 0) {
+        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:@"dmcalhany@westsidebaptist.org"]]];
+    }
     
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

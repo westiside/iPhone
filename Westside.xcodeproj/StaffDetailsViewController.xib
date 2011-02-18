@@ -84,7 +84,7 @@
 						<int key="IBUIContentMode">4</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Staff Name</string>
+						<string key="IBUIText">Gary Crawford</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">24</double>
@@ -102,7 +102,7 @@
 					<object class="IBUITableView" id="467153666">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 277}, {320, 119}}</string>
+						<string key="NSFrame">{{0, 256}, {320, 146}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
@@ -161,7 +161,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAACAgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Staff Title</string>
+						<string key="IBUIText">Senior Pastor</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica-LightOblique</string>
 							<double key="NSSize">17</double>
