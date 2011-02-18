@@ -15,13 +15,87 @@
 @synthesize nameLabel;
 @synthesize titleLabel;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+- (id)initWithID:(int)ID{
+    self = [super init];
+    if(self){        
+        switch (ID) {
+            case 0: //gary
+                imgPath = @"gary";
+                name = @"Gary Crawford";
+                title = @"Senior Pastor";
+                email = @"dmcalhany@westsidebaptist.org";
+                break;
+            case 1: //daniel
+                imgPath = @"daniel" ;
+                name = @"Daniel Morris" ;
+                title= @"Associate Pastor, Minister of Music" ;
+                email = @"dmorris@westsidebaptist.org" ;
+                break;
+            case 2: //mike
+                imgPath = @"mike" ;
+                name = @"Mike Ricks" ;
+                title = @"Associate Minister of Music and Media" ;
+                email = @"mricks@westsidebaptist.org" ;
+                break;
+            case 3: //phil
+                imgPath = @"phil" ;
+                name = @"Phil Young" ;
+                title = @"Sr. Associate Pastor" ;
+                email = @"pyoung@westsidebaptist.org" ;
+                break;
+            case 4: //steve
+                imgPath = @"steve" ;
+                name = @"Steve Loy" ;
+                title = @"Minister of College" ;
+                email = @"sloy@westsidebaptist.org" ;
+                break;
+            case 5: //chad
+                imgPath = @"chad" ;
+                name = @"Chad Chadwick" ;
+                title = @"Youth Pastor" ;
+                email = @"gchadwick@westsidebaptist.org" ;
+                break;
+            case 6: //glen
+                imgPath = @"glen" ;
+                name = @"Glen McKinney" ;
+                title = @"Associate Paster, Senior Adult Minister" ;
+                email = @"gmckinney@westsidebaptist.org" ;
+                break;
+            case 7: //tom
+                imgPath = @"tom" ;
+                name = @"Tom Grubbs" ;
+                title = @"Associate Pastor, Minister of Recreation" ;
+                email = @"tgrubbs@westsidebaptist.org" ;
+                break;
+            case 8: //ron
+                imgPath = @"ron" ;
+                name = @"Ron Surber" ;
+                title = @"Minister of Education" ;
+                email = @"rsurber@westsidebaptist.org" ;
+                break;
+            case 9: //sheryl
+                imgPath = @"sheryl" ;
+                name = @"Sheryl Bennett" ;
+                title = @"Minister of Missions, Prayer and Evangelism" ;
+                email = @"sbennett@westsidebaptist.org" ;
+                break;
+            case 10: //john
+                imgPath = @"john" ;
+                name = @"John Park" ;
+                title = @"Minister to Children" ;
+                email = @"jpark@westsidebaptist.org" ;
+                break;
+                
+                
+                
+            default:
+                break;
+        }
+               
     }
-    return self;
+    
+    return self;     
+        
 }
 
 - (void)dealloc
@@ -42,6 +116,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self setTitle:name];
+    [nameLabel setText:name];
+    [titleLabel setText:title];
+    [image setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgPath ofType:@"png"]]];
+    [nameLabel setText:name];
+    [titleLabel setText:title];
+    [image setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgPath ofType:@"png"]]];
+    
     tv.backgroundColor = [UIColor clearColor];
     image.layer.cornerRadius = 12.0;
     image.clipsToBounds = YES;
@@ -80,7 +163,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 3;
+    int number = 1;
+    if(twitter) number++;
+    if(facebook) number++;
+    return number;
 }
 
 
@@ -97,9 +183,9 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    if (indexPath.row == 0) cell.textLabel.text = @"Launch Email";
-    else if(indexPath.row == 1) cell.textLabel.text = @"Twitter Timeline";
-    else cell.textLabel.text = @"Facebook Page";
+    if (indexPath.row == 0) cell.textLabel.text = @"Send an Email";
+    else if(twitter) cell.textLabel.text = @"Twitter Timeline";
+    else if(facebook) cell.textLabel.text = @"Facebook Page";
     
     
     [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
@@ -116,15 +202,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    //[[tableView cellForRowAtIndexPath:indexPath].textLabel.text isEqualToString:@"Send an Email"];
     
-    if (indexPath.row == 0) {
+    if (indexPath.row == 0) { //email
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email]]];
+    }
+    else if (twitter) { //twitter
+        NSLog(@"Twitter");
         
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:@"dmcalhany@westsidebaptist.org"]]];
+    }
+    else if (facebook) { //facebook
+        NSLog(@"Facebook");
     }
     
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
        
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
 

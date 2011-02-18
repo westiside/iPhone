@@ -48,9 +48,7 @@
     [super viewDidLoad];
     [activityIndicator startAnimating];
     audioSelected = YES;
-    feeds = [[FeedParser alloc] init];
-    [self refreshButtonSelect:nil];
-    [feeds parseXML];    
+    [self refreshPodCasts];
     [podcastTable reloadData];    
 }
 
@@ -114,10 +112,11 @@
 }
 
 #pragma mark - User Interaction
-
-- (IBAction)viewChangeRequest:(id)sender {
-    [self refreshPodCasts:[mediaViewSelector selectedSegmentIndex]:NO];
-    
+- (IBAction)typeChanged:(id)sender {
+    if ([mediaViewSelector selectedSegmentIndex] == 0) {
+        audioSelected = YES;
+    }else   audioSelected = NO;
+    [self   refreshPodCasts];
 }
 
 - (IBAction)liveViewButtonSelected:(id)sender {
@@ -141,12 +140,6 @@
     
 }
 
-- (IBAction)refreshButtonSelect:(id)sender {
-    if(audioSelected) [self refreshPodCasts:0 :YES];
-    else [self refreshPodCasts:1 :YES];
-}
-
-
 
 #pragma mark - Accessory Methods
 
@@ -161,38 +154,15 @@
 }
 
 
-- (void)refreshPodCasts:(int)viewRequest:(BOOL)parse{
+- (void)refreshPodCasts{
     if(!feeds){
         feeds = [[FeedParser alloc] init];
-        [self refreshButtonSelect:nil];
-    }
-    if(parse) {
-       
         [feeds parseXML];
     }
-    
-    switch(viewRequest){
-        case 0 :    //Audio
-        {
-            
-            audioSelected = YES;     
-            break;
-        }
-        case 1  :   //Video
-        {
-            
-            audioSelected = NO;
-            break;
-        }
-            
-    }
-    
-    
-    
+       
     [podcastTable beginUpdates];
     [podcastTable deleteSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
-    if(parse) [podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-    else if(audioSelected)[podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
+    if(audioSelected)[podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
     else [podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationRight];
     [podcastTable endUpdates];
     
@@ -262,7 +232,6 @@
     cell.textLabel.text = f.feedName;
     cell.detailTextLabel.text = f.pubDate;
     [cell.detailTextLabel setTextColor:[UIColor darkGrayColor]];
-    //cell.imageView.image = f.image;
    
 
     
@@ -280,7 +249,7 @@
     if(audioSelected){
         Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
         [self loadPodcast:f.feedLink];
-       //NSLog(f.feedLink);
+        //NSLog(f.feedLink);
     } else
     {
         Feed *f = [feeds.videoFeeds objectAtIndex:indexPath.row];

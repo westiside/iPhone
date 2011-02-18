@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D01C672130E09A7000FDE79 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D01C670130E09A7000FDE79 /* HomeViewController.m */; };
+		2D01C673130E09A7000FDE79 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D01C671130E09A7000FDE79 /* HomeViewController.xib */; };
 		2D0F8F4712EBB19700C9B88B /* MediaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4512EBB19700C9B88B /* MediaController.m */; };
 		2D0F8F4812EBB19700C9B88B /* MediaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F8F4612EBB19700C9B88B /* MediaController.xib */; };
 		2D16DA0213046B7D00D080D5 /* ministrybanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D16DA0113046B7D00D080D5 /* ministrybanner.png */; };
@@ -108,6 +110,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D01C66F130E09A7000FDE79 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Westside.xcodeproj/HomeViewController.h; sourceTree = "<group>"; };
+		2D01C670130E09A7000FDE79 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Westside.xcodeproj/HomeViewController.m; sourceTree = "<group>"; };
+		2D01C671130E09A7000FDE79 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Westside.xcodeproj/HomeViewController.xib; sourceTree = "<group>"; };
 		2D0F8F4412EBB19700C9B88B /* MediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaController.h; sourceTree = "<group>"; };
 		2D0F8F4512EBB19700C9B88B /* MediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaController.m; sourceTree = "<group>"; };
 		2D0F8F4612EBB19700C9B88B /* MediaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaController.xib; sourceTree = "<group>"; };
@@ -269,6 +274,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D01C674130E09AC000FDE79 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D01C66F130E09A7000FDE79 /* HomeViewController.h */,
+				2D01C670130E09A7000FDE79 /* HomeViewController.m */,
+				2D01C671130E09A7000FDE79 /* HomeViewController.xib */,
+			);
+			name = Home;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		2D3BF11512F1065D005CD1C3 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +388,7 @@
 				2DD5D38512F7A00F00D67898 /* Resources */,
 				2D49AEB71308C32B00862F5E /* iPad */,
 				2DC012B51307325B00ADCC98 /* App Delegate */,
+				2D01C674130E09AC000FDE79 /* Home */,
 				2D9B98BD12F767CF001FA322 /* Connect Tab */,
 				2D9B98BA12F76794001FA322 /* Media Tab */,
 				2DFA2A5C12F7765900E3A8F9 /* Ministries Tab */,
@@ -734,6 +751,7 @@
 				2D49AEC21308C53E00862F5E /* MainWindow-iPad.xib in Resources */,
 				2D4062C71309C08F00A307E4 /* StaffDetailsViewController.xib in Resources */,
 				2D7DFF611309F27100661FFF /* test.xml in Resources */,
+				2D01C673130E09A7000FDE79 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +802,7 @@
 				2DEFCA1013059029008763AC /* Reachability.m in Sources */,
 				2D4062C61309C08F00A307E4 /* StaffDetailsViewController.m in Sources */,
 				2D7DFF661309F57B00661FFF /* WPParser.m in Sources */,
+				2D01C672130E09A7000FDE79 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

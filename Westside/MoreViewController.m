@@ -206,12 +206,6 @@
                 [self directions:nil];
                 break;
             }
-            /*case 2: 
-            {
-                label = @"Get Directions";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/youth/";
-                break;
-            }*/
            
            
             default:

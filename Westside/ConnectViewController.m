@@ -46,6 +46,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.connectNav setNavigationBarHidden:YES animated:NO];
     tv.backgroundColor = [UIColor clearColor];
     
     
@@ -322,9 +325,6 @@
         
     }
     else if(indexPath.section == 0){
-        //feed://www.westsidemediaministry.com/who-we-are/pastors-perspectives/feed/rss/
-        //http://www.westsidemediaministry.com/who-we-are/pastors-perspectives/
-        //[self pushWebWithLinkAndTitle:@"http://www.westsidemediaministry.com/who-we-are/pastors-perspectives/feed/":@"Pastor's Perspective"];
         
         WPParser *parser = [[WPParser alloc] initWithLink:@"http://www.westsidebaptist.org/2011/02/art-listening/feed/rss/"];
         NSString *html = [parser parseXML];
@@ -338,7 +338,7 @@
         
         
         
-        [self pushStaffWithID:1];
+        [self pushStaffWithID:indexPath.row];
     }
     
 }
@@ -390,11 +390,10 @@
         [staffVC release];
     }
     
-    StaffDetailsViewController *aStaffNavView = [[StaffDetailsViewController alloc] init];
+    StaffDetailsViewController *aStaffNavView = [[StaffDetailsViewController alloc] initWithID:ID];
     
     staffVC =aStaffNavView;
     
-    aStaffNavView.title = @"Gary Crawford";
     aStaffNavView.hidesBottomBarWhenPushed = YES;
     
     WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
