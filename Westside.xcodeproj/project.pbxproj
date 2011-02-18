@@ -49,7 +49,6 @@
 		2D7ADD5C12FA248C00B28EF1 /* TwitterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */; };
 		2D7ADD5F12FA24A100B28EF1 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5E12FA24A100B28EF1 /* Tweet.m */; };
 		2D7DBC1F12FDCECA00287814 /* NavBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7DBC1E12FDCECA00287814 /* NavBack.png */; };
-		2D7DFF611309F27100661FFF /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D7DFF601309F27100661FFF /* test.xml */; };
 		2D7DFF661309F57B00661FFF /* WPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7DFF651309F57B00661FFF /* WPParser.m */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
@@ -171,7 +170,6 @@
 		2D7ADD5D12FA24A100B28EF1 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 		2D7ADD5E12FA24A100B28EF1 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		2D7DBC1E12FDCECA00287814 /* NavBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBack.png; sourceTree = "<group>"; };
-		2D7DFF601309F27100661FFF /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = test.xml; path = ../Westside/test.xml; sourceTree = "<group>"; };
 		2D7DFF641309F57B00661FFF /* WPParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPParser.h; sourceTree = "<group>"; };
 		2D7DFF651309F57B00661FFF /* WPParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPParser.m; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,7 +286,6 @@
 		2D3BF11512F1065D005CD1C3 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				2D7DFF601309F27100661FFF /* test.xml */,
 				2D3BF11612F1065D005CD1C3 /* App Project Schedule (Tent).pdf */,
 				2D3BF11712F1065D005CD1C3 /* SRS.doc */,
 				2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */,
@@ -750,7 +747,6 @@
 				2D49AEC01308C45D00862F5E /* Default-Portrait~ipad.png in Resources */,
 				2D49AEC21308C53E00862F5E /* MainWindow-iPad.xib in Resources */,
 				2D4062C71309C08F00A307E4 /* StaffDetailsViewController.xib in Resources */,
-				2D7DFF611309F27100661FFF /* test.xml in Resources */,
 				2D01C673130E09A7000FDE79 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

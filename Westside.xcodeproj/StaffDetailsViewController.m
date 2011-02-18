@@ -7,13 +7,14 @@
 //
 
 #import "StaffDetailsViewController.h"
-
+#import "WestsideAppDelegate.h"
 
 @implementation StaffDetailsViewController
 @synthesize tv;
 @synthesize image;
 @synthesize nameLabel;
 @synthesize titleLabel;
+@synthesize webVC;
 
 - (id)initWithID:(int)ID{
     self = [super init];
@@ -150,6 +151,23 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(void) pushWebWithLinkAndTitle:(NSString *)link:(NSString *)nav_title{
+    if(webVC != nil) {
+        [webVC release];
+    }
+    
+    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkWithScale:link :YES];
+    
+    webVC =aWebNavView;
+    
+    aWebNavView.title = nav_title;
+    aWebNavView.hidesBottomBarWhenPushed = YES;
+    
+    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.connectNav pushViewController:webVC animated:YES]; 
+    
+    
+}
 
 
 #pragma mark - Table view data source
@@ -184,7 +202,7 @@
     }
     
     if (indexPath.row == 0) cell.textLabel.text = @"Send an Email";
-    else if(twitter) cell.textLabel.text = @"Twitter Timeline";
+    else if(twitter && indexPath.row == 1) cell.textLabel.text = @"Twitter Timeline";
     else if(facebook) cell.textLabel.text = @"Facebook Page";
     
     
@@ -207,18 +225,20 @@
     if (indexPath.row == 0) { //email
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email]]];
     }
-    else if (twitter) { //twitter
+    else if (twitter && indexPath.row == 1) { //twitter
         NSLog(@"Twitter");
-        
+        [self pushWebWithLinkAndTitle:[@"http://mobile.twitter.com/" stringByAppendingString:twitter] :[@"@" stringByAppendingString:twitter]];
     }
     else if (facebook) { //facebook
         NSLog(@"Facebook");
+        [self pushWebWithLinkAndTitle:[@"https://www.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];
     }
     
        
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
+
 
 
 
