@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Feed.h"
-
+#define PODCASTFEED @"http://sermon.net/rss/wbcmedia/main_channel"
+#define LIVEFEED @"http://wbcmedia.sermon.net/l/main"
 
 @interface FeedParser : NSObject <NSXMLParserDelegate> {
 @private

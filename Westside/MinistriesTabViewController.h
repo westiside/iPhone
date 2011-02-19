@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "GenericWebNavViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#define CHILDREN @"http://www.westsidebaptist.org/connect/ministries/children/"
+#define ADULT @"http://www.westsidebaptist.org/connect/ministries/adult-ministries/"
+#define YOUTH @"http://www.westsidebaptist.org/connect/ministries/youth/"
+#define MUSIC @"http://www.westsidebaptist.org/connect/ministries/music/"
+#define MEDIA @"http://www.westsidebaptist.org/connect/ministries/media/"
+#define MISSIONS @"http://www.westsidebaptist.org/connect/ministries/missions/"
+#define COLLEGE @"http://www.westsidebaptist.org/connect/ministries/college/"
+#define WEBSITE @"http://www.westsidebaptist.org/";
 
 @interface MinistriesTabViewController : UIViewController {
 @private

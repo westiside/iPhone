@@ -25,6 +25,8 @@
                 name = @"Gary Crawford";
                 title = @"Senior Pastor";
                 email = @"dmcalhany@westsidebaptist.org";
+                facebook = @"NickEubanks";
+                twitter = @"neubanks89";
                 break;
             case 1: //daniel
                 imgPath = @"daniel" ;
@@ -102,6 +104,7 @@
 - (void)dealloc
 {
     [super dealloc];
+    if(webVC) [webVC release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -228,7 +231,8 @@
     else if (twitter && indexPath.row == 1) { //twitter
         NSLog(@"Twitter");
         [self pushWebWithLinkAndTitle:[@"http://mobile.twitter.com/" stringByAppendingString:twitter] :[@"@" stringByAppendingString:twitter]];
-    }
+        
+           }
     else if (facebook) { //facebook
         NSLog(@"Facebook");
         [self pushWebWithLinkAndTitle:[@"https://www.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];

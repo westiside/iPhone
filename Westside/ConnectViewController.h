@@ -11,6 +11,7 @@
 #import "TwitterViewController.h"
 #import "GenericWebNavViewController.h"
 #import "StaffDetailsViewController.h"
+#define WORDPRESSFEED @"http://www.westsidebaptist.org/2011/02/art-listening/feed/rss/"
 
 @interface ConnectViewController : UIViewController {
 @private

@@ -11,6 +11,8 @@
 
 @interface HomeViewController : UIViewController {
     
+    UIImageView *picBanner;
 }
+@property (nonatomic, retain) IBOutlet UIImageView *picBanner;
 
 @end

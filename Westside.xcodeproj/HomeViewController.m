@@ -10,6 +10,7 @@
 
 
 @implementation HomeViewController
+@synthesize picBanner;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,6 +24,7 @@
 - (void)dealloc
 {
     [super dealloc];
+    [picBanner release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,11 +40,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    //picBanner.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic2" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic3" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic4" ofType:@"jpg"]] ,nil];
+    //picBanner.animationDuration = 15;
+    //[picBanner startAnimating];
+
 }
 
 - (void)viewDidUnload
 {
+    [self setPicBanner:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

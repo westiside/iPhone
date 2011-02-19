@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
-
 #import "FeedParser.h"
 
 @interface MediaController : UIViewController {
@@ -19,13 +18,12 @@
     UITableView *podcastTable;
     UITableViewCell *PodcastCell;
     BOOL audioSelected;
-    UIActivityIndicatorView *activityIndicator;
+    BOOL loaded;
 }
 @property (nonatomic, retain) IBOutlet UITableView *podcastTable;
 @property (nonatomic, retain) IBOutlet UITableViewCell *PodcastCell;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *mediaViewSelector;
 @property (nonatomic, retain) IBOutlet UITableViewCell *tvCell;
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
 - (IBAction)liveViewButtonSelected:(id)sender;
 - (void)loadPodcast:(NSString *)string;
 - (void)refreshPodCasts;

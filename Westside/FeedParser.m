@@ -42,11 +42,11 @@
     [audioFeeds removeAllObjects];
     [videoFeeds removeAllObjects];
     
-    NSURL *xmlURL = [NSURL URLWithString:@"http://sermon.net/rss/wbcmedia/main_channel"];
+    NSURL *xmlURL = [NSURL URLWithString:PODCASTFEED];
     NSXMLParser *feedParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
     [feedParser setDelegate:self];
     [feedParser setShouldResolveExternalEntities:YES];
-    [feedParser parse]; 
+    [feedParser parse];
     [feedParser release];
     
 }

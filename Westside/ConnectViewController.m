@@ -59,6 +59,7 @@
 - (void)viewDidUnload
 {
     [self setTv:nil];
+    [self setStaffCell:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -82,7 +83,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"Loading Table View");
+    
     int number = 0;
     switch(section){
         case 0: 
@@ -326,7 +327,7 @@
     }
     else if(indexPath.section == 0){
         
-        WPParser *parser = [[WPParser alloc] initWithLink:@"http://www.westsidebaptist.org/2011/02/art-listening/feed/rss/"];
+        WPParser *parser = [[WPParser alloc] initWithLink:WORDPRESSFEED];
         NSString *html = [parser parseXML];
         
         [self pushWebWithHTMLAndTitle:html :@"Pastor's Perspectives":[parser getLink]];

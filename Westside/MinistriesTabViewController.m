@@ -26,6 +26,7 @@
 - (void)dealloc
 {
     [super dealloc];
+    if(webVC) [webVC release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -166,49 +167,49 @@
             case 0:
             {
                 label = @"Website";
-                link = @"http://www.westsidemediaministry.com/";
+                link = WEBSITE;
                 break;
             }
             case 1: 
             {
                 label = @"Children";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/children/";
+                link =  CHILDREN;
                 break;
             }
             case 2: 
             {
                 label = @"Youth";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/youth/";
+                link =  YOUTH;
                 break;
             }
             case 3:
             {
                 label = @"College";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/college/";
+                link =  COLLEGE;
                 break;
             }
             case 4:
             {
                 label = @"Adult Ministries";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/adult-ministries/";
+                link =  ADULT;
                 break;
             }
             case 5:
             {
                 label = @"Missions";
-                link =  @"http://www.westsidemissions.com";//http://www.westsidemediaministry.com/connect/ministries/missions/";
+                link =  MISSIONS;
                 break;
             }
             case 6:
             {
                 label = @"Music";
-                link =  @"http://www.westsidemusicministry.com";//http://www.westsidemediaministry.com/connect/ministries/music/";
+                link =  MUSIC;
                 break;
             }
             case 7:
             {
                 label = @"Media Ministry";
-                link =  @"http://www.westsidemediaministry.com/connect/ministries/media/";
+                link =  MEDIA;
                 break;
             }
             default:

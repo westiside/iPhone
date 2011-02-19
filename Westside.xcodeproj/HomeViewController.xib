@@ -75,7 +75,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 246}, {280, 145}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEgMAA</bytes>
@@ -83,6 +82,10 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<bool key="IBUIBounces">NO</bool>
+						<bool key="IBUIScrollEnabled">NO</bool>
+						<bool key="IBUIShowsHorizontalScrollIndicator">NO</bool>
+						<bool key="IBUIShowsVerticalScrollIndicator">NO</bool>
 						<bool key="IBUIEditable">NO</bool>
 						<string key="IBUIText">Welcome to Westside. We are so excited you’ve joined us and we cannot wait to partner with you as we “take the hope of Christ to all people.” Westside is a place where you can Magnify your Creator, Mature in your Faith, Minister to a hurting world, and Multiply your leadership. So let’s begin this journey together.</string>
 						<object class="NSColor" key="IBUITextColor">
@@ -111,7 +114,7 @@
 					<object class="IBUIImageView" id="918227582">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 185}, {280, 53}}</string>
+						<string key="NSFrame">{{20, 185}, {280, 55}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -142,6 +145,14 @@
 						<reference key="destination" ref="191373211"/>
 					</object>
 					<int key="connectionID">3</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">picBanner</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="353734131"/>
+					</object>
+					<int key="connectionID">12</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -243,7 +254,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">11</int>
+			<int key="maxID">12</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

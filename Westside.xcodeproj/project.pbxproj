@@ -20,6 +20,7 @@
 		2D3BF11B12F1065D005CD1C3 /* Westside App UI Mockups.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2D3BF11812F1065D005CD1C3 /* Westside App UI Mockups.pdf */; };
 		2D4062C61309C08F00A307E4 /* StaffDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4062C41309C08F00A307E4 /* StaffDetailsViewController.m */; };
 		2D4062C71309C08F00A307E4 /* StaffDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4062C51309C08F00A307E4 /* StaffDetailsViewController.xib */; };
+		2D4638B0130F565300506F5A /* LoadingTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4638AF130F565300506F5A /* LoadingTableCellView.xib */; };
 		2D49AEBE1308C45700862F5E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D49AEBD1308C45700862F5E /* Default-Landscape~ipad.png */; };
 		2D49AEC01308C45D00862F5E /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D49AEBF1308C45D00862F5E /* Default-Portrait~ipad.png */; };
 		2D49AEC21308C53E00862F5E /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D49AEC11308C53E00862F5E /* MainWindow-iPad.xib */; };
@@ -71,10 +72,8 @@
 		2DA4A36C1306248A00106243 /* coming-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4A36B1306248A00106243 /* coming-up.png */; };
 		2DA4A3701306298800106243 /* PlainBack2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4A36F1306298800106243 /* PlainBack2.png */; };
 		2DA4A3721306299000106243 /* PlainBack2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4A3711306299000106243 /* PlainBack2@2x.png */; };
-		2DC012B31307240400ADCC98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC012B21307240400ADCC98 /* MapKit.framework */; };
 		2DC012BD130742A400ADCC98 /* directions_modules.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC012BB130742A400ADCC98 /* directions_modules.png */; };
 		2DC012BE130742A400ADCC98 /* give_modules.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC012BC130742A400ADCC98 /* give_modules.png */; };
-		2DC012C01307437C00ADCC98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC012BF1307437A00ADCC98 /* CoreLocation.framework */; };
 		2DD7A23012FF6E7400C5100B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */; };
 		2DE8CBE613044F6000CBFA4F /* group@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8CBE013044F6000CBFA4F /* group@2x.png */; };
 		2DE8CBE713044F6000CBFA4F /* tv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8CBE113044F6000CBFA4F /* tv@2x.png */; };
@@ -125,6 +124,7 @@
 		2D4062C31309C08F00A307E4 /* StaffDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaffDetailsViewController.h; path = Westside.xcodeproj/StaffDetailsViewController.h; sourceTree = SOURCE_ROOT; };
 		2D4062C41309C08F00A307E4 /* StaffDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaffDetailsViewController.m; path = Westside.xcodeproj/StaffDetailsViewController.m; sourceTree = SOURCE_ROOT; };
 		2D4062C51309C08F00A307E4 /* StaffDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StaffDetailsViewController.xib; path = Westside.xcodeproj/StaffDetailsViewController.xib; sourceTree = SOURCE_ROOT; };
+		2D4638AF130F565300506F5A /* LoadingTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTableCellView.xib; sourceTree = "<group>"; };
 		2D49AE9D1308C28400862F5E /* iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPad-Info.plist"; sourceTree = "<group>"; };
 		2D49AE9F1308C28400862F5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D49AEA11308C28400862F5E /* iPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPad-Prefix.pch"; sourceTree = "<group>"; };
@@ -245,8 +245,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC012C01307437C00ADCC98 /* CoreLocation.framework in Frameworks */,
-				2DC012B31307240400ADCC98 /* MapKit.framework in Frameworks */,
 				2DEFCA161305917A008763AC /* SystemConfiguration.framework in Frameworks */,
 				2DEFCA1413059174008763AC /* MobileCoreServices.framework in Frameworks */,
 				2DEFCA1213059166008763AC /* CFNetwork.framework in Frameworks */,
@@ -439,6 +437,7 @@
 				2D8DA26B12EB628100EE323D /* FeedParser.m */,
 				2D8DA26E12EB695A00EE323D /* Feed.h */,
 				2D8DA26F12EB695A00EE323D /* Feed.m */,
+				2D4638AF130F565300506F5A /* LoadingTableCellView.xib */,
 			);
 			name = "Media Tab";
 			sourceTree = "<group>";
@@ -748,6 +747,7 @@
 				2D49AEC21308C53E00862F5E /* MainWindow-iPad.xib in Resources */,
 				2D4062C71309C08F00A307E4 /* StaffDetailsViewController.xib in Resources */,
 				2D01C673130E09A7000FDE79 /* HomeViewController.xib in Resources */,
+				2D4638B0130F565300506F5A /* LoadingTableCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

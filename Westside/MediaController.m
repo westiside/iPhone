@@ -15,7 +15,6 @@
 @synthesize PodcastCell;
 @synthesize mediaViewSelector;
 @synthesize tvCell;
-@synthesize activityIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,10 +45,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [activityIndicator startAnimating];
     audioSelected = YES;
-    [self refreshPodCasts];
-    [podcastTable reloadData];    
+    loaded = NO;
+    NSInvocationOperation* theOp = [[[NSInvocationOperation alloc] initWithTarget:self
+                                                                         selector:@selector(refreshPodCasts) object:nil] autorelease];
+    NSOperationQueue* aQueue = [[[NSOperationQueue alloc] init] autorelease];
+    [aQueue addOperation:theOp];
+    
+       
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -62,8 +65,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    [activityIndicator  stopAnimating];
+        
     if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
                 
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to stream Podcasts" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -99,7 +101,9 @@
 
 - (void)viewDidUnload
 {
-    [self setActivityIndicator:nil];
+    [self setPodcastCell:nil];
+    [self setMediaViewSelector:nil];
+    [self setTvCell:nil];
     [super viewDidUnload];
     
     
@@ -122,7 +126,7 @@
 - (IBAction)liveViewButtonSelected:(id)sender {
 
         //Check for Live Feed
-        NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
+        NSURL *liveFeed = [NSURL URLWithString:LIVEFEED];
         NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
         if([data isEqualToString:@"No on air lives"]){
             NSLog(@"No Live Feed");
@@ -159,13 +163,18 @@
         feeds = [[FeedParser alloc] init];
         [feeds parseXML];
     }
-       
+    
+    
     [podcastTable beginUpdates];
     [podcastTable deleteSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
-    if(audioSelected)[podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
+    if(!loaded){
+        [podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationTop];
+        loaded = YES;
+    }
+    else if(audioSelected)[podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
     else [podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationRight];
     [podcastTable endUpdates];
-    
+        
 }
 
 
@@ -180,25 +189,29 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    if(audioSelected) return [feeds.audioFeeds count];
+    if(!loaded) return 1;
+    else if(audioSelected) return [feeds.audioFeeds count];
     else return [feeds.videoFeeds count];
 }
 
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    int height = 44;
     
-    Feed *f;
-    if(audioSelected){
-        f = [feeds.audioFeeds objectAtIndex:indexPath.row];
+    if(loaded){
+        Feed *f;
+        if(audioSelected){
+            f = [feeds.audioFeeds objectAtIndex:indexPath.row];
         
-    }else{
-        f = [feeds.videoFeeds objectAtIndex:indexPath.row];
+        }else{
+            f = [feeds.videoFeeds objectAtIndex:indexPath.row];
+        }
+        
+        height = 46;
+    
+        if([f.feedName length] > 37) height += 15;
     }
-    
-    int height = 46;
-    
-    if([f.feedName length] > 37) height += 15;
     
     return height;
 }
@@ -207,32 +220,42 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *MyIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    
+    if(loaded){
+      
+    
+        if (cell == nil) {
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier] autorelease];
+        }
     
     
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
-    }
+        Feed *f;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        if(audioSelected){
+            f = [feeds.audioFeeds objectAtIndex:indexPath.row];
+            
+        }else{
+            f = [feeds.videoFeeds objectAtIndex:indexPath.row];
+        }
     
-    
-    Feed *f;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    if(audioSelected){
-        f = [feeds.audioFeeds objectAtIndex:indexPath.row];
-       
+        UIFont *font = [UIFont fontWithName:@"Helvetica Bold" size:15];
+        [cell.textLabel setNumberOfLines:2];
+        [cell.textLabel setFont:font];
+        cell.textLabel.text = f.feedName;
+        cell.detailTextLabel.text = f.pubDate;
+        [cell.detailTextLabel setTextColor:[UIColor darkGrayColor]];
+        
     }else{
-        f = [feeds.videoFeeds objectAtIndex:indexPath.row];
+        if (cell == nil) {
+            [[NSBundle mainBundle] loadNibNamed:@"LoadingTableCellView" owner:self options:nil];
+            cell = tvCell;
+            tvCell = nil;
+        }
+
     }
-    
-    UIFont *font = [UIFont fontWithName:@"Helvetica Bold" size:15];
-    [cell.textLabel setNumberOfLines:2];
-    [cell.textLabel setFont:font];
-    cell.textLabel.text = f.feedName;
-    cell.detailTextLabel.text = f.pubDate;
-    [cell.detailTextLabel setTextColor:[UIColor darkGrayColor]];
-   
 
     
     return cell;
@@ -245,16 +268,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    
-    if(audioSelected){
-        Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
-        [self loadPodcast:f.feedLink];
-        //NSLog(f.feedLink);
-    } else
-    {
-        Feed *f = [feeds.videoFeeds objectAtIndex:indexPath.row];
-        [self loadPodcast:f.feedLink];
-        //NSLog(f.feedLink);
+    if(loaded){
+        if(audioSelected){
+            Feed *f = [feeds.audioFeeds objectAtIndex:indexPath.row];
+            [self loadPodcast:f.feedLink];
+            //NSLog(f.feedLink);
+        } else
+        {
+            Feed *f = [feeds.videoFeeds objectAtIndex:indexPath.row];
+            [self loadPodcast:f.feedLink];
+            //NSLog(f.feedLink);
+        }
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

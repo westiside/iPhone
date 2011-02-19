@@ -46,6 +46,8 @@
 
 - (void)viewDidUnload
 {
+    [self setTvCell:nil];
+    [self setTweetTable:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
