@@ -10,6 +10,7 @@
 #import "WestsideAppDelegate.h"
 
 @implementation GenericWebNavViewController
+@synthesize activity;
 @synthesize webView;
 @synthesize link;
 @synthesize html;
@@ -57,7 +58,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to view this page." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+        
+    } else
     
     if (wp){
         [webView setScalesPageToFit:NO];
@@ -73,6 +81,7 @@
 - (void)viewDidUnload
 {
     [self setWebView:nil];
+    [self setActivity:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -89,5 +98,31 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark - Webview Delegate
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error loading page" message:@"There was a problem accessing the webpage, please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    [alert show];
+    [alert release];
+    
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    [activity stopAnimating];
+    
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+    [activity startAnimating];
+    
+}
+
 
 @end

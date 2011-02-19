@@ -33,14 +33,19 @@
     NSString *apiCall = sourceLink;//@"http://www.westsidebaptist.org/2011/02/art-listening/feed/rss/";
     
     NSURL *xmlURL = [NSURL URLWithString:apiCall];
-    NSXMLParser *feedParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
-    [feedParser setDelegate:self];
-    [feedParser setShouldResolveExternalEntities:YES];
-    [feedParser parse]; 
-    [feedParser release];
     
-    return [[[[@"<h1 style=\"text-align: left;\"><span style=\"color: rgb(139, 69, 19); \">" stringByAppendingString:title] stringByAppendingString:@"</span></h1><div>"] stringByAppendingString:text] stringByAppendingString:@"</div><div><br /></div><div><br /></div><div><br /></div><div>"];//<span style=\"font-style: italic;\">Read More: "] stringByAppendingString:link] stringByAppendingString:@"</span></div>"];
+    //work around apple bug that leaks nsconcrete map and mallocs
+    NSData *xml = [NSData dataWithContentsOfURL:xmlURL];
+    if(xml!=nil){
+        NSXMLParser *feedParser = [[NSXMLParser alloc] initWithData:xml];
     
+        [feedParser setDelegate:self];
+        [feedParser setShouldResolveExternalEntities:YES];
+        [feedParser parse]; 
+        [feedParser release];
+    
+        return [[[[@"<h1 style=\"text-align: left;\"><span style=\"color: rgb(139, 69, 19); \">" stringByAppendingString:title] stringByAppendingString:@"</span></h1><div>"] stringByAppendingString:text] stringByAppendingString:@"</div><div><br /></div><div><br /></div><div><br /></div><div>"];//<span style=\"font-style: italic;\">Read More: "] stringByAppendingString:link] stringByAppendingString:@"</span></div>"];
+    }else return @"<h1>Error Loading</h1><div>Please try again later</div>";
     
 }
 

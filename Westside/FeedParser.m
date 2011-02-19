@@ -41,9 +41,12 @@
 -(void) parseXML{
     [audioFeeds removeAllObjects];
     [videoFeeds removeAllObjects];
-    
+   
+    //work around apple bug that leaks nsconcrete map and mallocs
     NSURL *xmlURL = [NSURL URLWithString:PODCASTFEED];
-    NSXMLParser *feedParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+    NSData *xml = [NSData dataWithContentsOfURL:xmlURL];
+    NSXMLParser *feedParser = [[NSXMLParser alloc] initWithData:xml];
+    
     [feedParser setDelegate:self];
     [feedParser setShouldResolveExternalEntities:YES];
     [feedParser parse];

@@ -27,7 +27,7 @@
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
-    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable) {
+    /*if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable) {
         
     //Check for Live Feed
     NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
@@ -43,7 +43,7 @@
         NSLog(@"Live Feed On Air");
         [mediaTabBarItem setBadgeValue:@"LIVE"];
     } 
-    }
+    }*/
     
     return YES;
 }

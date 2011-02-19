@@ -49,9 +49,9 @@
     loaded = NO;
     NSInvocationOperation* theOp = [[[NSInvocationOperation alloc] initWithTarget:self
                                                                          selector:@selector(refreshPodCasts) object:nil] autorelease];
-    NSOperationQueue* aQueue = [[[NSOperationQueue alloc] init] autorelease];
-    [aQueue addOperation:theOp];
     
+    [NSThread detachNewThreadSelector:@selector(start)
+                             toTarget:theOp withObject:nil];
        
 }
 
@@ -73,7 +73,7 @@
         [alert show];
         [alert release];
         
-    } else{
+    } /*else{
         NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
         NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
         if(data == nil){
@@ -81,7 +81,7 @@
              UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"An internet connection is required to listen podcasts. " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
              
              [alert show];
-             [alert release];*/
+             [alert release];
             
             WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
             [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
@@ -94,7 +94,7 @@
             
         }
 
-    }
+    }*/
     
 }
 

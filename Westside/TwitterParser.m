@@ -39,9 +39,13 @@
     [tweets removeAllObjects];
     
     NSString *apiCall = [[@"http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=" stringByAppendingString:screen_name] stringByAppendingString:@"&count=10"];
-    
+       
     NSURL *xmlURL = [NSURL URLWithString:apiCall];
-    NSXMLParser *feedParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+    
+    //work around apple bug that leaks nsconcrete map and mallocs
+    NSData *xml = [NSData dataWithContentsOfURL:xmlURL];
+    NSXMLParser *feedParser = [[NSXMLParser alloc] initWithData:xml];
+    
     [feedParser setDelegate:self];
     [feedParser setShouldResolveExternalEntities:YES];
     [feedParser parse]; 

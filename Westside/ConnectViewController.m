@@ -327,12 +327,21 @@
     }
     else if(indexPath.section == 0){
         
-        WPParser *parser = [[WPParser alloc] initWithLink:WORDPRESSFEED];
-        NSString *html = [parser parseXML];
+        if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to view this page." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            [alert show];
+            [alert release];
+            
+        } else{
+            WPParser *parser = [[WPParser alloc] initWithLink:WORDPRESSFEED];
+            NSString *html = [parser parseXML];
         
-        [self pushWebWithHTMLAndTitle:html :@"Pastor's Perspectives":[parser getLink]];
+            [self pushWebWithHTMLAndTitle:html :@"Pastor's Perspectives":[parser getLink]];
         
-        [parser release];
+            [parser release];
+        }
         
         
     } else if (indexPath.section == 2){
