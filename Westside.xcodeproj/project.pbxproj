@@ -326,15 +326,6 @@
 			name = iPad;
 			sourceTree = "<group>";
 		};
-		2D7DFF631309F56000661FFF /* Wordpress  */ = {
-			isa = PBXGroup;
-			children = (
-				2D7DFF641309F57B00661FFF /* WPParser.h */,
-				2D7DFF651309F57B00661FFF /* WPParser.m */,
-			);
-			name = "Wordpress ";
-			sourceTree = "<group>";
-		};
 		2D84554812EA835D00F19F55 = {
 			isa = PBXGroup;
 			children = (
@@ -379,7 +370,6 @@
 		2D84555D12EA835E00F19F55 /* Westside */ = {
 			isa = PBXGroup;
 			children = (
-				2D7DFF631309F56000661FFF /* Wordpress  */,
 				2DD5D38512F7A00F00D67898 /* Resources */,
 				2D49AEB71308C32B00862F5E /* iPad */,
 				2DC012B51307325B00ADCC98 /* App Delegate */,
@@ -466,6 +456,8 @@
 				2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */,
 				2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */,
 				2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */,
+				2D7DFF641309F57B00661FFF /* WPParser.h */,
+				2D7DFF651309F57B00661FFF /* WPParser.m */,
 				2D7ADD5A12FA248C00B28EF1 /* TwitterParser.h */,
 				2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */,
 				2D7ADD5D12FA24A100B28EF1 /* Tweet.h */,
@@ -882,7 +874,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -895,7 +887,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};

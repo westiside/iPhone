@@ -24,7 +24,6 @@
 -(void)dealloc{
     [audioFeeds release];
     [videoFeeds release];
-    
     [feedName release];
     [feedLink release];
     [pubDate release];
@@ -48,7 +47,7 @@
     NSXMLParser *feedParser = [[NSXMLParser alloc] initWithData:xml];
     
     [feedParser setDelegate:self];
-    [feedParser setShouldResolveExternalEntities:YES];
+    //[feedParser setShouldResolveExternalEntities:YES];
     [feedParser parse];
     [feedParser release];
     
@@ -73,21 +72,7 @@
                 currentStringValue = nil;
                 return;
             } else
-                
-            /*
-             if([elementName isEqualToString:@"itunes:duration"] ) {
-             currentStringValue = nil;
-             return;
-             } else
-             
-             if([elementName isEqualToString:@"itunes:image"] ) {
-             if(image != nil) [image release];
-             NSURL *url = [NSURL URLWithString:[attributeDict objectForKey:@"href"]];
-             NSData *data = [NSData dataWithContentsOfURL:url];
-             image = [[UIImage alloc] initWithData:data];
-             return;
-             }*/
-                
+               
                 if([elementName isEqualToString:@"enclosure"] ) {
                     isAudio = [[attributeDict objectForKey:@"type"] isEqualToString:@"audio/mpeg"];
                     return;
@@ -98,9 +83,8 @@
 
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    if (!currentStringValue) {
-        currentStringValue = [NSMutableString stringWithCapacity:50];
-    }
+    
+    currentStringValue = [NSMutableString stringWithCapacity:50];
     currentStringValue = [currentStringValue stringByAppendingString:string];
 }
 

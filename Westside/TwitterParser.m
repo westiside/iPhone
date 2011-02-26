@@ -3,7 +3,7 @@
 //  Westside
 //
 //  Created by Nick Eubanks on 2/2/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import "TwitterParser.h"
@@ -38,7 +38,7 @@
 -(void) parseXML{
     [tweets removeAllObjects];
     
-    NSString *apiCall = [[@"http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=" stringByAppendingString:screen_name] stringByAppendingString:@"&count=10"];
+    NSString *apiCall = [@"http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=" stringByAppendingString:screen_name];// stringByAppendingString:@"&count=10"];
        
     NSURL *xmlURL = [NSURL URLWithString:apiCall];
     

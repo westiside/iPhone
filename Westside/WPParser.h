@@ -13,7 +13,6 @@
 @private
     NSString *text;
     NSString *title;
-    NSString *date;
     NSString *link;
     NSString *currentStringValue;
 }

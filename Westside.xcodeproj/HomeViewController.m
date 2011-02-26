@@ -3,7 +3,7 @@
 //  Westside
 //
 //  Created by Nick Eubanks on 2/17/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Westside Baptist Church. All rights reserved.
 //
 
 #import "HomeViewController.h"

@@ -30,8 +30,7 @@
 
 -(NSString*) parseXML{
     
-    NSString *apiCall = sourceLink;//@"http://www.westsidebaptist.org/2011/02/art-listening/feed/rss/";
-    
+    NSString *apiCall = sourceLink;    
     NSURL *xmlURL = [NSURL URLWithString:apiCall];
     
     //work around apple bug that leaks nsconcrete map and mallocs
@@ -61,7 +60,7 @@
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
     
-    if ([elementName isEqualToString:@"title"] ) {
+   if ([elementName isEqualToString:@"title"] ) {
         currentStringValue = nil;
         return;
     } else

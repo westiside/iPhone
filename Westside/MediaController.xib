@@ -74,7 +74,7 @@
 							<object class="IBUISegmentedControl" id="336038545">
 								<reference key="NSNextResponder" ref="1049085772"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{5, 7}, {254, 30}}</string>
+								<string key="NSFrame">{{61, 7}, {198, 30}}</string>
 								<reference key="NSSuperview" ref="1049085772"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="170191503"/>
@@ -131,6 +131,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="1013996177">
 								<reference key="IBUINavigationBar" ref="1049085772"/>
+								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="1026683810">
+									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+									<int key="IBUIStyle">1</int>
+									<reference key="IBUINavigationItem" ref="1013996177"/>
+									<int key="IBUISystemItemIdentifier">13</int>
+								</object>
 								<reference key="IBUITitleView" ref="336038545"/>
 								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="930643794">
 									<string key="IBUITitle">Live</string>
@@ -219,6 +225,14 @@
 					</object>
 					<int key="connectionID">58</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">refreshSelected:</string>
+						<reference key="source" ref="1026683810"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">63</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -266,6 +280,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="336038545"/>
 							<reference ref="930643794"/>
+							<reference ref="1026683810"/>
 						</object>
 						<reference key="parent" ref="1049085772"/>
 					</object>
@@ -287,6 +302,11 @@
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">62</int>
+						<reference key="object" ref="1026683810"/>
+						<reference key="parent" ref="1013996177"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -303,6 +323,7 @@
 					<string>5.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>6.IUISegmentedControlInspectorSelectedSegmentMetadataKey</string>
+					<string>62.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -318,6 +339,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<integer value="1"/>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -332,7 +354,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">58</int>
+			<int key="maxID">63</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -341,14 +363,35 @@
 					<string key="className">MediaController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">liveViewButtonSelected:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>liveViewButtonSelected:</string>
+							<string>refreshSelected:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">liveViewButtonSelected:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">liveViewButtonSelected:</string>
-							<string key="candidateClassName">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>liveViewButtonSelected:</string>
+							<string>refreshSelected:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">liveViewButtonSelected:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">refreshSelected:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
