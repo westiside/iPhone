@@ -50,7 +50,6 @@
 		2D7ADD5C12FA248C00B28EF1 /* TwitterParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */; };
 		2D7ADD5F12FA24A100B28EF1 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7ADD5E12FA24A100B28EF1 /* Tweet.m */; };
 		2D7DBC1F12FDCECA00287814 /* NavBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7DBC1E12FDCECA00287814 /* NavBack.png */; };
-		2D7DFF661309F57B00661FFF /* WPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7DFF651309F57B00661FFF /* WPParser.m */; };
 		2D84555812EA835E00F19F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555712EA835E00F19F55 /* UIKit.framework */; };
 		2D84555A12EA835E00F19F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555912EA835E00F19F55 /* Foundation.framework */; };
 		2D84555C12EA835E00F19F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D84555B12EA835E00F19F55 /* CoreGraphics.framework */; };
@@ -101,6 +100,8 @@
 		2DF0BAEF1305F1C8001DFF11 /* john.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0BAEA1305F1C6001DFF11 /* john.png */; };
 		2DF0BAF01305F1C8001DFF11 /* phil.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0BAEB1305F1C7001DFF11 /* phil.png */; };
 		2DF0BAF11305F1C8001DFF11 /* sheryl.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0BAEC1305F1C8001DFF11 /* sheryl.png */; };
+		2DF533BC1319B7F400D508C1 /* BlogPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF533BA1319B7F300D508C1 /* BlogPostViewController.m */; };
+		2DF533BD1319B7F400D508C1 /* BlogPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DF533BB1319B7F400D508C1 /* BlogPostViewController.xib */; };
 		2DFA2A5A12F76F2C00E3A8F9 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */; };
 		2DFA2A5B12F76F2C00E3A8F9 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */; };
 		2DFA2A6012F776BA00E3A8F9 /* MinistriesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA2A5E12F776BA00E3A8F9 /* MinistriesTabViewController.m */; };
@@ -170,8 +171,6 @@
 		2D7ADD5D12FA24A100B28EF1 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 		2D7ADD5E12FA24A100B28EF1 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		2D7DBC1E12FDCECA00287814 /* NavBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBack.png; sourceTree = "<group>"; };
-		2D7DFF641309F57B00661FFF /* WPParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPParser.h; sourceTree = "<group>"; };
-		2D7DFF651309F57B00661FFF /* WPParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPParser.m; sourceTree = "<group>"; };
 		2D84555312EA835E00F19F55 /* Westside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D84555712EA835E00F19F55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D84555912EA835E00F19F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -232,6 +231,9 @@
 		2DF0BAEA1305F1C6001DFF11 /* john.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = john.png; sourceTree = "<group>"; };
 		2DF0BAEB1305F1C7001DFF11 /* phil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phil.png; sourceTree = "<group>"; };
 		2DF0BAEC1305F1C8001DFF11 /* sheryl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheryl.png; sourceTree = "<group>"; };
+		2DF533B91319B7F300D508C1 /* BlogPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPostViewController.h; sourceTree = "<group>"; };
+		2DF533BA1319B7F300D508C1 /* BlogPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPostViewController.m; sourceTree = "<group>"; };
+		2DF533BB1319B7F400D508C1 /* BlogPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogPostViewController.xib; sourceTree = "<group>"; };
 		2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
 		2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
@@ -456,8 +458,6 @@
 				2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */,
 				2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */,
 				2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */,
-				2D7DFF641309F57B00661FFF /* WPParser.h */,
-				2D7DFF651309F57B00661FFF /* WPParser.m */,
 				2D7ADD5A12FA248C00B28EF1 /* TwitterParser.h */,
 				2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */,
 				2D7ADD5D12FA24A100B28EF1 /* Tweet.h */,
@@ -474,6 +474,9 @@
 				2D7A6BDB12FDC8700002D7EA /* GenericWebNavViewController.h */,
 				2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */,
 				2D7A6BDD12FDC8700002D7EA /* GenericWebNavViewController.xib */,
+				2DF533B91319B7F300D508C1 /* BlogPostViewController.h */,
+				2DF533BA1319B7F300D508C1 /* BlogPostViewController.m */,
+				2DF533BB1319B7F400D508C1 /* BlogPostViewController.xib */,
 			);
 			name = "Generic Web View";
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				2D4062C71309C08F00A307E4 /* StaffDetailsViewController.xib in Resources */,
 				2D01C673130E09A7000FDE79 /* HomeViewController.xib in Resources */,
 				2D4638B0130F565300506F5A /* LoadingTableCellView.xib in Resources */,
+				2DF533BD1319B7F400D508C1 /* BlogPostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,8 +793,8 @@
 				2D7A6BDE12FDC8700002D7EA /* GenericWebNavViewController.m in Sources */,
 				2DEFCA1013059029008763AC /* Reachability.m in Sources */,
 				2D4062C61309C08F00A307E4 /* StaffDetailsViewController.m in Sources */,
-				2D7DFF661309F57B00661FFF /* WPParser.m in Sources */,
 				2D01C672130E09A7000FDE79 /* HomeViewController.m in Sources */,
+				2DF533BC1319B7F400D508C1 /* BlogPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

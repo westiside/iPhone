@@ -10,8 +10,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "TwitterViewController.h"
 #import "GenericWebNavViewController.h"
+#import "BlogPostViewController.h"
 #import "StaffDetailsViewController.h"
-#define WORDPRESSFEED @"http://www.westsidebaptist.org/2011/02/art-listening/feed/rss/"
 
 @interface ConnectViewController : UIViewController {
 @private
@@ -29,7 +29,6 @@
 @property (nonatomic, retain) IBOutlet UITableView *tv;
 
 -(void) pushWebWithLinkAndTitle:(NSString *)link:(NSString *)title;
--(void) pushWebWithHTMLAndTitle:(NSString *)html:(NSString *)title:(NSString*)link;
 -(void) pushStaffWithID:(int)ID;
 
 @end

@@ -8,7 +8,6 @@
 
 #import "ConnectViewController.h"
 #import "WestsideAppDelegate.h"
-#import "WPParser.h"
 
 @implementation ConnectViewController
 @synthesize twitterView;
@@ -335,14 +334,23 @@
             [alert release];
             
         } else{
-            WPParser *parser = [[WPParser alloc] initWithLink:WORDPRESSFEED];
-            NSString *html = [parser parseXML];
-        
-            /*NSString *sample = @"<div class=\"pageContent\"><div id=\"page-head\"><h1>The Art of Listening</h1></div><div id=\"subhead\">The Art of Listening</div><div class=\"addleftspace\"><p>When a conversation came up about marriage counseling in one family, one uncle denied any need for it with his wife. He explained, “She was a communication major in college and I majored in theater arts.” The family didn’t understand the connection so one of them asked what their college majors had to do with a successful marriage. The uncle replied, “She is good at communicating and I am good at acting like I’m listening.” That may be true for too many of us (men)!</p> <p>I’m wondering if we have been listening to what God has been up to at Westside over the last seven weeks. We have seen 18 persons make a Profession of Faith, 48 persons come for Baptism, 35 persons come for membership by letter or statement, and many recommitments to Christ. There have been other decisions for Vocational Ministry and missions as well. WOW! Are you listening – God is up to a fresh and powerful movement among us. I believe it is fundamentally because of PRAYER. We have earnestly sought God and He always “rewards those who seek Him” (Hebrews 11:6). And as we continue to do so, we will realize we are just at the front of what He intends to do!</p><p>Thank you ALL, who have prayed so consistently and fervently. God will honor such commitment in ways we can’t imagine. And thank you ALL, who are a part of making the PRAYER GARDEN a reality. It should be finished soon and will stand as a constant reminder of our Lord’s prayer in the garden and our commitment to “Prayer First.”</p><p>SUNDAY…will be another great day at Westside. See you then with a smile on your face, a Bible in your hand and a friend by your side.</p>";*/
+            //push blog view
             
-            [self pushWebWithHTMLAndTitle:html :@"Pastor's Perspectives":[parser getLink]];
-        
-            [parser release];
+            if(webVC != nil) {
+                [webVC release];
+            }
+            
+            GenericWebNavViewController *aWebNavView = [[BlogPostViewController alloc] init];
+            
+            webVC =aWebNavView;
+            
+            aWebNavView.title = @"Post of the Week";
+            aWebNavView.hidesBottomBarWhenPushed = YES;
+            
+            WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+            [delegate.connectNav pushViewController:webVC animated:YES]; 
+            [delegate.connectNav setNavigationBarHidden:NO animated:YES];
+            
         }
         
         
@@ -360,25 +368,6 @@
     }
     
     GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithLinkWithScale:link :YES];
-    
-    webVC =aWebNavView;
-    
-    aWebNavView.title = title;
-    aWebNavView.hidesBottomBarWhenPushed = YES;
-    
-    WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.connectNav pushViewController:webVC animated:YES]; 
-    [delegate.connectNav setNavigationBarHidden:NO animated:YES];
-    
-    
-}
-
--(void) pushWebWithHTMLAndTitle:(NSString *)html:(NSString *)title:(NSString*)link{
-    if(webVC != nil) {
-        [webVC release];
-    }
-    
-    GenericWebNavViewController *aWebNavView = [[GenericWebNavViewController alloc] initWithHTMLAndLink:html:link];
     
     webVC =aWebNavView;
     

@@ -11,18 +11,16 @@
 
 @interface GenericWebNavViewController : UIViewController <UIWebViewDelegate> {
     BOOL scale;
-    BOOL wp;
     UIWebView *webView;
     UIActivityIndicatorView *activity;
+    UIBarButtonItem *backBTN;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) NSString* link;
-@property (nonatomic, retain) NSString* html;
 
 
 
 -(id)initWithLinkWithScale:(NSString *)string:(BOOL)scale_in;
--(id)initWithHTMLAndLink:(NSString *)string:(NSString *)link_in;
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 - (void)webViewDidFinishLoad:(UIWebView *)webView;
