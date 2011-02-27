@@ -21,69 +21,67 @@
     if(self){        
         switch (ID) {
             case 0: //gary
-                imgPath = @"gary";
+                imgPath = @"garyL";
                 name = @"Gary Crawford";
                 title = @"Senior Pastor";
                 email = @"dmcalhany@westsidebaptist.org";
-                facebook = @"NickEubanks";
-                twitter = @"neubanks89";
                 break;
-            case 1: //daniel
-                imgPath = @"daniel" ;
+            case 2: //daniel
+                imgPath = @"danielL" ;
                 name = @"Daniel Morris" ;
                 title= @"Associate Pastor, Minister of Music" ;
                 email = @"dmorris@westsidebaptist.org" ;
                 break;
-            case 2: //mike
-                imgPath = @"mike" ;
+            case 10: //mike
+                imgPath = @"mikeL" ;
                 name = @"Mike Ricks" ;
                 title = @"Associate Minister of Music and Media" ;
                 email = @"mricks@westsidebaptist.org" ;
                 break;
-            case 3: //phil
-                imgPath = @"phil" ;
+            case 1: //phil
+                imgPath = @"philL" ;
                 name = @"Phil Young" ;
                 title = @"Sr. Associate Pastor" ;
                 email = @"pyoung@westsidebaptist.org" ;
                 break;
-            case 4: //steve
-                imgPath = @"steve" ;
+            case 6: //steve
+                imgPath = @"steveL" ;
                 name = @"Steve Loy" ;
                 title = @"Minister of College" ;
                 email = @"sloy@westsidebaptist.org" ;
                 break;
             case 5: //chad
-                imgPath = @"chad" ;
+                imgPath = @"chadL" ;
                 name = @"Chad Chadwick" ;
                 title = @"Youth Pastor" ;
                 email = @"gchadwick@westsidebaptist.org" ;
                 break;
-            case 6: //glen
-                imgPath = @"glen" ;
+            case 7: //glen
+                imgPath = @"glenL" ;
                 name = @"Glen McKinney" ;
                 title = @"Associate Paster, Senior Adult Minister" ;
                 email = @"gmckinney@westsidebaptist.org" ;
                 break;
-            case 7: //tom
-                imgPath = @"tom" ;
+            case 9: //tom
+                imgPath = @"tomL" ;
                 name = @"Tom Grubbs" ;
                 title = @"Associate Pastor, Minister of Recreation" ;
                 email = @"tgrubbs@westsidebaptist.org" ;
                 break;
-            case 8: //ron
-                imgPath = @"ron" ;
+            case 3: //ron
+                imgPath = @"ronL" ;
                 name = @"Ron Surber" ;
                 title = @"Minister of Education" ;
                 email = @"rsurber@westsidebaptist.org" ;
                 break;
-            case 9: //sheryl
-                imgPath = @"sheryl" ;
+            case 8: //sheryl
+                imgPath = @"sherylL" ;
                 name = @"Sheryl Bennett" ;
                 title = @"Minister of Missions, Prayer and Evangelism" ;
                 email = @"sbennett@westsidebaptist.org" ;
                 break;
-            case 10: //john
-                imgPath = @"john" ;
+            case 4: //john
+                imgPath = @"johnL" ;
                 name = @"John Park" ;
                 title = @"Minister to Children" ;
                 email = @"jpark@westsidebaptist.org" ;

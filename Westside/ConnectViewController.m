@@ -92,7 +92,7 @@
         }
         case 1: 
         {
-            number = 2;
+            number = 1;
             break;
         }
         case 2: 
@@ -155,25 +155,25 @@
                 title.text = @"Senior Pastor";
                 email.text = @"dmcalhany@westsidebaptist.org";
                 break;
-            case 1: //daniel
+            case 2: //daniel
                 imgPath = @"daniel" ;
                 name.text = @"Daniel Morris" ;
                 title.text = @"Associate Pastor, Minister of Music" ;
                 email.text = @"dmorris@westsidebaptist.org" ;
                 break;
-            case 2: //mike
+            case 10: //mike
                 imgPath = @"mike" ;
                 name.text = @"Mike Ricks" ;
                 title.text = @"Associate Minister of Music and Media" ;
                 email.text = @"mricks@westsidebaptist.org" ;
                 break;
-            case 3: //phil
+            case 1: //phil
                 imgPath = @"phil" ;
                 name.text = @"Phil Young" ;
                 title.text = @"Sr. Associate Pastor" ;
                 email.text = @"pyoung@westsidebaptist.org" ;
                 break;
-            case 4: //steve
+            case 6: //steve
                 imgPath = @"steve" ;
                 name.text = @"Steve Loy" ;
                 title.text = @"Minister of College" ;
@@ -185,31 +185,31 @@
                 title.text = @"Youth Pastor" ;
                 email.text = @"gchadwick@westsidebaptist.org" ;
                 break;
-            case 6: //glen
+            case 7: //glen
                 imgPath = @"glen" ;
                 name.text = @"Glen McKinney" ;
                 title.text = @"Associate Paster, Senior Adult Minister" ;
                 email.text = @"gmckinney@westsidebaptist.org" ;
                 break;
-            case 7: //tom
+            case 9: //tom
                 imgPath = @"tom" ;
                 name.text = @"Tom Grubbs" ;
                 title.text = @"Associate Pastor, Minister of Recreation" ;
                 email.text = @"tgrubbs@westsidebaptist.org" ;
                 break;
-            case 8: //ron
+            case 3: //ron
                 imgPath = @"ron" ;
                 name.text = @"Ron Surber" ;
                 title.text = @"Minister of Education" ;
                 email.text = @"rsurber@westsidebaptist.org" ;
                 break;
-            case 9: //sheryl
+            case 8: //sheryl
                 imgPath = @"sheryl" ;
                 name.text = @"Sheryl Bennett" ;
                 title.text = @"Minister of Missions, Prayer and Evangelism" ;
                 email.text = @"sbennett@westsidebaptist.org" ;
                 break;
-            case 10: //john
+            case 4: //john
                 imgPath = @"john" ;
                 name.text = @"John Park" ;
                 title.text = @"Minister to Children" ;
@@ -344,7 +344,7 @@
             
             webVC =aWebNavView;
             
-            aWebNavView.title = @"Post of the Week";
+            aWebNavView.title = @"This Week";
             aWebNavView.hidesBottomBarWhenPushed = YES;
             
             WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
