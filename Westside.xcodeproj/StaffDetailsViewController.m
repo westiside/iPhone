@@ -211,7 +211,7 @@
     
     [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
     
-    [cell setBackgroundColor:[UIColor colorWithRed:.96 green:.94 blue:.90 alpha:1]];
+    [cell setBackgroundColor:[UIColor colorWithRed:1 green:.98 blue:.94 alpha:1]];
     
     return cell;
     
