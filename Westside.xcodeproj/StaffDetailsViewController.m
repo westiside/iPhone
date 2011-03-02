@@ -224,33 +224,42 @@
 {
     
     //[[tableView cellForRowAtIndexPath:indexPath].textLabel.text isEqualToString:@"Send an Email"];
-    
-    if (indexPath.row == 0) { //email
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email]]];
-    }
-    else if (twitter && indexPath.row == 1) { //twitter
-        NSLog(@"Twitter");
+    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
         
-        if(twitterView != nil) {
-            [twitterView release];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to view this page." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+        
+    } else{
+        
+        if (indexPath.row == 0) { //email
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email]]];
         }
-        
-        TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController"bundle:nil];
-        twitterView = aTwitterView;
-        
-        twitterView.title = twitter;
-        
-        twitterView.hidesBottomBarWhenPushed = YES;
-        
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.connectNav pushViewController:twitterView animated:YES]; 
-        
-        //[self pushWebWithLinkAndTitle:[@"http://mobile.twitter.com/" stringByAppendingString:twitter] :[@"@" stringByAppendingString:twitter]];
-        
-           }
-    else if (facebook) { //facebook
-        NSLog(@"Facebook");
-        [self pushWebWithLinkAndTitle:[@"https://www.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];
+        else if (twitter && indexPath.row == 1) { //twitter
+            NSLog(@"Twitter");
+            
+            if(twitterView != nil) {
+                [twitterView release];
+            }
+            
+            TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController"bundle:nil];
+            twitterView = aTwitterView;
+            
+            twitterView.title = twitter;
+            
+            twitterView.hidesBottomBarWhenPushed = YES;
+            
+            WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+            [delegate.connectNav pushViewController:twitterView animated:YES]; 
+            
+            //[self pushWebWithLinkAndTitle:[@"http://mobile.twitter.com/" stringByAppendingString:twitter] :[@"@" stringByAppendingString:twitter]];
+            
+               }
+        else if (facebook) { //facebook
+            NSLog(@"Facebook");
+            [self pushWebWithLinkAndTitle:[@"https://www.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];
+        }
     }
     
        

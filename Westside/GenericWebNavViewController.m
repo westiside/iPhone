@@ -82,10 +82,7 @@
 #pragma mark - Webview Delegate
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error loading page" message:@"There was a problem accessing the webpage, please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
-    [alert show];
-    [alert release];
     
 }
 

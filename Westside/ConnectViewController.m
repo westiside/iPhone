@@ -306,23 +306,33 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.section == 1){
-        if(twitterView != nil) {
+        if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to view this page." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            [alert show];
+            [alert release];
+            
+        } else {
+            
+            if(twitterView != nil) {
             [twitterView release];
         }
-        
-        TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController"bundle:nil];
-        twitterView = aTwitterView;
-        
-        
-        
-        if(indexPath.row ==0 && indexPath.section == 1) twitterView.title = @"@wbcgainesville";
-        else if(indexPath.row ==1 && indexPath.section == 1) twitterView.title = @"@westsidecollege";
-        
-        twitterView.hidesBottomBarWhenPushed = YES;
-        
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.connectNav pushViewController:twitterView animated:YES]; 
-        [delegate.connectNav setNavigationBarHidden:NO animated:YES];
+            
+            TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController"bundle:nil];
+            twitterView = aTwitterView;
+            
+            
+            
+            if(indexPath.row ==0 && indexPath.section == 1) twitterView.title = @"@wbcgainesville";
+            else if(indexPath.row ==1 && indexPath.section == 1) twitterView.title = @"@westsidecollege";
+            
+            twitterView.hidesBottomBarWhenPushed = YES;
+            
+            WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+            [delegate.connectNav pushViewController:twitterView animated:YES]; 
+            [delegate.connectNav setNavigationBarHidden:NO animated:YES];
+        }
         
     }
     else if(indexPath.section == 0){
