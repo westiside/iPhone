@@ -16,7 +16,7 @@
 #define MEDIA @"http://www.westsidebaptist.org/connect/ministries/media/"
 #define MISSIONS @"http://www.westsidebaptist.org/connect/ministries/missions/"
 #define COLLEGE @"http://www.westsidebaptist.org/connect/ministries/college/"
-#define WEBSITE @"http://www.westsidebaptist.org/";
+#define WEBSITE  @"http://westsidebaptist.org/"
 
 @interface MinistriesTabViewController : UIViewController {
 @private

@@ -15,6 +15,7 @@
 @synthesize nameLabel;
 @synthesize titleLabel;
 @synthesize webVC;
+@synthesize twitterView;
 
 - (id)initWithID:(int)ID{
     self = [super init];
@@ -103,6 +104,7 @@
 {
     [super dealloc];
     if(webVC) [webVC release];
+    if(twitterView) [twitterView release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -228,7 +230,22 @@
     }
     else if (twitter && indexPath.row == 1) { //twitter
         NSLog(@"Twitter");
-        [self pushWebWithLinkAndTitle:[@"http://mobile.twitter.com/" stringByAppendingString:twitter] :[@"@" stringByAppendingString:twitter]];
+        
+        if(twitterView != nil) {
+            [twitterView release];
+        }
+        
+        TwitterViewController *aTwitterView = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController"bundle:nil];
+        twitterView = aTwitterView;
+        
+        twitterView.title = twitter;
+        
+        twitterView.hidesBottomBarWhenPushed = YES;
+        
+        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.connectNav pushViewController:twitterView animated:YES]; 
+        
+        //[self pushWebWithLinkAndTitle:[@"http://mobile.twitter.com/" stringByAppendingString:twitter] :[@"@" stringByAppendingString:twitter]];
         
            }
     else if (facebook) { //facebook

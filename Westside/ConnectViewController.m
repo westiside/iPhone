@@ -29,6 +29,7 @@
 {
     if(webVC) [webVC release];
     if(staffVC) [staffVC release];
+    if(twitterView) [twitterView release];
     [super dealloc];
 }
 

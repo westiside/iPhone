@@ -129,7 +129,7 @@
     
     Tweet *tweet = [twitter.tweets objectAtIndex:indexPath.row];
     
-    return tweet.height;
+    return  tweet.height > 75 ? tweet.height : 75;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

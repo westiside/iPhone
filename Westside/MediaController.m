@@ -208,27 +208,6 @@
 
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    int height = 44;
-    
-    if(loaded){
-        Feed *f;
-        if(audioSelected){
-            f = [feeds.audioFeeds objectAtIndex:indexPath.row];
-        
-        }else{
-            f = [feeds.videoFeeds objectAtIndex:indexPath.row];
-        }
-        
-        height = 46;
-    
-        if([f.feedName length] > 37) height += 15;
-    }
-    
-    return height;
-}
-
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -254,7 +233,6 @@
         }
     
         UIFont *font = [UIFont fontWithName:@"Helvetica Bold" size:15];
-        [cell.textLabel setNumberOfLines:2];
         [cell.textLabel setFont:font];
         cell.textLabel.text = f.feedName;
         cell.detailTextLabel.text = f.pubDate;
