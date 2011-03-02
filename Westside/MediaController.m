@@ -164,8 +164,10 @@
 
 
 - (IBAction)refreshSelected:(id)sender{
-    [feeds parseXML];
     loaded = NO;
+    [podcastTable reloadData];
+    
+    [feeds parseXML];
     [self refreshPodCasts];
 }
 

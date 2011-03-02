@@ -54,7 +54,7 @@
         lines = [[lines objectAtIndex:1] componentsSeparatedByString:@"<span class=\"comments-link\">"];
         lines = [[lines objectAtIndex:0] componentsSeparatedByString:@"<div id=\"subhead\">"];
         lines = [[lines objectAtIndex:1] componentsSeparatedByString:@"</div>"];
-                
+          
         [webView setScalesPageToFit:NO];
         [webView loadHTMLString:[[[@"<h2 style=\"text-align: left;\"><span style=\"color: rgb(139, 69, 19); \">" stringByAppendingString:[lines objectAtIndex:0]] stringByAppendingString:@"</span></h2><div>"] stringByAppendingString:[lines objectAtIndex:1]] baseURL:nil];
     }

@@ -46,33 +46,11 @@
     tv.backgroundColor = [UIColor clearColor];
     imageBanner.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic2" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic3" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic4" ofType:@"jpg"]] ,nil];
     imageBanner.animationDuration = 20;
-    //imageBanner.layer.cornerRadius = 12.0;
-    //imageBanner.clipsToBounds = YES;
-    imageBanner.layer.borderColor =[UIColor whiteColor].CGColor;//darkGray
+    imageBanner.layer.borderColor =[UIColor whiteColor].CGColor;
     imageBanner.layer.borderWidth = 1;
     [imageBanner startAnimating];
        
-    /*
-     map.layer.cornerRadius = 10.0;
-     map.clipsToBounds = YES;
-     map.layer.borderColor = [UIColor whiteColor].CGColor;
-     map.layer.borderWidth = 1.5;
-     //29.6604, Longitude = -82.4476
-     CLLocationDegrees lat = 29.661;
-     CLLocationDegrees longit = -82.4476;
-     CLLocation *loc = [[CLLocation alloc] initWithLatitude:lat longitude:longit];
-     MKCoordinateRegion region;
-     region.center = loc.coordinate;
-     
-     MKCoordinateSpan span;
-     span.latitudeDelta = .004;
-     span.longitudeDelta = .004;
-     region.span = span;
-     [loc release];
-     
-     
-     [map setRegion:region animated:YES];
-     */
+    
      
     
 }
