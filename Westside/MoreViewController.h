@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "GenericWebNavViewController.h"
+#define PICTURES 5
 
 @interface MoreViewController : UIViewController {
 @private

@@ -240,13 +240,18 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *title = nil;
     switch(section){
+        case 0:
+        {
+            title = @"Meet the Pastor";
+            break;
+        }
         case 1: 
         {
             title = @"Westside on Twitter";
             break;
         }
         case 2:{
-            title = @"Church Staff";
+            title = @"Who We Are";
             break;
         }
     } 

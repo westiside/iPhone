@@ -21,23 +21,31 @@
     self = [super init];
     if(self){        
         switch (ID) {
+                /*
+                 Add the following to support twitter or facebook for each staff:
+                    twitter = @"account_name";
+                    facebook = @"account_name";
+                 */
             case 0: //gary
                 imgPath = @"garyL";
                 name = @"Gary Crawford";
                 title = @"Senior Pastor";
                 email = @"dmcalhany@westsidebaptist.org";
+                twitter = @"GaryLCrawford";
                 break;
             case 2: //daniel
                 imgPath = @"danielL" ;
                 name = @"Daniel Morris" ;
                 title= @"Associate Pastor, Minister of Music" ;
                 email = @"dmorris@westsidebaptist.org" ;
+                twitter = @"danielcmorris";
                 break;
             case 10: //mike
                 imgPath = @"mikeL" ;
                 name = @"Mike Ricks" ;
                 title = @"Associate Minister of Music and Media" ;
                 email = @"mricks@westsidebaptist.org" ;
+                twitter = @"MikeRicks";
                 break;
             case 1: //phil
                 imgPath = @"philL" ;
@@ -50,6 +58,7 @@
                 name = @"Steve Loy" ;
                 title = @"Minister of College" ;
                 email = @"sloy@westsidebaptist.org" ;
+                twitter = @"StephenL1971";
                 break;
             case 5: //chad
                 imgPath = @"chadL" ;
@@ -62,18 +71,21 @@
                 name = @"Glen McKinney" ;
                 title = @"Associate Paster, Senior Adult Minister" ;
                 email = @"gmckinney@westsidebaptist.org" ;
+                twitter = @"GlenMcKinney";
                 break;
             case 9: //tom
                 imgPath = @"tomL" ;
                 name = @"Tom Grubbs" ;
                 title = @"Associate Pastor, Minister of Recreation" ;
                 email = @"tgrubbs@westsidebaptist.org" ;
+                twitter = @"RecreationTom";
                 break;
             case 3: //ron
                 imgPath = @"ronL" ;
                 name = @"Ron Surber" ;
                 title = @"Minister of Education" ;
                 email = @"rsurber@westsidebaptist.org" ;
+                twitter = @"RonSurber";
                 break;
             case 8: //sheryl
                 imgPath = @"sherylL" ;

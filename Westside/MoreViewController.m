@@ -8,6 +8,7 @@
 
 #import "MoreViewController.h"
 #import "WestsideAppDelegate.h"
+#include <stdlib.h>
 
 @implementation MoreViewController
 @synthesize imageBanner;
@@ -44,7 +45,19 @@
 {
     [super viewDidLoad];
     tv.backgroundColor = [UIColor clearColor];
-    imageBanner.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic1" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic2" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic3" ofType:@"jpg"]],[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"pic4" ofType:@"jpg"]] ,nil];
+       
+                      
+    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:PICTURES];
+    
+    for(int i = 1; i <= PICTURES ; i++){
+        UIImage *image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[@"pic" stringByAppendingFormat:@"%d",i] ofType:@"png"]];
+       
+        [array addObject:image];
+      
+    }  
+    
+    imageBanner.animationImages = array;
+    [array release];
     imageBanner.animationDuration = 20;
     imageBanner.layer.borderColor =[UIColor whiteColor].CGColor;
     imageBanner.layer.borderWidth = 1;

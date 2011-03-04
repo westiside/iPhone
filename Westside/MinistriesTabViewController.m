@@ -76,12 +76,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-   return 8;
+    if (section == 0) {
+        return 2;
+    }
+    else return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -99,40 +102,50 @@
         switch (indexPath.row) {
             case 0:
             {
-                label = @"Church Website";
+                label = @"Website";
                 break;
             }
             case 1: 
             {
+                label = @"Calendar";
+                break;
+            }
+        }
+
+    }
+    else if(indexPath.section == 1){
+        switch (indexPath.row) {
+            case 0: 
+            {
                 label = @"Children";
                 break;
             }
-            case 2: 
+            case 1: 
             {
                 label = @"Youth";
                 break;
             }
-            case 3:
+            case 2:
             {
                 label = @"College";
                 break;
             }
-            case 4:
+            case 3:
             {
                 label = @"Adult Ministries";
                 break;
             }
-            case 5:
+            case 4:
             {
                 label = @"Missions";
                 break;
             }
-            case 6:
+            case 5:
             {
                 label = @"Music";
                 break;
             }
-            case 7:
+            case 6:
             {
                 label = @"Media Ministry";
                 break;
@@ -160,9 +173,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    
+    NSString *label = @"";
+    NSString *link = @"";
     if(indexPath.section == 0){
-        NSString *label = @"";
-        NSString *link = @"";
         switch (indexPath.row) {
             case 0:
             {
@@ -172,41 +186,51 @@
             }
             case 1: 
             {
+                label = @"Calendar";
+                link =  CALENDAR;
+                break;
+            }
+        }
+    }
+    else if(indexPath.section == 1){
+        switch (indexPath.row) {
+            case 0: 
+            {
                 label = @"Children";
                 link =  CHILDREN;
                 break;
             }
-            case 2: 
+            case 1: 
             {
                 label = @"Youth";
                 link =  YOUTH;
                 break;
             }
-            case 3:
+            case 2:
             {
                 label = @"College";
                 link =  COLLEGE;
                 break;
             }
-            case 4:
+            case 3:
             {
                 label = @"Adult Ministries";
                 link =  ADULT;
                 break;
             }
-            case 5:
+            case 4:
             {
                 label = @"Missions";
                 link =  MISSIONS;
                 break;
             }
-            case 6:
+            case 5:
             {
                 label = @"Music";
                 link =  MUSIC;
                 break;
             }
-            case 7:
+            case 6:
             {
                 label = @"Media Ministry";
                 link =  MEDIA;
@@ -217,10 +241,11 @@
                 
                 
         }
-        
-        [self webWithLinkAndTitle:link :label];
     } 
-        
+    
+    
+    
+    [self webWithLinkAndTitle:link :label];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

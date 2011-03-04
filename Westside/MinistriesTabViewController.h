@@ -17,6 +17,7 @@
 #define MISSIONS @"http://www.westsidebaptist.org/connect/ministries/missions/"
 #define COLLEGE @"http://www.westsidebaptist.org/connect/ministries/college/"
 #define WEBSITE  @"http://westsidebaptist.org/"
+#define CALENDAR @"http://www.westsidebaptist.org/serve/calendar/"
 
 @interface MinistriesTabViewController : UIViewController {
 @private
