@@ -53,11 +53,7 @@
     [NSThread detachNewThreadSelector:@selector(start)
                              toTarget:theOp withObject:nil];
     
-    NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
-                                                                         selector:@selector(checkForLiveFeed) object:nil] autorelease];
     
-    [NSThread detachNewThreadSelector:@selector(start)
-                             toTarget:liveOp withObject:nil];
 
        
 }
@@ -65,6 +61,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    
     
    
 }
@@ -81,11 +79,43 @@
         [alert release];
         
         
+    }
+    /*
+    NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
+                                                                          selector:@selector(checkForLiveFeed) object:nil] autorelease];
+    
+    [NSThread detachNewThreadSelector:@selector(start)
+                             toTarget:liveOp withObject:nil];
+    */
+}
 
+/*
+- (void) checkForLiveFeed {
+    
+    Check with:
+     NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
+     selector:@selector(checkForLiveFeed) object:nil] autorelease];
+     
+     [NSThread detachNewThreadSelector:@selector(start)
+     toTarget:liveOp withObject:nil];
+    
+     
+    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
+    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
+    if(data == nil){
+        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
+        
+        
+    } else{
+        
+        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.mediaTabBarItem setBadgeValue:nil];
+        
     }
     
 }
-
+*/
 
 - (void)viewDidUnload
 {
@@ -145,22 +175,6 @@
     
 }
 
-- (void) checkForLiveFeed {
-    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
-    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
-    if(data == nil){
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
-        
-        
-    } else{
-        
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.mediaTabBarItem setBadgeValue:nil];
-        
-    }
-    
-}
 
 
 - (IBAction)refreshSelected:(id)sender{

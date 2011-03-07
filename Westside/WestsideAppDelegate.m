@@ -62,6 +62,40 @@
 }
 
 
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
+                                                                          selector:@selector(checkForLiveFeed) object:nil] autorelease];
+    
+    [NSThread detachNewThreadSelector:@selector(start)
+                             toTarget:liveOp withObject:nil];
+    
+}
+
+
+- (void) checkForLiveFeed {
+    
+    /* Check with:
+     NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
+     selector:@selector(checkForLiveFeed) object:nil] autorelease];
+     
+     [NSThread detachNewThreadSelector:@selector(start)
+     toTarget:liveOp withObject:nil];
+     
+     */
+    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
+    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
+    if(data == nil){
+        [mediaTabBarItem setBadgeValue:@"LIVE"];
+        
+    } else{
+        [mediaTabBarItem setBadgeValue:nil];
+        
+    }
+    
+    NSLog(@"Check Complete");
+}
+
 
 - (void)dealloc {
 

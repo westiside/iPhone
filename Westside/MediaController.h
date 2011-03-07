@@ -27,7 +27,6 @@
 - (IBAction)liveViewButtonSelected:(id)sender;
 - (IBAction)refreshSelected:(id)sender;
 - (void)loadPodcast:(NSString *)string;
-- (void) checkForLiveFeed; 
 - (void)refreshPodCasts;
 
 
