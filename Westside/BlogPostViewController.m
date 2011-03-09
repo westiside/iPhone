@@ -11,11 +11,13 @@
 
 @implementation BlogPostViewController
 @synthesize webView;
+@synthesize activity;
 
 
 - (void)dealloc
 {
     [webView release];
+    [activity release];
     [super dealloc];
 }
 
@@ -32,6 +34,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
+                                                                          selector:@selector(loadPodcast) object:nil] autorelease];
+    
+    [NSThread detachNewThreadSelector:@selector(start)
+                             toTarget:liveOp withObject:nil];
+    
+    
+
+}
+
+-(void)loadPodcast{
     if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to view this page." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -40,6 +53,7 @@
         [alert release];
         
     } else {
+        [activity startAnimating];
         //Load pastor's perspective's page in html and find the most recent blog posting
         NSURL *htmlURL = [NSURL URLWithString:WORDPRESSFEED];
         NSMutableString *pageContents = [NSMutableString stringWithContentsOfURL:htmlURL encoding:NSUTF8StringEncoding error:nil];
@@ -54,17 +68,18 @@
         lines = [[lines objectAtIndex:1] componentsSeparatedByString:@"<span class=\"comments-link\">"];
         lines = [[lines objectAtIndex:0] componentsSeparatedByString:@"<div id=\"subhead\">"];
         lines = [[lines objectAtIndex:1] componentsSeparatedByString:@"</div>"];
-          
+        
         [webView setScalesPageToFit:NO];
         [webView loadHTMLString:[[[@"<h2 style=\"text-align: left;\"><span style=\"color: rgb(139, 69, 19); \">" stringByAppendingString:[lines objectAtIndex:0]] stringByAppendingString:@"</span></h2><div>"] stringByAppendingString:[lines objectAtIndex:1]] baseURL:nil];
+        [activity stopAnimating];
     }
-    
 
 }
 
 - (void)viewDidUnload
 {
     [self setWebView:nil];
+    [self setActivity:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

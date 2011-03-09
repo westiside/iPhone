@@ -13,7 +13,9 @@
 
 @interface BlogPostViewController : UIViewController {
     UIWebView *webView;
+    UIActivityIndicatorView *activity;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activity;
 
 @end

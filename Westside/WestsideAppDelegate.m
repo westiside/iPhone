@@ -83,17 +83,19 @@
      toTarget:liveOp withObject:nil];
      
      */
-    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
-    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
-    if(data == nil){
-        [mediaTabBarItem setBadgeValue:@"LIVE"];
+    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable) {
+        NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
+        NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
+        if(data == nil){
+            [mediaTabBarItem setBadgeValue:@"LIVE"];
+            
+        } else{
+            [mediaTabBarItem setBadgeValue:nil];
+            
+        }
         
-    } else{
-        [mediaTabBarItem setBadgeValue:nil];
-        
+        NSLog(@"Check Complete");
     }
-    
-    NSLog(@"Check Complete");
 }
 
 
