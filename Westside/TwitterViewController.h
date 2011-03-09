@@ -14,10 +14,15 @@
     TwitterParser *twitter;
     UITableView *tweetTable;
     UITableViewCell *tvCell;
+    BOOL loaded;
+    UITableViewCell *loadingCell;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *tweetTable;
 @property (nonatomic, retain) IBOutlet UITableViewCell *tvCell;
 @property (nonatomic, retain) TwitterParser *twitter;
+-(void)loadTweets;
+-(void)updateTweetTable;
+@property (nonatomic, retain)IBOutlet UITableViewCell *loadingCell;
 
 @end

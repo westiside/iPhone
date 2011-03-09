@@ -96,6 +96,7 @@
 		2DC1BE70131DEE70001DB04B /* ministry.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1BE68131DEE70001DB04B /* ministry.png */; };
 		2DC1BE71131DEE70001DB04B /* ministry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1BE69131DEE70001DB04B /* ministry@2x.png */; };
 		2DD7A23012FF6E7400C5100B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */; };
+		2DD8991F13281D7C00F28192 /* TwitterLoadedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD8991E13281D7B00F28192 /* TwitterLoadedCell.xib */; };
 		2DE8CBF31304528A00CBFA4F /* icon_blue72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8CBF01304528A00CBFA4F /* icon_blue72.png */; };
 		2DE8CBF41304528A00CBFA4F /* icon_blue114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8CBF11304528A00CBFA4F /* icon_blue114.png */; };
 		2DE8CBF51304528A00CBFA4F /* icon_blue57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8CBF21304528A00CBFA4F /* icon_blue57.png */; };
@@ -217,6 +218,7 @@
 		2DC1BE68131DEE70001DB04B /* ministry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ministry.png; sourceTree = "<group>"; };
 		2DC1BE69131DEE70001DB04B /* ministry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ministry@2x.png"; sourceTree = "<group>"; };
 		2DD7A22F12FF6E7400C5100B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2DD8991E13281D7B00F28192 /* TwitterLoadedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterLoadedCell.xib; sourceTree = "<group>"; };
 		2DE8CBF01304528A00CBFA4F /* icon_blue72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_blue72.png; path = ../icon_blue72.png; sourceTree = "<group>"; };
 		2DE8CBF11304528A00CBFA4F /* icon_blue114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_blue114.png; path = ../icon_blue114.png; sourceTree = "<group>"; };
 		2DE8CBF21304528A00CBFA4F /* icon_blue57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_blue57.png; path = ../icon_blue57.png; sourceTree = "<group>"; };
@@ -266,14 +268,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D01C674130E09AC000FDE79 /* Home */ = {
+		2D01C674130E09AC000FDE79 /* Home Tab */ = {
 			isa = PBXGroup;
 			children = (
 				2D01C66F130E09A7000FDE79 /* HomeViewController.h */,
 				2D01C670130E09A7000FDE79 /* HomeViewController.m */,
 				2D01C671130E09A7000FDE79 /* HomeViewController.xib */,
 			);
-			name = Home;
+			name = "Home Tab";
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -330,12 +332,15 @@
 				2DD5D38512F7A00F00D67898 /* Resources */,
 				2D49AEB71308C32B00862F5E /* iPad */,
 				2DC012B51307325B00ADCC98 /* App Delegate */,
-				2D01C674130E09AC000FDE79 /* Home */,
+				2D01C674130E09AC000FDE79 /* Home Tab */,
 				2D9B98BD12F767CF001FA322 /* Connect Tab */,
 				2D9B98BA12F76794001FA322 /* Media Tab */,
 				2DFA2A5C12F7765900E3A8F9 /* Ministries Tab */,
 				2D9B98BC12F7679F001FA322 /* More Tab */,
+				2DD8991D13281BA700F28192 /* Staff Details View */,
+				2DD8991C13281B8B00F28192 /* Twitter View */,
 				2DC012B41307324200ADCC98 /* Generic Web View */,
+				2DD8991B13281B7000F28192 /* Blog Post View */,
 				2D84555E12EA835E00F19F55 /* Supporting Files */,
 			);
 			path = Westside;
@@ -405,18 +410,6 @@
 				2DFA2A5712F76F2C00E3A8F9 /* ConnectViewController.h */,
 				2DFA2A5812F76F2C00E3A8F9 /* ConnectViewController.m */,
 				2DFA2A5912F76F2C00E3A8F9 /* ConnectViewController.xib */,
-				2D4062C31309C08F00A307E4 /* StaffDetailsViewController.h */,
-				2D4062C41309C08F00A307E4 /* StaffDetailsViewController.m */,
-				2D4062C51309C08F00A307E4 /* StaffDetailsViewController.xib */,
-				2D6DA3871303828100900D67 /* StaffTableViewCellNib.xib */,
-				2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */,
-				2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */,
-				2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */,
-				2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */,
-				2D7ADD5A12FA248C00B28EF1 /* TwitterParser.h */,
-				2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */,
-				2D7ADD5D12FA24A100B28EF1 /* Tweet.h */,
-				2D7ADD5E12FA24A100B28EF1 /* Tweet.m */,
 			);
 			name = "Connect Tab";
 			sourceTree = "<group>";
@@ -440,9 +433,6 @@
 				2D7A6BDB12FDC8700002D7EA /* GenericWebNavViewController.h */,
 				2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */,
 				2D7A6BDD12FDC8700002D7EA /* GenericWebNavViewController.xib */,
-				2DF533B91319B7F300D508C1 /* BlogPostViewController.h */,
-				2DF533BA1319B7F300D508C1 /* BlogPostViewController.m */,
-				2DF533BB1319B7F400D508C1 /* BlogPostViewController.xib */,
 			);
 			name = "Generic Web View";
 			sourceTree = "<group>";
@@ -522,6 +512,43 @@
 				2DC012BA130733FD00ADCC98 /* Animation Picures */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		2DD8991B13281B7000F28192 /* Blog Post View */ = {
+			isa = PBXGroup;
+			children = (
+				2DF533B91319B7F300D508C1 /* BlogPostViewController.h */,
+				2DF533BA1319B7F300D508C1 /* BlogPostViewController.m */,
+				2DF533BB1319B7F400D508C1 /* BlogPostViewController.xib */,
+			);
+			name = "Blog Post View";
+			sourceTree = "<group>";
+		};
+		2DD8991C13281B8B00F28192 /* Twitter View */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8991E13281D7B00F28192 /* TwitterLoadedCell.xib */,
+				2D7ADD5512FA12D000B28EF1 /* TwitterViewController.h */,
+				2D7ADD5612FA12D000B28EF1 /* TwitterViewController.m */,
+				2D1B487A12FDFDFA00D11A42 /* TwitterTableViewCellNib.xib */,
+				2D7ADD5712FA12D000B28EF1 /* TwitterViewController.xib */,
+				2D7ADD5A12FA248C00B28EF1 /* TwitterParser.h */,
+				2D7ADD5B12FA248C00B28EF1 /* TwitterParser.m */,
+				2D7ADD5D12FA24A100B28EF1 /* Tweet.h */,
+				2D7ADD5E12FA24A100B28EF1 /* Tweet.m */,
+			);
+			name = "Twitter View";
+			sourceTree = "<group>";
+		};
+		2DD8991D13281BA700F28192 /* Staff Details View */ = {
+			isa = PBXGroup;
+			children = (
+				2D4062C31309C08F00A307E4 /* StaffDetailsViewController.h */,
+				2D4062C41309C08F00A307E4 /* StaffDetailsViewController.m */,
+				2D4062C51309C08F00A307E4 /* StaffDetailsViewController.xib */,
+				2D6DA3871303828100900D67 /* StaffTableViewCellNib.xib */,
+			);
+			name = "Staff Details View";
 			sourceTree = "<group>";
 		};
 		2DEFCA1C1305AC57008763AC /* Staff Images */ = {
@@ -700,6 +727,7 @@
 				2DBA2DB11321A9FB005C295B /* ron.png in Resources */,
 				2DBA2DB31321AA79005C295B /* Default.png in Resources */,
 				2DBA2DB51321AA7E005C295B /* Default@2x.png in Resources */,
+				2DD8991F13281D7C00F28192 /* TwitterLoadedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

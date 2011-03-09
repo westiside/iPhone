@@ -34,17 +34,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
-                                                                          selector:@selector(loadPodcast) object:nil] autorelease];
-    
-    [NSThread detachNewThreadSelector:@selector(start)
-                             toTarget:liveOp withObject:nil];
     
     
-
+    [self performSelectorInBackground:@selector(loadBlog) withObject:nil];
 }
 
--(void)loadPodcast{
+-(void)loadBlog{
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+
     if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable) {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You must have an active network connection in order to view this page." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -73,6 +70,8 @@
         [webView loadHTMLString:[[[@"<h2 style=\"text-align: left;\"><span style=\"color: rgb(139, 69, 19); \">" stringByAppendingString:[lines objectAtIndex:0]] stringByAppendingString:@"</span></h2><div>"] stringByAppendingString:[lines objectAtIndex:1]] baseURL:nil];
         [activity stopAnimating];
     }
+    
+    [pool  release];
 
 }
 

@@ -47,13 +47,8 @@
     [super viewDidLoad];
     audioSelected = YES;
     loaded = NO;
-    NSInvocationOperation* theOp = [[[NSInvocationOperation alloc] initWithTarget:self
-                                                                         selector:@selector(refreshPodCasts) object:nil] autorelease];
-    
-    [NSThread detachNewThreadSelector:@selector(start)
-                             toTarget:theOp withObject:nil];
-    
-    
+   
+    [self performSelectorInBackground:@selector(refreshPodCasts) withObject:nil];
 
        
 }
@@ -80,42 +75,7 @@
         
         
     }
-    /*
-    NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
-                                                                          selector:@selector(checkForLiveFeed) object:nil] autorelease];
-    
-    [NSThread detachNewThreadSelector:@selector(start)
-                             toTarget:liveOp withObject:nil];
-    */
 }
-
-/*
-- (void) checkForLiveFeed {
-    
-    Check with:
-     NSInvocationOperation* liveOp = [[[NSInvocationOperation alloc] initWithTarget:self
-     selector:@selector(checkForLiveFeed) object:nil] autorelease];
-     
-     [NSThread detachNewThreadSelector:@selector(start)
-     toTarget:liveOp withObject:nil];
-    
-     
-    NSURL *liveFeed = [NSURL URLWithString:@"http://wbcmedia.sermon.net/l/main"];
-    NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
-    if(data == nil){
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.mediaTabBarItem setBadgeValue:@"LIVE"];
-        
-        
-    } else{
-        
-        WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [delegate.mediaTabBarItem setBadgeValue:nil];
-        
-    }
-    
-}
-*/
 
 - (void)viewDidUnload
 {
@@ -186,12 +146,19 @@
 }
 
 - (void)refreshPodCasts{
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+
     if(!feeds){
         feeds = [[FeedParser alloc] init];
         [feeds parseXML];
     }
     
-    
+    [self performSelectorOnMainThread:@selector(updateTable) withObject:nil waitUntilDone:YES];
+        
+    [pool release];
+}
+
+-(void)updateTable{
     
     [podcastTable beginUpdates];
     [podcastTable deleteSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
@@ -202,9 +169,8 @@
     else if(audioSelected)[podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
     else [podcastTable insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationRight];
     [podcastTable endUpdates];
-        
+    
 }
-
 
 #pragma mark - Table view data source
 

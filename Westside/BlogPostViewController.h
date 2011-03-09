@@ -17,5 +17,6 @@
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activity;
+-(void) loadBlog;
 
 @end
