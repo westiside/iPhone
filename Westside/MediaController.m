@@ -107,15 +107,12 @@
         NSURL *liveFeed = [NSURL URLWithString:LIVEFEED];
         NSString *data = [NSString stringWithContentsOfURL:liveFeed encoding:NSStringEncodingConversionAllowLossy error:nil];
         if([data isEqualToString:@"No on air lives"]){
-            NSLog(@"No Live Feed");
-            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Live Feed Off-Air" message:@"Check back on Sunday at 9:15am, 10:45am, and 6:00pm" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             
             [alert show];
             [alert release];
             
         } else{
-            NSLog(@"Live Feed On Air");
             [self loadPodcast:@"http://wbcmedia.sermon.net/l/main"];
         }
         

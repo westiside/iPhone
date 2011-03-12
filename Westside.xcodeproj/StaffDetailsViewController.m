@@ -249,8 +249,6 @@
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto:" stringByAppendingString:email]]];
         }
         else if (twitter && indexPath.row == 1) { //twitter
-            NSLog(@"Twitter");
-            
             if(twitterView != nil) {
                 [twitterView release];
             }
@@ -269,7 +267,6 @@
             
                }
         else if (facebook) { //facebook
-            NSLog(@"Facebook");
             [self pushWebWithLinkAndTitle:[@"https://www.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];
         }
     }

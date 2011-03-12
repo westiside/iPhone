@@ -109,7 +109,7 @@
 }
 
 - (IBAction)egiving:(id)sender{
-    if(webVC != nil) {
+   /* if(webVC != nil) {
         [webVC release];
     }
     
@@ -121,7 +121,12 @@
     
     WestsideAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     [delegate.moreNav pushViewController:webVC animated:YES]; 
-    [delegate.moreNav setNavigationBarHidden:NO animated:YES];
+    [delegate.moreNav setNavigationBarHidden:NO animated:YES];*/
+    
+   
+    //required to launch in safari for App Store approval
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://e-giving.org/start.asp?id=1678"]];
+    
 }
 
 

@@ -94,7 +94,6 @@
             
         }
         
-        NSLog(@"Check Complete");
     }
 }
 

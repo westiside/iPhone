@@ -45,7 +45,6 @@
 		2D4062C61309C08F00A307E4 /* StaffDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4062C41309C08F00A307E4 /* StaffDetailsViewController.m */; };
 		2D4062C71309C08F00A307E4 /* StaffDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4062C51309C08F00A307E4 /* StaffDetailsViewController.xib */; };
 		2D4638B0130F565300506F5A /* LoadingTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4638AF130F565300506F5A /* LoadingTableCellView.xib */; };
-		2D49AEC21308C53E00862F5E /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D49AEC11308C53E00862F5E /* MainWindow-iPad.xib */; };
 		2D6DA3881303828100900D67 /* StaffTableViewCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6DA3871303828100900D67 /* StaffTableViewCellNib.xib */; };
 		2D6DA38C13038E5600900D67 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6DA38B13038E5400900D67 /* AVFoundation.framework */; };
 		2D7A6BDE12FDC8700002D7EA /* GenericWebNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A6BDC12FDC8700002D7EA /* GenericWebNavViewController.m */; };
@@ -154,7 +153,6 @@
 		2D4062C41309C08F00A307E4 /* StaffDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaffDetailsViewController.m; path = Westside.xcodeproj/StaffDetailsViewController.m; sourceTree = SOURCE_ROOT; };
 		2D4062C51309C08F00A307E4 /* StaffDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StaffDetailsViewController.xib; path = Westside.xcodeproj/StaffDetailsViewController.xib; sourceTree = SOURCE_ROOT; };
 		2D4638AF130F565300506F5A /* LoadingTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTableCellView.xib; sourceTree = "<group>"; };
-		2D49AEC11308C53E00862F5E /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		2D6DA3871303828100900D67 /* StaffTableViewCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StaffTableViewCellNib.xib; sourceTree = "<group>"; };
 		2D6DA38B13038E5400900D67 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2D7A6BDB12FDC8700002D7EA /* GenericWebNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericWebNavViewController.h; sourceTree = "<group>"; };
@@ -279,14 +277,6 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		2D49AEB71308C32B00862F5E /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				2D49AEC11308C53E00862F5E /* MainWindow-iPad.xib */,
-			);
-			name = iPad;
-			sourceTree = "<group>";
-		};
 		2D84554812EA835D00F19F55 = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				2DD5D38512F7A00F00D67898 /* Resources */,
-				2D49AEB71308C32B00862F5E /* iPad */,
 				2DC012B51307325B00ADCC98 /* App Delegate */,
 				2D01C674130E09AC000FDE79 /* Home Tab */,
 				2D9B98BD12F767CF001FA322 /* Connect Tab */,
@@ -671,7 +660,6 @@
 				2DE8CBF31304528A00CBFA4F /* icon_blue72.png in Resources */,
 				2DE8CBF41304528A00CBFA4F /* icon_blue114.png in Resources */,
 				2DE8CBF51304528A00CBFA4F /* icon_blue57.png in Resources */,
-				2D49AEC21308C53E00862F5E /* MainWindow-iPad.xib in Resources */,
 				2D4062C71309C08F00A307E4 /* StaffDetailsViewController.xib in Resources */,
 				2D01C673130E09A7000FDE79 /* HomeViewController.xib in Resources */,
 				2D4638B0130F565300506F5A /* LoadingTableCellView.xib in Resources */,
@@ -828,10 +816,71 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		065E750D1329CB9B0041E00C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Ricks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "Westside Baptist Church App";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F7E36180-935C-414A-BE43-EB336B7B981C";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		065E750E1329CB9B0041E00C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Westside/Westside-Prefix.pch";
+				INFOPLIST_FILE = "Westside/Westside-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		065E750F1329CB9B0041E00C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Westside.app/Westside";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WestsideTests/WestsideTests-Prefix.pch";
+				INFOPLIST_FILE = "WestsideTests/WestsideTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
 		2D84558612EA835E00F19F55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -839,6 +888,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "Westside Baptist Church App";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -847,12 +899,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Ricks (NLHL74NH4S)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "Westside Baptist Church App";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B6E1D8F7-1A70-4E96-9274-90890BE2947B";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -870,7 +926,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Westside/Westside-Prefix.pch";
 				INFOPLIST_FILE = "Westside/Westside-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -889,7 +945,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Westside/Westside-Prefix.pch";
 				INFOPLIST_FILE = "Westside/Westside-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -949,6 +1005,7 @@
 			buildConfigurations = (
 				2D84558612EA835E00F19F55 /* Debug */,
 				2D84558712EA835E00F19F55 /* Release */,
+				065E750D1329CB9B0041E00C /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -958,6 +1015,7 @@
 			buildConfigurations = (
 				2D84558912EA835E00F19F55 /* Debug */,
 				2D84558A12EA835E00F19F55 /* Release */,
+				065E750E1329CB9B0041E00C /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -967,6 +1025,7 @@
 			buildConfigurations = (
 				2D84558C12EA835E00F19F55 /* Debug */,
 				2D84558D12EA835E00F19F55 /* Release */,
+				065E750F1329CB9B0041E00C /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
