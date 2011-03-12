@@ -275,7 +275,7 @@
             
             //[self pushWebWithLinkAndTitle:[@"http://mobile.twitter.com/" stringByAppendingString:twitter] :[@"@" stringByAppendingString:twitter]];
             
-               }
+        }
         else if (facebook) { //facebook
             [self pushWebWithLinkAndTitle:[@"http://m.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];
         }
