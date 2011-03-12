@@ -32,6 +32,7 @@
                 title = @"Senior Pastor";
                 email = @"dmcalhany@westsidebaptist.org";
                 twitter = @"GaryLCrawford";
+                facebook = @"pastorgarycrawford";
                 break;
             case 2: //daniel
                 imgPath = @"danielL" ;
@@ -39,6 +40,7 @@
                 title= @"Associate Pastor, Minister of Music" ;
                 email = @"dmorris@westsidebaptist.org" ;
                 twitter = @"danielcmorris";
+                facebook = @"danielmorrismusic";
                 break;
             case 10: //mike
                 imgPath = @"mikeL" ;
@@ -46,12 +48,14 @@
                 title = @"Associate Minister of Music and Media" ;
                 email = @"mricks@westsidebaptist.org" ;
                 twitter = @"MikeRicks";
+                facebook = @"profile.php?id=502224708";
                 break;
             case 1: //phil
                 imgPath = @"philL" ;
                 name = @"Phil Young" ;
                 title = @"Sr. Associate Pastor" ;
                 email = @"pyoung@westsidebaptist.org" ;
+                facebook = @"profile.php?id=723678730";
                 break;
             case 6: //steve
                 imgPath = @"steveL" ;
@@ -59,6 +63,7 @@
                 title = @"Minister of College" ;
                 email = @"sloy@westsidebaptist.org" ;
                 twitter = @"StephenL1971";
+                facebook = @"profile.php?id=1185700847";
                 break;
             case 5: //chad
                 imgPath = @"chadL" ;
@@ -72,6 +77,7 @@
                 title = @"Associate Paster, Senior Adult Minister" ;
                 email = @"gmckinney@westsidebaptist.org" ;
                 twitter = @"GlenMcKinney";
+                facebook = @"glen.mckinney2";
                 break;
             case 9: //tom
                 imgPath = @"tomL" ;
@@ -79,6 +85,7 @@
                 title = @"Associate Pastor, Minister of Recreation" ;
                 email = @"tgrubbs@westsidebaptist.org" ;
                 twitter = @"RecreationTom";
+                facebook = @"profile.php?id=1459236300";
                 break;
             case 3: //ron
                 imgPath = @"ronL" ;
@@ -86,18 +93,21 @@
                 title = @"Minister of Education" ;
                 email = @"rsurber@westsidebaptist.org" ;
                 twitter = @"RonSurber";
+                facebook = @"profile.php?id=1181351406";
                 break;
             case 8: //sheryl
                 imgPath = @"sherylL" ;
                 name = @"Sheryl Bennett" ;
                 title = @"Minister of Missions, Prayer and Evangelism" ;
                 email = @"sbennett@westsidebaptist.org" ;
+                facebook = @"Sbennett623";
                 break;
             case 4: //john
                 imgPath = @"johnL" ;
                 name = @"John Park" ;
                 title = @"Minister to Children" ;
                 email = @"jpark@westsidebaptist.org" ;
+                facebook = @"profile.php?id=100000752403948";
                 break;
                 
                 
@@ -267,7 +277,7 @@
             
                }
         else if (facebook) { //facebook
-            [self pushWebWithLinkAndTitle:[@"https://www.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];
+            [self pushWebWithLinkAndTitle:[@"http://m.facebook.com/" stringByAppendingString: facebook] :@"Facebook"];
         }
     }
     
